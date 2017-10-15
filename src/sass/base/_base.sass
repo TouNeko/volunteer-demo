@@ -1,0 +1,27 @@
+$link-color: $main-color-blue
+$link-color-hover: $main-color-blue-dark
+
+*, *:before, *:after
+  box-sizing: border-box
+
+body
+  @extend %system-font
+  font-size: 16px
+  line-height: 1.5
+  -webkit-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  color: $color-black
+
+  &:before
+    top: auto
+    bottom: 0
+
+img
+  max-width: 100%
+
+a
+  color: $link-color
+
+  &:hover
+    color: $link-color-hover

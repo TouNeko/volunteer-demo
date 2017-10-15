@@ -1,0 +1,128 @@
+.event-list-section
+
+.event-list, .org-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  +tablet
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .event-item, .org-item
+    width: 100%
+    margin-bottom: 24px
+    overflow: hidden
+    background-color: $sub-color-gray-light
+    border-radius: $border-radius
+    box-shadow: $box-shadow
+
+    +tablet
+      width: calc(50% - 16px)
+
+    +desktop
+      width: calc(33.333% - 16px)
+
+  .event-image, .org-image
+    display: block
+    width: 100%
+    padding-top: 56.25%
+    background-position: center
+    background-size: cover
+
+  .event-info, .org-info
+    margin: 16px 16px 48px
+    color: $sub-color-black
+
+    .name
+      margin: 0 0 4px
+      @extend %font-size-l
+      font-weight: 400
+      color: $main-color-blue-dark
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+    .org
+      margin: 0 0 4px
+      @extend %font-size-s
+      color: $sub-color-gray
+
+    .description
+      overflow: hidden
+      height: 96px
+      margin: 0
+      color: $sub-color-black
+
+    .tag-list
+      margin: 12px 0
+      padding: 0
+      list-style: none
+
+    .tag-item
+      display: inline-block
+
+      a
+        display: block
+        padding: 4px 12px
+        @extend %font-size-s
+        text-decoration: none
+        color: $sub-color-black
+        background-color: $color-white
+        border-radius: 48px
+        transition: color .25s, background-color .25s
+
+        &:hover
+          color: white
+          background-color: $sub-color-gray
+
+.event-apply-info
+  position: relative
+  margin: 16px
+  padding-bottom: 16px
+  display: flex
+  align-items: flex-top
+
+  .event-people-apply,
+  .event-people-need,
+  .event-apply-presentage
+
+    .label, .unit
+      @extend %font-size-ui-s
+      color: $sub-color-gray
+
+    .label
+      &::after
+        content: ' / '
+
+    .value
+      @extend %font-size-ui-xl
+
+    .unit
+      display: inline-block
+      margin-left: 4px
+
+  .event-people-need
+    flex: 1
+    margin-left: 12px
+    padding-left: 12px
+    border-left: 1px solid rgba(black, .1)
+
+  .event-apply-presentage
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      height: 8px
+      background-color: rgba(black, .1)
+
+    .presentage-bar
+      position: absolute
+      left: 0
+      bottom: 0
+      height: 8px
+      background-color: $main-color-blue

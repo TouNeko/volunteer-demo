@@ -1,0 +1,23 @@
+extends ./_html
+
+block html
+  head
+    - var info = getData('info')
+    block head
+      include ./shared/_head
+      != style_tag('fs')
+    block title
+      - var star = env == 'dev' ? 'Ã¢Ëœâ€¦': ''
+      title #{star}#{info.site.title}
+    block keywords
+      meta(name='keywords' content=info.site.keywords)
+    block description
+      meta(name='description' content=info.site.description)
+    block og
+      include ./shared/_og
+  body
+    include /partials/fs/_header
+    block content
+    include /partials/fs/_footer
+    block foot
+      include ./shared/_foot

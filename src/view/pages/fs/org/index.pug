@@ -1,0 +1,18 @@
+extends /layouts/_fs-layout
+
+block content
+  section
+    .container.org-list-section
+      .section-title
+        h1.title 所有單位
+        .function
+      ul.org-list
+        - for(var i = 0; i < 6; i++)
+          li.org-item
+            a.org-image(href='/fs/org/org-detail' style='background-image:url("http://fakeimg.pl/320x180/")')
+            .org-info
+              a.name(href='/fs/org/org-detail') 單位名稱
+              p.description 應用單位介紹，介紹這個單位的文字。應用單位介紹，介紹這個單位的文字。應用單位介紹，介紹這個單位的文字。應用單位介紹，介紹這個單位的文字。
+              ul.tag-list
+                li.tag-item: a(href='#') 長期照護
+                li.tag-item: a(href='#') 社會關懷

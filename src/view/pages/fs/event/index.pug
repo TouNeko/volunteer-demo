@@ -1,0 +1,30 @@
+extends /layouts/_fs-layout
+
+block content
+  section
+    .container.event-list-section
+      .section-title
+        h1.title 所有活動
+        .function
+      ul.event-list
+        - for(var i = 0; i < 6; i++)
+          li.event-item
+            a.event-image(href='/fs/event/event-detail' style='background-image:url("http://fakeimg.pl/320x180/")')
+            .event-info
+              a.name(href='/fs/event/event-detail') 活動名稱
+              .org 應用單位
+              p.description 活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。
+              ul.tag-list
+                li.tag-item: a(href='#') 長期照護
+                li.tag-item: a(href='#') 社會關懷
+            .event-apply-info
+              .event-people-apply
+                .label 完成報名
+                .value 136<span class='unit'>人</span>
+              .event-people-need
+                .label 需求人數
+                .value 240<span class='unit'>人</span>
+              .event-apply-presentage
+                .label 需求百分比
+                .value 56.7<span class='unit'>%</span>
+                .presentage-bar(style='width: 56.7%')
