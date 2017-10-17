@@ -1,0 +1,64 @@
+.hero
+  .slider-content-wrap
+    position: relative
+    padding-top: 41.67%
+    overflow: hidden
+
+    .slider-content-inner
+      position: absolute
+      z-index: 10
+      top: 0
+      left: 0
+      width: 100%
+
+  .slider-nav
+    margin-top: 4px
+    margin-left: -4px
+    margin-right: -4px
+
+    .slick-prev, .slick-next
+      position: absolute
+      overflow: hidden
+      padding: 0
+      top: calc(50% - 8px)
+      width: 8px
+      height: 8px
+      text-indent: 100%
+      border: 8px solid transparent
+      background-color: transparent
+      cursor: pointer
+
+    .slick-prev
+      left: -24px
+      border-right-color: rgba(black, .75)
+
+    .slick-next
+      right: -24px
+      border-left-color: rgba(black, .75)
+
+
+  .slider-name
+    position: relative
+    align-items: center
+    padding: 4px
+    cursor: pointer
+
+    span
+      display: flex
+      align-items: center
+      align-content: stretch
+      justify-content: center
+      overflow: hidden
+      width: 100%
+      padding: 8px
+      @extend %font-size-ui-s
+      text-align: center
+      color: white
+      background-color: rgba(black, .45)
+      transition: background-color .25s
+
+
+    &.slick-current
+      span
+        background-color: rgba(black, .75)
+

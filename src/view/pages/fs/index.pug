@@ -1,5 +1,60 @@
 extends /layouts/_fs-layout
 
 block content
+  section
+    .container.hero
+      .slider-content-wrap
+        .slider-content-inner
+          .slider-content
+            - for(var i = 0; i < 5; i++)
+              img.slide-image(src='http://fakeimg.pl/1920x800/575757/?text=HeroBanner')
+      .slider-nav
+        - for(var i = 0; i < 5; i++)
+          .slider-name: span 活動名稱，這是一個 Volunteer 活動
+  section
+    .container.event-list-section
+      .section-title
+        h1.title 最新活動
+        .function
+          a.more-button(href='/fs/event/') 更多活動
+      ul.event-list
+        - for(var i = 0; i < 6; i++)
+          li.event-item
+            a.event-image(href='/fs/event/event-detail' style='background-image:url("http://fakeimg.pl/320x180/")')
+            .event-info
+              a.name(href='/fs/event/event-detail') 活動名稱
+              .org 應用單位
+              p.description 活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。
+              ul.tag-list
+                li.tag-item: a(href='#') 長期照護
+                li.tag-item: a(href='#') 社會關懷
+            .event-apply-info
+              .event-people-apply
+                .label 完成報名
+                .value 136<span class='unit'>人</span>
+              .event-people-need
+                .label 需求人數
+                .value 240<span class='unit'>人</span>
+              .event-apply-presentage
+                .label 需求百分比
+                .value 56.7<span class='unit'>%</span>
+                .presentage-bar(style='width: 56.7%')
+
+  section
+    .container.org-list-section
+      .section-title
+        h1.title 新增單位
+        .function
+          a.more-button(href='/fs/event/') 更多單位
+      ul.org-list
+        - for(var i = 0; i < 3; i++)
+          li.org-item
+            a.org-image(href='/fs/org/org-detail' style='background-image:url("http://fakeimg.pl/320x180/")')
+            .org-info
+              a.name(href='/fs/org/org-detail') 單位名稱
+              p.description 應用單位介紹，介紹這個單位的文字。應用單位介紹，介紹這個單位的文字。應用單位介紹，介紹這個單位的文字。應用單位介紹，介紹這個單位的文字。
+              ul.tag-list
+                li.tag-item: a(href='#') 長期照護
+                li.tag-item: a(href='#') 社會關懷
 
 
