@@ -20,14 +20,12 @@ $header-bg: $main-color-blue
     align-items: center
 
   .logo
-    flex: 1
     margin: 0 24px 0 0
     font-size: 21px
     line-height: 24px
     font-weight: 500
 
     +tablet
-      flex: 0
 
   .nav-wrap
     position: fixed
@@ -37,7 +35,7 @@ $header-bg: $main-color-blue
 
     +tablet
       position: static
-      flex: 1
+      flex: 2
 
   .nav-button
     width: 56px
@@ -95,6 +93,9 @@ $header-bg: $main-color-blue
         &:hover
           background-color: rgba($base-color-white, .25)
 
+  .member
+    text-align: right
+    flex: 1
 
   .member-name
     margin-right: 12px

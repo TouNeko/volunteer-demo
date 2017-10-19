@@ -6,7 +6,7 @@ block html
     block head
       include ./shared/_head
     block title
-      - var star = env == 'dev' ? 'Ã¢Ëœâ€¦': ''
+      - var star = env == 'dev' ? '.': ''
       title #{star}#{info.site.title}
     block keywords
       meta(name='keywords' content=info.site.keywords)

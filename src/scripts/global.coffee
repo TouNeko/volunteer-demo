@@ -11,7 +11,7 @@ if $('.hero').length != 0
     slidesToScroll: 1
     arrows: false
     fade: true
-    autoplay: true
+    autoplay: false
     autoplaySpeed: 7000
     asNavFor: '.slider-nav'
 
