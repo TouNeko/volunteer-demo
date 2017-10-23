@@ -1,0 +1,28 @@
+.pagination
+  margin: 48px 0
+  padding: 0
+  list-style: none
+  text-align: center
+
+  li
+    display: inline-block
+
+    +tablet
+      margin: 0 2px
+  a
+    display: block
+    padding: 4px 8px
+    @extend %font-size-ui-m
+    color: $sub-color-black
+    font-weight: 500
+    text-decoration: none
+    background-color: $sub-color-gray-light
+    border-radius: $border-radius
+    transition: background-color .25s, color .25s
+
+    &:hover
+      color: $base-color-white
+      background-color: $sub-color-black-light
+
+    +tablet
+      padding: 4px 12px

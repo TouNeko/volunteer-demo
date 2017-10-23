@@ -1,0 +1,42 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container
+      .section-title
+        h1.title 單位管理
+        .function
+          form.form-group
+            .form-unit
+              label 搜尋
+              input(type='text' placeholder='搜尋單位')
+            .form-unit
+              label 排序
+              select
+                option 依時間排序
+            .form-unit
+              label 篩選
+              select
+                option 依類型篩選
+
+      table.table
+        thead
+          tr
+            th 單位名稱
+            th 登記地址
+            th 聯絡電話
+            th 傳真號碼
+            th Email
+            th 審核狀態
+            th 管理
+          - for(var i = 0; i < 5; i++)
+            tr
+              td 台東青年活動中心
+              td 台東市博愛路425號
+              td 089123456
+              td 089123456
+              td volunteer@taitung.com.tw
+              td 待審核
+              td: a.button(href='/bs/org/detail') 管理
+
+      include /partials/bs/_pagination

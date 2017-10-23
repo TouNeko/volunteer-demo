@@ -1,0 +1,115 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container.bs-detail
+
+      .detail-title
+        .title-content
+          h1.title 課程名稱課程名稱
+          p.sub-title 課程資料管理
+
+      .form-section
+        .aside
+          h2.form-title 基本資料
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 訓練單位
+              select
+                option 台東青年活動中心
+              .radio-group
+                .radio-item
+                  input#radioitem1(type='radio' name='radioitem')
+                  label(for='radioitem1') 志工訓練
+                .radio-item
+                  input#radioitem2(type='radio' name='radioitem')
+                  label(for='radioitem2') 志工活動
+            .form-unit
+              label.label 訓練類別
+              select
+                option 基礎訓練
+            .form-unit
+              label.label 訓練名稱
+              input(type='text' value='訓練名稱訓練名稱')
+            .form-unit
+              label.label 課程活動 DM
+              .input-group
+                input(type='text' value='')
+                button.button 上傳
+            .form-unit
+              label.label 課程簡述（100字以內）
+              textarea
+            .form-unit
+              label.label 訓練地點
+              input(type='text' value='')
+            .form-unit
+              label.label 注意事項
+              textarea
+            .form-unit
+              label.label 聯絡人
+              input(type='text' value='')
+            .form-unit
+              label.label 聯絡電話
+              input(type='text' value='')
+            .form-unit
+              label.label 報名審核
+              .radio-group
+                .radio-item
+                  input#radioitem1(type='radio' name='radiogroup1')
+                  label(for='radioitem1') 報名需審核
+                .radio-item
+                  input#radioitem2(type='radio' name='radiogroup1')
+                  label(for='radioitem2') 報名不需審核
+            .form-unit
+              label.label 人數限制
+              .radio-group
+                .radio-item
+                  input#radioitem1(type='radio' name='radiogroup2')
+                  label(for='radioitem1') 不限制人數
+                .radio-item
+                  input#radioitem2(type='radio' name='radiogroup2')
+                  label(for='radioitem2') 限制人數
+                  input.small(type='text')
+                  span 人
+            .form-unit
+              label.label 其他審核資料
+              .input-group
+                input(type='text' value='')
+                button.button 上傳
+
+      .form-section
+        .aside
+          h2.form-title 課程時間
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 第一天
+              .input-group
+                input(type='text' placeholder='日期')
+                input.medium(type='text' placeholder='時間（起）')
+                span ~
+                input.medium(type='text' placeholder='時間（迄）')
+                span 認列時數
+                input.small(type='text' placeholder='')
+            .form-unit
+              label.label 第二天
+              .input-group
+                input(type='text' placeholder='日期')
+                input.medium(type='text' placeholder='時間（起）')
+                span ~
+                input.medium(type='text' placeholder='時間（迄）')
+                span 認列時數
+                input.small(type='text' placeholder='')
+                button.button 刪除
+            .form-unit
+              button.button 新增時間
+
+      .form-section
+        .aside
+        .main
+          .button-group
+            button.cta-button 儲存變更
+            button 取消變更

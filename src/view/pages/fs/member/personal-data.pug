@@ -13,36 +13,36 @@ block content
         .main
           form.form-group
             .form-unit
-              label 會員 ID
+              label.label 會員 ID
               .data Volunteer_0001
             .form-unit
-              label 姓名
+              label.label 姓名
               .data 志工人
             .form-unit
-              label 身分證字號
+              label.label 身分證字號
               .data A123***654
             .form-unit
-              label 呈現名稱
+              label.label 呈現名稱
               input(type='text' value='志工人')
             .form-unit
-              label 居住地址
+              label.label 居住地址
               input(type='text' value='台東市博愛路425號')
             .form-unit
-              label 戶籍地址
+              label.label 戶籍地址
               input(type='text' value='台東市博愛路425號')
               .check-item
-                input(type='checkbox' checked)
-                span 與居住地址相同
+                input#same-address(type='checkbox' checked)
+                label(for='same-address') 與居住地址相同
             .form-unit
-              label 聯絡電話
+              label.label 聯絡電話
               .input-group
                 input(type='text' value='089123456')
                 input(type='text' value='098123456')
             .form-unit
-              label Email
+              label.label Email
               input(type='text' value='Volunteer@taitung.com.tw')
             .form-unit
-              label 密碼
+              label.label 密碼
               .input-group
                 .data.password ・・・・・・・・
                 a.small-button(href='/fs/member/change-pw') 變更密碼
@@ -54,13 +54,13 @@ block content
         .main
           form.form-group
             .form-unit
-              label 姓名
+              label.label 姓名
               input(type='text' value='志工人')
             .form-unit
-              label 關係
+              label.label 關係
               input(type='text' value='父子')
             .form-unit
-              label 聯絡電話
+              label.label 聯絡電話
               input(type='text' value='089123456')
             .form-unit
                 a.small-button(href='#') 新增緊急聯絡人
@@ -78,12 +78,12 @@ block content
         .main
           form.form-group
             .form-unit
-              label 技能項目
+              label.label 技能項目
               .data-group
                 .data.check.checked 救生員執照
                 a.small-button(href='#') 更新技能
             .form-unit
-              label 技能項目 - 認證中
+              label.label 技能項目 - 認證中
               .data-group
                 .data.check CPR 執照
                 a.small-button(href='#') 更新技能
@@ -111,12 +111,12 @@ block content
         .main
           form.form-group
             .form-unit
-              label 報名中
+              label.label 報名中
               .data 活動名稱一（已完成報名）
               .data 活動名稱二（審核中）
 
             .form-unit
-              label 過去的活動
+              label.label 過去的活動
               .data-group
                 .data 活動名稱一
                 a.small-button(href='#') 活動日誌

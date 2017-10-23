@@ -1,0 +1,53 @@
+.option
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 24px
+
+  .option-item
+    display: inline-flex
+    align-items: center
+    padding: 4px 0
+    width: 33.333%
+
+    &.align-right
+      justify-content: flex-end
+
+    .input-group, .select-group
+      width: 90%
+      display: inline-flex
+      align-items: center
+
+    label
+      margin-right: 8px
+      @extend %font-size-ui-s
+      font-weight: 500
+      color: $sub-color-gray
+
+    select
+      flex: 1
+      appearance: none
+      padding: 3px 32px 3px 6px
+      border: 1px solid $sub-color-gray-light
+      border-radius: $border-radius
+      background: $sub-color-gray-light resolve('ui-arrow-down.svg') center right no-repeat
+
+      &:focus
+        outline: 0
+        border-color: $sub-color-black-light
+
+    input
+      flex: 1
+      padding: 6px
+      border: 1px solid $sub-color-gray-bright
+      border-radius: $border-radius
+
+      &:focus
+        outline: 0
+        border-color: $sub-color-black-light
+
+
+    button
+      @extend %button
+      @extend %button-size-s
+      @extend %button-primary
+      width: 80px

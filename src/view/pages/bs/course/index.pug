@@ -1,0 +1,72 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container
+      .section-title
+        h1.title 課程管理
+        .function
+          form.form-group
+            .form-unit
+              a.button(href='#') 新增
+
+      .option
+        .option-item
+          .select-group
+            label 報名狀態
+            select
+              option 開放報名
+        .option-item
+          .select-group
+            label 訓練類別
+            select
+              option 基礎訓練
+        .option-item
+          .input-group
+            label 訓練名稱
+            input(type='text' placeholder='輸入訓練名稱')
+        .option-item
+          .select-group
+            label 訓練單位
+            select
+              option 台東青年活動中心
+        .option-item.long
+          .select-group
+            label 訓練日期
+            select
+              option 2017/10/01
+            span ~
+            select
+              option 2017/10/30
+        .option-item.short
+          button.inquire 查詢
+
+      table.table
+        thead
+          tr
+            th 訓練類別
+            th 報名狀態
+            th 訓練單位
+            th 報名時間
+            th 訓練時間
+            th 課程名稱
+            th 證明
+            th 福利
+            th 目前報名人數
+            th 管理
+          - for(var i = 0; i < 5; i++)
+            tr
+              td 基礎訓練
+              td 開放報名
+              td 台東青年活動中心
+              td 2017/10/30~2017/11/30
+              td 2017/10/30~2017/11/30
+              td 訓練名稱訓練名稱
+              td 服務學習證書
+              td 中餐
+              td 20
+              td
+                a.button(href='/bs/course/detail') 管理
+                button 審核
+
+      include /partials/bs/_pagination

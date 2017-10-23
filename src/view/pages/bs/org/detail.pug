@@ -1,0 +1,61 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container.bs-detail
+
+      .detail-title
+        .title-image.org-logo(style='background-image: url("http://fakeimg.pl/120x120/")')
+        .title-content
+          h1.title 台東青年活動中心
+          p.sub-title 單位資料管理
+
+      .form-section
+        .aside
+          h2.form-title 單位資料
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 單位名稱
+              .data 台東青年活動中心
+            .form-unit
+              label.label 單位簡介（100字以內）
+              textarea
+            .form-unit
+              label.label 登記地址
+              input(type='text' value='台東市博愛路425號')
+            .form-unit
+              label.label 聯絡電話
+              input(type='text' value='089123456')
+            .form-unit
+              label.label 傳真號碼
+              input(type='text' value='098123456')
+            .form-unit
+              label.label Email
+              input(type='text' value='Volunteer@taitung.com.tw')
+            .form-unit
+              label.label 單位 LOGO
+              .image-group
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 變更照片
+            .form-unit
+              label.label 單位照片（最多五張）
+              .image-group
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 變更照片
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 變更照片
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 上傳照片
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 上傳照片
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 上傳照片
+
+      .form-section
+        .aside
+        .main
+          .button-group
+            button.cta-button 儲存變更
+            button 取消變更

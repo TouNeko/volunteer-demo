@@ -1,0 +1,141 @@
+$header-bg: $main-color-blue
+
+.header
+  background-color: $header-bg
+
+  a
+    @extend %font-size-ui-m
+    font-weight: 500
+    color: $base-color-white
+    text-decoration: none
+    display: inline-block
+    padding: 12px
+
+    &:hover
+      background-color: rgba($base-color-white, .25)
+      transition: background-color .25s
+
+  .container
+    display: flex
+    align-items: center
+
+  .logo
+    margin: 0 24px 0 0
+    font-size: 21px
+    line-height: 24px
+    font-weight: 500
+
+    +tablet
+
+  .nav-wrap
+    position: fixed
+    z-index: 10
+    right: 20px
+    bottom: 20px
+
+    +tablet
+      position: static
+      flex: 2
+
+  .nav-button
+    width: 56px
+    height: 56px
+    color: $base-color-white
+    text-align: center
+    font-size: .85rem
+    font-weight: 700
+    line-height: 56px
+    background-color: $main-color-blue
+    border-radius: 50%
+    box-shadow: $box-shadow
+    cursor: pointer
+
+    &:hover
+      background-color: $main-color-blue-dark
+
+    +tablet
+      display: none
+
+  .nav
+    display: none
+    position: absolute
+    overflow: hidden
+    right: 0
+    bottom: 64px
+    min-width: 120px
+    background-color: $color-white
+    border-radius: $border-radius
+    box-shadow: $box-shadow
+    animation: fade-in-up .25s forwards
+
+    a
+      display: block
+      width: 100%
+      text-align: center
+      color: $sub-color-black
+
+      &:hover
+        background-color: $sub-color-gray-light
+
+    +tablet
+      display: block
+      position: static
+      background-color: transparent
+      border-radius: 0
+      box-shadow: none
+
+      a
+        display: inline-block
+        width: auto
+        text-align: left
+        color: $base-color-white
+
+        &:hover
+          background-color: rgba($base-color-white, .25)
+
+  .member
+    text-align: right
+    flex: 1
+
+  .member-name
+    margin-right: 12px
+    @extend %font-size-ui-m
+    color: $base-color-white
+
+    &::before
+      content: 'Hi, '
+
+.menu-is-active
+  position: relative
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(black, .5)
+    animation: fade-in .5s forwards
+
+  .nav
+    display: block
+
+  +tablet
+    &::after
+      display: none
+
+@keyframes fade-in-up
+  from
+    opacity: 0
+    bottom: 0
+  to
+    opacity: 1
+    bottom: 64px
+
+@keyframes fade-in
+  from
+    opacity: 0
+  to
+    opacity: 1
+

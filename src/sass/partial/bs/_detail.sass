@@ -1,0 +1,44 @@
+.bs-detail
+  .detail-title
+    display: flex
+    flex-wrap: nowrap
+
+    .title-image
+      margin-right: 12px
+      width: 64px
+      height: 64px
+      background-position: center
+      background-size: cover
+      border-radius: $border-radius
+
+      +tablet
+        margin-right: 24px
+        width: 100px
+        height: 100px
+
+    .title-content
+      max-width: 720px
+      width: 100%
+
+      .title
+        margin: 0
+
+      .sub-title
+        margin: 8px 0 24px
+        @extend %font-size-ui-l
+        font-weight: 500
+        color: $sub-color-gray
+
+  .rating-comment
+    padding: 12px
+    margin-bottom: 8px
+    background-color: $sub-color-gray-light
+    border-radius: $border-radius
+
+    .meta
+      @extend %font-size-s
+      font-weight: 500
+      color: $sub-color-gray
+
+    .content
+      margin: 8px 0 0

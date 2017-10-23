@@ -11,12 +11,18 @@
       flex: 1
 
     .main
-      flex: 4
+      flex: 8
 
 .form-title
   margin: 0
   @extend %font-size-l
   color: $sub-color-black-light
+
+  br
+    display: none
+
+    +tablet
+      display: block
 
 .form-group
   padding-top: 12px
@@ -24,7 +30,7 @@
   border-top: 3px solid $sub-color-gray-bright
 
   +tablet
-    padding-top: 0
+    padding-top: 1px
     padding-left: 24px
     border-top: 0
     border-left: 3px solid $sub-color-gray-bright
@@ -35,7 +41,7 @@
     +tablet
       margin-top: 18px
 
-  label, .label
+  .label
     @extend %font-size-ui-s
     color: $sub-color-gray
 
@@ -45,11 +51,43 @@
   input[type='text']
     display: block
     margin-top: 4px
-    padding: 8px
+    padding: 4px 8px
     width: 240px
-    height: 36px
+    height: 32px
     border-radius: $border-radius
     border: 1px solid $sub-color-gray-bright
+
+    &:focus
+      outline: 0
+      border-color: $sub-color-black-light
+
+  textarea
+    display: block
+    margin-top: 4px
+    padding: 8px
+    max-width: 480px
+    width: 100%
+    min-height: 120px
+    border-radius: $border-radius
+    border: 1px solid $sub-color-gray-bright
+
+    &:focus
+      outline: 0
+      border-color: $sub-color-black-light
+
+  select
+    display: block
+    margin-top: 4px
+    width: 240px
+    appearance: none
+    padding: 3px 32px 3px 6px
+    border: 1px solid $sub-color-gray-light
+    border-radius: $border-radius
+    background: $sub-color-gray-light resolve('ui-arrow-down.svg') center right no-repeat
+
+    &:focus
+      outline: 0
+      border-color: $sub-color-black-light
 
   .data
     margin-top: 4px
@@ -69,12 +107,68 @@
       &::after
         opacity: 1
 
-  .input-group, .data-group, .check-item, .radio-item
+  .button
+    @extend %button
+    @extend %button-size-s
+    @extend %button-secondary
+
+  .input-group, .data-group, .image-group, .check-item, .radio-item
     margin-top: 4px
 
     input, .data
       display: inline-block
       margin-right: 8px
+
+    .small
+      width: 48px
+      margin-right: 8px
+
+    .medium
+      width: 128px
+      margin-right: 8px
+
+    .button
+      display: inline-block
+      @extend %button-size-form
+
+  .check-group
+    .check-item
+      display: inline-block
+      margin-right: 16px
+
+      input[type='checkbox']
+        margin-right: 0
+
+      &.fixed-width
+        max-width: 180px
+        width: 100%
+
+  .radio-group
+    .radio-item
+      display: inline-block
+      margin-right: 16px
+
+      input[type='radio']
+        margin-right: 0
+
+      &.fixed-width
+        max-width: 180px
+        width: 100%
+
+  .image-uploader
+    display: inline-flex
+    align-items: flex-end
+    justify-content: center
+    margin-right: 8px
+    width: 64px
+    height: 64px
+    background-position: center
+    background-size: cover
+    border-radius: $border-radius
+
+    +tablet
+      width: 100px
+      height: 100px
 
   .small-button
     display: inline-block
@@ -83,13 +177,22 @@
     @extend %button-size-s
     @extend %button-secondary
 
+  .table
+    margin: 24px 0
+
+    th:last-child, td:last-child
+      text-align: left
+
 .button-group
   margin-bottom: 72px
 
-  .cta-button
+  button
     display: inline-block
     @extend %button
     @extend %button-size-m
+    @extend %button-secondary
+
+  .cta-button
     @extend %button-primary
 
   +tablet

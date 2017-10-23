@@ -1,0 +1,213 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container.bs-detail
+
+      .detail-title
+        .title-content
+          h1.title 活動名稱活動名稱
+          p.sub-title 活動資料管理
+
+      .form-section
+        .aside
+          h2.form-title 基本資料
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 召募對象
+              select
+                option 志工團體
+            .form-unit
+              label.label 運用單位
+              select
+                option 台東青年活動中心
+            .form-unit
+              label.label 活動名稱
+              input(type='text' value='活動名稱活動名稱')
+            .form-unit
+              label.label 召募聯絡人
+              input(type='text' value='志工人')
+            .form-unit
+              label.label 召募聯絡電話
+              input(type='text' value='098123456')
+            .form-unit
+              label.label 招募人數
+              input(type='text' value='20')
+            .form-unit
+              label.label 招募時間
+              .input-group
+                input(type='text' value='2017/10/01')
+                span ~
+                input(type='text' value='2017/10/30')
+            .form-unit
+              label.label 服務地點
+              input(type='text' value='台東市博愛路425號')
+
+      .form-section
+        .aside
+          h2.form-title 服務時間
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 服務時間
+              select
+                option 長期召募
+            .form-unit
+              label.label 服務日期
+              .input-group
+                input(type='text' value='2017/10/01')
+                span ~
+                input(type='text' value='2017/10/30')
+            .form-unit
+              label.label 服務時間
+              .input-group
+                input(type='text' value='08:00')
+                span ~
+                input(type='text' value='18:00')
+            .form-unit
+              label.label 服務週期
+              .check-group
+                .check-item
+                  input#checkitem1(type='checkbox')
+                  label(for='checkitem1') 星期一
+                .check-item
+                  input#checkitem2(type='checkbox')
+                  label(for='checkitem2') 星期二
+                .check-item
+                  input#checkitem3(type='checkbox')
+                  label(for='checkitem3') 星期三
+                .check-item
+                  input#checkitem4(type='checkbox')
+                  label(for='checkitem4') 星期四
+                .check-item
+                  input#checkitem5(type='checkbox')
+                  label(for='checkitem5') 星期五
+                .check-item
+                  input#checkitem6(type='checkbox' checked)
+                  label(for='checkitem6') 星期六
+                .check-item
+                  input#checkitem7(type='checkbox' checked)
+                  label(for='checkitem7') 星期日
+            .form-unit
+              label.label 每週志工認列時數
+              .input-group
+                input(type='text' value='8')
+
+      .form-section
+        .aside
+          h2.form-title 服務類型
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 服務類型
+              .check-group
+                .check-item.fixed-width
+                  input#checkitem1(type='checkbox')
+                  label(for='checkitem1') 身心障礙福利服務
+                .check-item.fixed-width
+                  input#checkitem2(type='checkbox')
+                  label(for='checkitem2') 諮商福利服務
+                .check-item.fixed-width
+                  input#checkitem3(type='checkbox')
+                  label(for='checkitem3') 老人福利服務
+                .check-item.fixed-width
+                  input#checkitem4(type='checkbox')
+                  label(for='checkitem4') 家庭福利服務
+                .check-item.fixed-width
+                  input#checkitem5(type='checkbox')
+                  label(for='checkitem5') 婦女福利服務
+                .check-item.fixed-width
+                  input#checkitem6(type='checkbox' checked)
+                  label(for='checkitem6') 社會福利服務
+                .check-item.fixed-width
+                  input#checkitem7(type='checkbox' checked)
+                  label(for='checkitem7') 少年福利服務
+
+      .form-section
+        .aside
+          h2.form-title 志工專長需求
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 志工專長需求
+              .check-group
+                .check-item.fixed-width
+                  input#checkitem1(type='checkbox')
+                  label(for='checkitem1') 家電修理
+                .check-item.fixed-width
+                  input#checkitem2(type='checkbox')
+                  label(for='checkitem2') 機械
+                .check-item.fixed-width
+                  input#checkitem3(type='checkbox')
+                  label(for='checkitem3') 醫療護理
+                .check-item.fixed-width
+                  input#checkitem4(type='checkbox')
+                  label(for='checkitem4') 手工藝
+                .check-item.fixed-width
+                  input#checkitem5(type='checkbox')
+                  label(for='checkitem5') 體育
+                .check-item.fixed-width
+                  input#checkitem6(type='checkbox' checked)
+                  label(for='checkitem6') 活動攝影
+                .check-item.fixed-width
+                  input#checkitem7(type='checkbox' checked)
+                  label(for='checkitem7') 駕駛
+
+      .form-section
+        .aside
+          h2.form-title 提供證明
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 提供證明
+              .check-group
+                .check-item.fixed-width
+                  input#checkitem1(type='checkbox')
+                  label(for='checkitem1') 時數條
+                .check-item.fixed-width
+                  input#checkitem2(type='checkbox')
+                  label(for='checkitem2') 時數證明書
+                .check-item.fixed-width
+                  input#checkitem3(type='checkbox')
+                  label(for='checkitem3') 感謝狀
+                .check-item.fixed-width
+                  input#checkitem4(type='checkbox')
+                  label(for='checkitem4') 服務學習證明書
+                .check-item.fixed-width
+                  input#checkitem5(type='checkbox')
+                  label(for='checkitem5') 績效證明書
+
+      .form-section
+        .aside
+          h2.form-title 福利
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 福利
+              .check-group
+                .check-item.fixed-width
+                  input#checkitem1(type='checkbox')
+                  label(for='checkitem1') 交通費
+                .check-item.fixed-width
+                  input#checkitem2(type='checkbox')
+                  label(for='checkitem2') 誤餐費
+                .check-item.fixed-width
+                  input#checkitem3(type='checkbox')
+                  label(for='checkitem3') 志工意外保險
+                .check-item.fixed-width
+                  input#checkitem4(type='checkbox')
+                  label(for='checkitem4') 其他
+
+      .form-section
+        .aside
+        .main
+          .button-group
+            button.cta-button 儲存變更
+            button 取消變更

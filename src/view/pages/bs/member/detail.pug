@@ -1,0 +1,271 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container.bs-detail
+
+      .detail-title
+        .title-content
+          h1.title 志工人
+          p.sub-title 志工資料管理
+
+      .form-section
+        .aside
+          h2.form-title 基本資料
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 志工編號
+              input(type='text' value='TV201710010001 ')
+            .form-unit
+              label.label 志工姓名
+              input(type='text' value='志工人')
+            .form-unit
+              label.label 身分證字號
+              input(type='text' value='A123456789')
+            .form-unit
+              label.label 生日
+              input(type='text' value='70/10/01')
+            .form-unit
+              label.label 聯絡電話
+              .input-group
+                input(type='text' value='098123456')
+                input(type='text' value='098123456')
+            .form-unit
+              label.label 荐訓單位
+              input(type='text' value='')
+            .form-unit
+              label.label 基訓成績
+              input(type='text' value='')
+            .form-unit
+              label.label 性別
+              .radio-group
+                .radio-item
+                  input#radioitem1(type='radio' name='radiogroup1')
+                  label(for='radioitem1') 男性
+                .radio-item
+                  input#radioitem2(type='radio' name='radiogroup1')
+                  label(for='radioitem2') 女性
+            .form-unit
+              label.label 是否為原住民
+              .radio-group
+                .radio-item
+                  input#radioitem1(type='radio' name='radiogroup2')
+                  label(for='radioitem1') 是
+                .radio-item
+                  input#radioitem2(type='radio' name='radiogroup2')
+                  label(for='radioitem2') 否
+            .form-unit
+              label.label 教育程度
+              select
+                option 大專
+            .form-unit
+              label.label 首次志工服務日
+              input(type='text' value='2017/10/01')
+            .form-unit
+              label.label 職業別
+              .radio-group
+                .radio-item.fixed-width
+                  input#radioitem1(type='radio' name='radiogroup3')
+                  label(for='radioitem1') 在職軍公教人員
+                .radio-item.fixed-width
+                  input#radioitem2(type='radio' name='radiogroup3')
+                  label(for='radioitem2') 退休軍公教人員
+                .radio-item.fixed-width
+                  input#radioitem3(type='radio' name='radiogroup3')
+                  label(for='radioitem3') 工商界人士
+                .radio-item.fixed-width
+                  input#radioitem4(type='radio' name='radiogroup3')
+                  label(for='radioitem4') 一般退休人士
+                .radio-item.fixed-width
+                  input#radioitem5(type='radio' name='radiogroup3')
+                  label(for='radioitem5') 家管
+                .radio-item.fixed-width
+                  input#radioitem6(type='radio' name='radiogroup3')
+                  label(for='radioitem6') 學生
+                .radio-item.fixed-width
+                  input#radioitem7(type='radio' name='radiogroup3')
+                  label(for='radioitem7') 其他
+            .form-unit
+              label.label 通訊地址
+              input(type='text' value='')
+            .form-unit
+              label.label 其他備註
+              input(type='text' value='')
+
+      .form-section
+        .aside
+          h2.form-title 所屬運用單位
+
+        .main
+          form.form-group
+            table.table
+              thead
+                tr
+                  th 運用單位類別
+                  th 運用單位編號
+                  th 單位名稱
+                - for(var i = 0; i < 2; i++)
+                  tr
+                    td 綜
+                    td A00VY111
+                    td 台東縣志願服務協會
+
+            .form-unit
+              button.button 新增
+
+
+      .form-section
+        .aside
+          h2.form-title 所屬志工隊
+
+        .main
+          form.form-group
+            table.table
+              thead
+                tr
+                  th 志工隊編號
+                  th 志工隊名稱
+                - for(var i = 0; i < 2; i++)
+                  tr
+                    td A00VY111
+                    td 台東縣志願服務協會
+
+            .form-unit
+              button.button 新增
+
+      .form-section
+        .aside
+          h2.form-title 受訓資訊
+
+        .main
+          form.form-group
+            table.table
+              thead
+                tr
+                  th 訓練單位
+                  th 受訓時間
+                  th 課程類別
+                  th 課程名稱
+                  th 結訓成績
+                  th 結訓證書
+                  th 人工補充
+                - for(var i = 0; i < 2; i++)
+                  tr
+                    td 台東縣志願服務協會
+                    td 2017/10/01~2017/10/30
+                    td 基礎訓練
+                    td 社福類志工訓練
+                    td 100
+                    td: a.button(href='#') 預覽
+                    td
+
+            .form-unit
+              button.button 新增
+
+      .form-section
+        .aside
+          h2.form-title 志工服務紀錄
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 累積時數
+              .data 78小時
+            table.table
+              thead
+                tr
+                  th 服務召募單位
+                  th 服務時間
+                  th 需求類別
+                  th 服務名稱
+                  th 服務類別
+                  th 服務時數
+                  th 取得評價
+                  th 人工補充
+                - for(var i = 0; i < 2; i++)
+                  tr
+                    td 台東縣志願服務協會
+                    td 2017/10/01~2017/10/30
+                    td 短期服務
+                    td 到宅服務義工
+                    td 老人服務
+                    td 8
+                    td *****
+                    td
+
+            .form-unit
+              button.button 新增
+
+      .form-section
+        .aside
+          h2.form-title 得獎資訊
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 榮譽卡條件
+              .data 已符合申請志願服務榮譽卡
+            table.table
+              thead
+                tr
+                  th 受訓時間
+                  th 授獎單位
+                  th 獎項名稱
+                  th 審核狀況
+                  th 獎狀
+                  th 人工補充
+                - for(var i = 0; i < 2; i++)
+                  tr
+                    td 2017/10/01
+                    td 台東縣政府
+                    td 志願服務貢獻獎
+                    td 已申請
+                    td: a.button(href='#') 預覽
+                    td 是
+
+            .form-unit
+              button.button 新增
+
+      .form-section
+        .aside
+          h2.form-title 保險資訊
+
+        .main
+          form.form-group
+            table.table
+              thead
+                tr
+                  th 保險單位
+                  th 保險時間
+                  th 保險類別
+                - for(var i = 0; i < 2; i++)
+                  tr
+                    td 台東縣志願服務協會
+                    td 2017/10/01~2017/10/30
+                    td 志工團體意外保險
+
+            .form-unit
+              button.button 新增
+
+      .form-section
+        .aside
+          h2.form-title 志工評價
+
+        .main
+          form.form-group
+            - for(var i = 0; i < 2; i++)
+              .rating-comment
+                .meta 台東縣志願服務協會 - 志工人 - 2017/10/01 *****
+                p.content 謝謝你們讓我們學習更多事情！
+
+            .form-unit
+              button.button 新增
+
+      .form-section
+        .aside
+        .main
+          .button-group
+            button.cta-button 儲存變更
+            button 取消變更

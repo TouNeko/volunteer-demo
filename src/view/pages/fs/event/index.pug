@@ -6,13 +6,24 @@ block content
       .section-title
         h1.title 所有活動
         .function
+          form.form-group
+            .form-unit
+              label 排序
+              select
+                option 依時間排序
+            .form-unit
+              label 篩選
+              select
+                option 依類型篩選
+
+
       ul.event-list
         - for(var i = 0; i < 6; i++)
           li.event-item
             a.event-image(href='/fs/event/event-detail' style='background-image:url("http://fakeimg.pl/320x180/")')
             .event-info
               a.name(href='/fs/event/event-detail') 活動名稱
-              .org 應用單位
+              .org 運用單位
               p.description 活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。
               ul.tag-list
                 li.tag-item: a(href='#') 長期照護

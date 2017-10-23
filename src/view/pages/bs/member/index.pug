@@ -1,0 +1,64 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container
+      .section-title
+        h1.title 志工管理
+        .function
+          form.form-group
+            .form-unit
+              a.button(href='#') 新增
+
+      .option
+        .option-item
+          .input-group
+            label 志工姓名
+            input(type='text' placeholder='')
+        .option-item
+          .input-group
+            label 身分證字號
+            input(type='text' placeholder='')
+        .option-item
+          .input-group
+            label 聯絡電話
+            input(type='text' placeholder='')
+        .option-item
+          .select-group
+            label 運用單位
+            select
+              option 台東青年活動中心
+        .option-item
+          .select-group
+            label 志工隊
+            select
+              option 台東生命線志工隊
+        .option-item
+          button.inquire 查詢
+
+      table.table
+        thead
+          tr
+            th 志工代號
+            th 志工姓名
+            th 身分證字號
+            th 生日
+            th 聯絡電話1
+            th 聯絡電話2
+            th 所屬運用單位
+            th 所屬志工隊
+            th 管理
+          - for(var i = 0; i < 5; i++)
+            tr
+              td TV201710100001
+              td 志工人
+              td A123456789
+              td 70/01/01
+              td 0981234567
+              td 0981234567
+              td 台東青年活動中心
+              td 台東生命線志工隊
+              td: a.button(href='/bs/member/detail') 管理
+
+      include /partials/bs/_pagination
+

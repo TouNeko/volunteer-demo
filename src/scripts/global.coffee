@@ -19,5 +19,13 @@ if $('.hero').length != 0
     slidesToShow: 3
     slidesToScroll: 1
     asNavFor: '.slider-content'
+    arrows: true
     centerMode: false
     focusOnSelect: true
+    responsive: [
+      {
+        breakpoint: 740
+        settings:
+          arrows: false
+      }
+    ]
