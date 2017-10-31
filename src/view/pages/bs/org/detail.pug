@@ -8,7 +8,7 @@ block content
         .title-image.org-logo(style='background-image: url("http://fakeimg.pl/120x120/")')
         .title-content
           h1.title 台東青年活動中心
-          p.sub-title 單位資料管理
+          p.sub-title 運用單位資料管理
 
       .form-section
         .aside
@@ -18,7 +18,7 @@ block content
           form.form-group
             .form-unit
               label.label 單位名稱
-              .data 台東青年活動中心
+              input(type='text' value='台東青年活動中心')
             .form-unit
               label.label 單位簡介（100字以內）
               textarea
@@ -27,7 +27,9 @@ block content
               input(type='text' value='台東市博愛路425號')
             .form-unit
               label.label 聯絡電話
-              input(type='text' value='089123456')
+              .input-group
+                input(type='text' value='098123456')
+                input(type='text' value='098123456')
             .form-unit
               label.label 傳真號碼
               input(type='text' value='098123456')

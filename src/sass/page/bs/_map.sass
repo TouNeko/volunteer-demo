@@ -1,0 +1,52 @@
+.event-map
+  display: flex
+
+  .event-list
+    flex: 1
+    margin: 0 12px 0 0
+    padding: 0
+    list-style: none
+
+  .map-wrap
+    flex: 2
+
+    .map
+      height: 676px
+
+    .map-event-info
+      max-width: 210px
+
+.event-map-item
+  padding: 12px
+  background-color: $sub-color-gray-light
+  border-radius: $border-radius
+
+  .map-event-info
+    max-width: none
+
+.event-map-item + .event-map-item
+  margin-top: 8px
+
+.map-event-info
+  padding-left: 8px
+  border-left-width: 3px
+  border-left-style: solid
+  font-weight: 500
+
+
+.map-event-name
+  display: block
+  @extend %font-size-ui-m
+
+.map-event-meta
+  display: block
+  @extend %font-size-ui-s
+  color: $sub-color-gray
+
+
+.map-manage-button
+  display: inline-block
+  margin-top: 8px
+  @extend %button
+  @extend %button-size-s
+  @extend %button-primary

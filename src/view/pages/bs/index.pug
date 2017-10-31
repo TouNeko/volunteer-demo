@@ -1,3 +1,100 @@
 extends /layouts/_bs-layout
 
 block content
+  section
+    .container
+      .section-title
+        h1.title 活動地圖
+        .function
+          form.form-group
+            .form-unit
+              label 篩選
+              select
+                option 依類型篩選
+
+      .event-map
+        ul.event-list
+          li.event-map-item
+            .map-event-info(style='border-left-color: #13A3D7')
+              .map-event-name 活動名稱活動名稱活動名稱
+              .map-event-meta 2017/10/15 - 2017/10/31
+              a.map-manage-button(href='/bs/event/detail') 管理
+          li.event-map-item
+            .map-event-info(style='border-left-color: #D0021B')
+              .map-event-name 活動名稱活動名稱活動名稱
+              .map-event-meta 2017/10/15 - 2017/10/31
+              a.map-manage-button(href='/bs/event/detail') 管理
+          li.event-map-item
+            .map-event-info(style='border-left-color: #F29908')
+              .map-event-name 活動名稱活動名稱活動名稱
+              .map-event-meta 2017/10/15 - 2017/10/31
+              a.map-manage-button(href='/bs/event/detail') 管理
+          li.event-map-item
+            .map-event-info(style='border-left-color: #A713D7')
+              .map-event-name 活動名稱活動名稱活動名稱
+              .map-event-meta 2017/10/15 - 2017/10/31
+              a.map-manage-button(href='/bs/event/detail') 管理
+          li.event-map-item
+            .map-event-info(style='border-left-color: #18AD20')
+              .map-event-name 活動名稱活動名稱活動名稱
+              .map-event-meta 2017/10/15 - 2017/10/31
+              a.map-manage-button(href='/bs/event/detail') 管理
+          li.event-map-item
+            .map-event-info(style='border-left-color: #FF60C9')
+              .map-event-name 活動名稱活動名稱活動名稱
+              .map-event-meta 2017/10/15 - 2017/10/31
+              a.map-manage-button(href='/bs/event/detail') 管理
+
+
+        .map-wrap
+          .map#map
+
+  script.
+    function initMap() {
+      var mkr1 = {lat: 22.7502979, lng: 121.1482763};
+      var mkr2 = {lat: 22.7524152, lng: 121.1505937};
+      var mkr3 = {lat: 22.755314, lng: 121.1490058};
+      var mkr4 = {lat: 22.754394, lng: 121.1474608};
+      var mkr5 = {lat: 22.749121, lng: 121.1532608};
+      var mkr6 = {lat: 22.747864, lng: 121.1449608};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: mkr1
+      });
+      var marker1info = new google.maps.InfoWindow();
+      marker1info.setContent(createInfoWindowContent('#13A3D7'));
+      marker1info.setPosition(mkr1);
+      marker1info.open(map);
+      var marker2info = new google.maps.InfoWindow();
+      marker2info.setContent(createInfoWindowContent('#D0021B'));
+      marker2info.setPosition(mkr2);
+      marker2info.open(map);
+      var marker3info = new google.maps.InfoWindow();
+      marker3info.setContent(createInfoWindowContent('#F29908'));
+      marker3info.setPosition(mkr3);
+      marker3info.open(map);
+      var marker4info = new google.maps.InfoWindow();
+      marker4info.setContent(createInfoWindowContent('#A713D7'));
+      marker4info.setPosition(mkr4);
+      marker4info.open(map);
+      var marker5info = new google.maps.InfoWindow();
+      marker5info.setContent(createInfoWindowContent('#18AD20'));
+      marker5info.setPosition(mkr5);
+      marker5info.open(map);
+      var marker6info = new google.maps.InfoWindow();
+      marker6info.setContent(createInfoWindowContent('#FF60C9'));
+      marker6info.setPosition(mkr6);
+      marker6info.open(map);
+    }
+    function createInfoWindowContent(eventColor) {
+      return [
+        '<div class="map-event-info" style="border-left-color:'+ eventColor +'">\
+          <span class="map-event-name">活動名稱活動名稱活動名稱</span>\
+          <span class="map-event-meta">2017/10/15 - 2017/10/31</span>\
+          <a class="map-manage-button" href="/bs/event/detail">管理</a>\
+        </div>'
+      ].join('');
+    }
+
+  script(async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz56xYIQ1zgNHU6ptrLuX8VKsV3WqOAUA&callback=initMap")
