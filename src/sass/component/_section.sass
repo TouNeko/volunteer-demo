@@ -1,19 +1,22 @@
 section
-  margin: 48px 0
+  margin: 24px 0
 
   .section-title
-    display: flex
-    justify-content: space-between
-    align-items: center
     margin: 12px 0
 
+    +tablet
+      display: flex
+      justify-content: space-between
+      align-items: center
+
     .title
+      margin: 0
       @extend %font-size-xl
       font-weight: 500
-      color: $sub-color-gray
+      color: $sub-color-black
 
     .function
-      text-align: right
+      text-align: left
 
       .form-group
         display: inline-flex
@@ -31,7 +34,10 @@ section
 
         input, select
           display: inline-block
-          max-width: 160px
+          max-width: 111px
+
+          +tablet
+            max-width: 160px
 
         .button
           display: inline-block

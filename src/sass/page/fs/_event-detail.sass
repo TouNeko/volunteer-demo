@@ -22,14 +22,20 @@
   .event-main
     .title
       margin-top: 0
+      @extend %font-size-xl
 
     .org-logo
-      margin-bottom: 8px
+      display: inline-block
       width: 64px
       height: 64px
       background-position: center
       background-size: cover
       border-radius: $border-radius
+
+    .org-name
+      display: inline-block
+      vertical-align: text-bottom
+      margin-left: 4px
 
     .share
       position: absolute
@@ -77,6 +83,7 @@
         height: 100px
 
     .org-name
+      display: inline-block
       max-width: 720px
       width: 100%
 
@@ -98,6 +105,11 @@
         font-weight: 300
 
     .cta-button
+      position: fixed
+      left: 8px
+      right: 8px
+      bottom: 8px
+      z-index: 10
       display: block
       margin-top: 42px
       @extend %button
