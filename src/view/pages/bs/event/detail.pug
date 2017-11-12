@@ -3,10 +3,16 @@ extends /layouts/_bs-layout
 block content
   section
     .container.bs-detail
+      .section-title
+        h1.title 活動名稱活動名稱
+        .function
+          form.form-group
+            .form-unit
+              a.button(href='/bs/event/people') 報名資料
+              a.button(href='/bs/event/match') 志工媒合
 
       .detail-title
         .title-content
-          h1.title 活動名稱活動名稱
           p.sub-title 活動資料管理
 
       .form-section
@@ -201,7 +207,7 @@ block content
                 .check-item.fixed-width
                   input#checkitem7(type='checkbox' checked)
                   label(for='checkitem7') 駕駛
-            
+
 
       .form-section
         .aside
