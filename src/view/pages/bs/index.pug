@@ -10,39 +10,48 @@ block content
             .form-unit
               label 篩選
               select
-                option 依類型篩選
+                option 依達成率篩選
+                option 高達成率 80%~100%
+                option 中達成率 60%~79%
+                option 低達成率 0%~59%
 
       .event-map
         ul.event-list
           li.event-map-item
-            .map-event-info(style='border-left-color: #13A3D7')
+            .map-event-info(style='border-left-color: #10B647')
               .map-event-name 活動名稱活動名稱活動名稱
               .map-event-meta 2017/10/15 - 2017/10/31
-              a.map-manage-button(href='/bs/event/detail') 管理
-          li.event-map-item
-            .map-event-info(style='border-left-color: #D0021B')
-              .map-event-name 活動名稱活動名稱活動名稱
-              .map-event-meta 2017/10/15 - 2017/10/31
+              .map-event-meta 募集達成率：80%
               a.map-manage-button(href='/bs/event/detail') 管理
           li.event-map-item
             .map-event-info(style='border-left-color: #F29908')
               .map-event-name 活動名稱活動名稱活動名稱
               .map-event-meta 2017/10/15 - 2017/10/31
+              .map-event-meta 募集達成率：70%
               a.map-manage-button(href='/bs/event/detail') 管理
           li.event-map-item
-            .map-event-info(style='border-left-color: #A713D7')
+            .map-event-info(style='border-left-color: #F29908')
               .map-event-name 活動名稱活動名稱活動名稱
               .map-event-meta 2017/10/15 - 2017/10/31
+              .map-event-meta 募集達成率：70%
               a.map-manage-button(href='/bs/event/detail') 管理
           li.event-map-item
-            .map-event-info(style='border-left-color: #18AD20')
+            .map-event-info(style='border-left-color: #F29908')
               .map-event-name 活動名稱活動名稱活動名稱
               .map-event-meta 2017/10/15 - 2017/10/31
+              .map-event-meta 募集達成率：60%
               a.map-manage-button(href='/bs/event/detail') 管理
           li.event-map-item
-            .map-event-info(style='border-left-color: #FF60C9')
+            .map-event-info(style='border-left-color: #9A9A9A')
               .map-event-name 活動名稱活動名稱活動名稱
               .map-event-meta 2017/10/15 - 2017/10/31
+              .map-event-meta 募集達成率：50%
+              a.map-manage-button(href='/bs/event/detail') 管理
+          li.event-map-item
+            .map-event-info(style='border-left-color: #9A9A9A')
+              .map-event-name 活動名稱活動名稱活動名稱
+              .map-event-meta 2017/10/15 - 2017/10/31
+              .map-event-meta 募集達成率：30%
               a.map-manage-button(href='/bs/event/detail') 管理
 
 
@@ -62,11 +71,11 @@ block content
         center: mkr1
       });
       var marker1info = new google.maps.InfoWindow();
-      marker1info.setContent(createInfoWindowContent('#13A3D7'));
+      marker1info.setContent(createInfoWindowContent('#10B647'));
       marker1info.setPosition(mkr1);
       marker1info.open(map);
       var marker2info = new google.maps.InfoWindow();
-      marker2info.setContent(createInfoWindowContent('#D0021B'));
+      marker2info.setContent(createInfoWindowContent('#F29908'));
       marker2info.setPosition(mkr2);
       marker2info.open(map);
       var marker3info = new google.maps.InfoWindow();
@@ -74,15 +83,15 @@ block content
       marker3info.setPosition(mkr3);
       marker3info.open(map);
       var marker4info = new google.maps.InfoWindow();
-      marker4info.setContent(createInfoWindowContent('#A713D7'));
+      marker4info.setContent(createInfoWindowContent('#F29908'));
       marker4info.setPosition(mkr4);
       marker4info.open(map);
       var marker5info = new google.maps.InfoWindow();
-      marker5info.setContent(createInfoWindowContent('#18AD20'));
+      marker5info.setContent(createInfoWindowContent('#9A9A9A'));
       marker5info.setPosition(mkr5);
       marker5info.open(map);
       var marker6info = new google.maps.InfoWindow();
-      marker6info.setContent(createInfoWindowContent('#FF60C9'));
+      marker6info.setContent(createInfoWindowContent('#9A9A9A'));
       marker6info.setPosition(mkr6);
       marker6info.open(map);
     }
@@ -91,6 +100,7 @@ block content
         '<div class="map-event-info" style="border-left-color:'+ eventColor +'">\
           <span class="map-event-name">活動名稱活動名稱活動名稱</span>\
           <span class="map-event-meta">2017/10/15 - 2017/10/31</span>\
+          <span class="map-event-meta">募集達成率：60%</span>\
           <a class="map-manage-button" href="/bs/event/detail">管理</a>\
         </div>'
       ].join('');

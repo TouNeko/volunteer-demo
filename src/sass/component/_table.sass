@@ -11,11 +11,17 @@
     &:last-child
       text-align: center
 
+    &.fit
+      min-width: auto
+
+    &.center
+      text-align: center
+
   th
     border-bottom: 1px solid $sub-color-gray
 
-  tr:nth-child(2n+3)
-    background-color: $sub-color-gray-light
+  tr
+    border-bottom: 1px solid $sub-color-gray-light
 
   button, .button
     display: inline-block
@@ -23,3 +29,17 @@
     @extend %button
     @extend %button-size-s
     @extend %button-secondary
+
+  select
+    display: block
+    margin-top: 4px
+    width: 240px
+    appearance: none
+    padding: 3px 32px 3px 6px
+    border: 1px solid $sub-color-gray-light
+    border-radius: $border-radius
+    background: $sub-color-gray-light resolve('ui-arrow-down.svg') center right no-repeat
+
+    &:focus
+      outline: 0
+      border-color: $sub-color-black-light

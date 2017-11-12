@@ -6,7 +6,7 @@ block content
 
       .detail-title
         .title-content
-          h1.title 志工人
+          h1.title 志・人
           p.sub-title 志工資料管理
 
       .form-section
@@ -17,13 +17,20 @@ block content
           form.form-group
             .form-unit
               label.label 志工編號
-              input(type='text' value='TV201710010001 ')
+              input(type='text' value='TV201710010001')
+            //- .form-unit
+            //-   label.label 志工姓名
+            //-   input(type='text' value='志工人')
             .form-unit
               label.label 志工姓名
-              input(type='text' value='志工人')
+              .input-group
+                .data 志・人
+                button.small-button(type='button' data-toggle='modal' data-target='#need-pw') 觀看資料
             .form-unit
               label.label 身分證字號
-              input(type='text' value='A123456789')
+              .input-group
+                .data A123***678
+                button.small-button(type='button' data-toggle='modal' data-target='#need-pw') 觀看資料
             .form-unit
               label.label 生日
               input(type='text' value='70/10/01')
@@ -113,7 +120,7 @@ block content
                     td 台東縣志願服務協會
 
             .form-unit
-              button.button 新增
+              button.button 管理
 
 
       .form-section
@@ -133,7 +140,7 @@ block content
                     td 台東縣志願服務協會
 
             .form-unit
-              button.button 新增
+              button.button 管理
 
       .form-section
         .aside
@@ -162,7 +169,7 @@ block content
                     td
 
             .form-unit
-              button.button 新增
+              button.button 管理
 
       .form-section
         .aside
@@ -196,7 +203,7 @@ block content
                     td
 
             .form-unit
-              button.button 新增
+              button.button 管理
 
       .form-section
         .aside
@@ -226,7 +233,7 @@ block content
                     td 是
 
             .form-unit
-              button.button 新增
+              button.button 管理
 
       .form-section
         .aside
@@ -247,7 +254,7 @@ block content
                     td 志工團體意外保險
 
             .form-unit
-              button.button 新增
+              button.button 管理
 
       .form-section
         .aside
@@ -261,7 +268,7 @@ block content
                 p.content 謝謝你們讓我們學習更多事情！
 
             .form-unit
-              button.button 新增
+              button.button 管理
 
       .form-section
         .aside
@@ -269,3 +276,16 @@ block content
           .button-group
             button.cta-button 儲存變更
             button 取消變更
+
+  #need-pw.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h4#myModalLabel.modal-title 請輸入密碼
+        .modal-body
+          form.form-group
+            .form-unit
+              input(type='password' placeholder='請輸入您的密碼')
+        .modal-footer
+          button.btn.secondary(type='button', data-dismiss='modal') 取消
+          button.btn.primary(type='button') 送出

@@ -13,6 +13,17 @@
     .main
       flex: 8
 
+  .form-group
+    padding-top: 12px
+    border-top: 3px solid $sub-color-gray-bright
+
+    +tablet
+      padding-top: 1px
+      padding-left: 24px
+      border-top: 0
+      border-left: 3px solid $sub-color-gray-bright
+
+
 .form-title
   margin: 0 12px 0 0
   @extend %font-size-l
@@ -25,15 +36,7 @@
       display: block
 
 .form-group
-  padding-top: 12px
   @extend %font-size-ui-m
-  border-top: 3px solid $sub-color-gray-bright
-
-  +tablet
-    padding-top: 1px
-    padding-left: 24px
-    border-top: 0
-    border-left: 3px solid $sub-color-gray-bright
 
   .form-unit + .form-unit
     margin-top: 12px
@@ -48,7 +51,7 @@
     &::after
       content: ' / '
 
-  input[type='text']
+  input[type='text'], input[type='password'], input[type='number']
     display: block
     margin-top: 4px
     padding: 4px 8px
@@ -197,3 +200,10 @@
 
   +tablet
     padding-left: 27px
+
+input[type='checkbox']:disabled
+  appearance: none
+  width: 12px
+  height: 12px
+  background-color: $sub-color-gray-bright
+  border-radius: 2px

@@ -1,6 +1,7 @@
 global.$ = global.jQuery = require 'jquery'
 # require './vendor/jquery.waypoints.min'
 require './vendor/slick.min'
+require './vendor/bs.custom'
 
 $('.nav-button').on 'click', ->
   $('html').toggleClass 'menu-is-active'
