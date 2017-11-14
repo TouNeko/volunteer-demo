@@ -11,34 +11,36 @@ block content
               label 搜尋
               input(type='text' placeholder='搜尋單位')
             .form-unit
-              label 排序
-              select
-                option 依時間排序
-            .form-unit
               label 篩選
               select
-                option 依類型篩選
+                option 依層級篩選
             .form-unit
-              a.button(href='#') 新增
+              a.button(href='#') 新增單位
 
       table.table
         thead
           tr
             th 單位名稱
+            th 單位層級
             th 登記地址
             th 聯絡電話
             th 傳真號碼
             th Email
-            th 審核狀態
-            th 管理
+            th.center 管理
           - for(var i = 0; i < 5; i++)
             tr
               td 台東青年活動中心
+              td
+                select
+                  option 一般單位
+                  option 各局處
+                  option 社會處
               td 台東市博愛路425號
               td 089123456
               td 089123456
               td volunteer@taitung.com.tw
-              td 待審核
-              td: a.button(href='/bs/org/detail') 管理
+              td.center
+                a.button(href='/bs/org/detail') 管理
+                button.button(type='button') 刪除
 
       include /partials/bs/_pagination

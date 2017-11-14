@@ -11,7 +11,7 @@ taskname = argv._[0]
 
 if taskname == 'save' || argv.testsave
   argv.env = 'prod'
-  argv.minify = true
+  argv.minify = false
   argv.relative = true
   argv.archive = true
 else

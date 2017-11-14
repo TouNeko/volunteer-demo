@@ -41,7 +41,7 @@ block content
             th 聯絡電話1
             th 聯絡電話2
             th 所屬運用單位
-            th 管理
+            th.center 管理
           - for(var i = 0; i < 5; i++)
             tr
               td TV201710100001
@@ -51,7 +51,6 @@ block content
               td 0981234567
               td 0981234567
               td 台東青年活動中心
-              td: a.button(href='/bs/member/detail') 管理
+              td.center: a.button(href='/bs/member/detail') 管理
 
       include /partials/bs/_pagination
-

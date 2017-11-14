@@ -1,0 +1,91 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container
+      .section-title
+        h1.title 活動名稱活動名稱 - 志工日誌
+        .function
+          form.form-group
+            .form-unit
+              a.button(href='/bs/event/detail') 活動管理
+              a.button(href='/bs/event/match') 志工媒合
+              a.button(href='/bs/event/record') 志工日誌
+
+      ul.nav.nav-tabs
+        li.active
+          a(href='#sign', data-toggle='tab') 報到紀錄
+        li
+          a(href='#check', data-toggle='tab') 日誌 - 檢核項目
+        li
+          a(href='#content', data-toggle='tab') 日誌 - 心得與照片
+
+      .tab-content
+        #sign.tab-pane.active
+          table.table
+            thead
+              tr
+                th 活動日期
+                th 報到人數
+                th 未報到名單
+              - for(var i = 0; i < 3; i++)
+                tr
+                  td 2017/11/2#{9-i}
+                  td 46/50
+                  td 志工人1, 志工人2, 志工人3, 志工人4
+
+        #check.tab-pane
+          table.table
+            thead
+              tr
+                th 活動日期
+                th 檢核項目
+                th 達成人數
+                th 未達成名單
+              - for(var i = 0; i < 3; i++)
+                tr
+                  td 2017/11/2#{9-i}
+                  td 確認老人確實用餐
+                  td 46/50
+                  td 志工人1, 志工人2, 志工人3, 志工人4
+                tr
+                  td
+                  td 確認老人健康狀態
+                  td 46/50
+                  td 志工人1, 志工人2, 志工人3, 志工人4
+                tr
+                  td
+                  td 環境清潔
+                  td 44/50
+                  td 志工人1, 志工人2, 志工人3, 志工人4, 志工人5, 志工人6
+
+        #content.tab-pane
+          table.table
+            thead
+              tr
+                th 活動日期
+                th 上傳者
+                th 心得
+                th.center 照片
+              - for(var i = 0; i < 3; i++)
+                tr
+                  td 2017/11/2#{9-i}
+                  td 志工人1
+                  td 老人配合度很高，雙方互動良好。
+                  td.center: button.button(type='button' data-toggle='modal' data-target='#content-photo') 觀看照片
+                tr
+                  td
+                  td 志工人2
+                  td 老人身體很健康，都有按時吃飯。
+                  td.center 無
+
+  #content-photo.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h4#myModalLabel.modal-title 2017/11/27 活動照片
+        .modal-body
+          img(src="http://fakeimg.pl/1920x1080/" alt="")
+          img(src="http://fakeimg.pl/1920x1080/" alt="")
+        .modal-footer
+          button.btn.primary(type='button', data-dismiss='modal') 關閉

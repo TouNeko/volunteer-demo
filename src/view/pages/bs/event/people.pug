@@ -10,14 +10,15 @@ block content
             .form-unit
               a.button(href='/bs/event/detail') 活動管理
               a.button(href='/bs/event/match') 志工媒合
+              a.button(href='/bs/event/record') 志工日誌
 
       ul.nav.nav-tabs
         li.active
-          a(href='#wait', data-toggle='tab') 待審核
+          a(href='#wait', data-toggle='tab') 待審核名單
         li
-          a(href='#pass', data-toggle='tab') 審核通過
+          a(href='#pass', data-toggle='tab') 審核通過名單
         li
-          a(href='#fail', data-toggle='tab') 審核未通過
+          a(href='#fail', data-toggle='tab') 審核未通過名單
 
       .tab-content
         #wait.tab-pane.active
@@ -32,7 +33,7 @@ block content
                 th 聯絡電話2
                 th 所屬運用單位
                 th 加分條件
-                th 管理
+                th.center 管理
               - for(var i = 0; i < 5; i++)
                 tr
                   td TV201710100001
@@ -43,7 +44,7 @@ block content
                   td 0981234567
                   td 台東青年活動中心
                   td 符合(1/2)
-                  td
+                  td.center
                     a.button(href='/bs/member/detail' target='_blank') 個人資訊
                     br
                     button.button(type='button') 審核通過
@@ -54,11 +55,11 @@ block content
 
         #pass.tab-pane
           .section-subtitle
-            h2.title 匯出
+            h2.title 投保表單
             .function
               form.form-group
                 .form-unit
-                  a.button(href='#') 匯出報名成功名單
+                  a.button(href='/bs/event/insurance' target='_blank') 製作投保表單
 
           table.table
             thead
@@ -71,7 +72,7 @@ block content
                 th 聯絡電話2
                 th 所屬運用單位
                 th 加分條件
-                th 管理
+                th.center 管理
               - for(var i = 0; i < 5; i++)
                 tr
                   td TV201710100001
@@ -82,7 +83,7 @@ block content
                   td 0981234567
                   td 台東青年活動中心
                   td 符合(1/2)
-                  td
+                  td.center
                     a.button(href='/bs/member/detail' target='_blank') 個人資訊
 
           include /partials/bs/_pagination
@@ -96,14 +97,14 @@ block content
                 th 姓名
                 th 未通過原因
                 th 加分條件
-                th 管理
+                th.center 管理
               - for(var i = 0; i < 5; i++)
                 tr
                   td TV201710100001
                   td 志工人
                   td 志工資料不完整，請補齊資料。
                   td 符合(1/2)
-                  td
+                  td.center
                     a.button(href='/bs/member/detail' target='_blank') 個人資訊
                     br
                     button.button(type='button') 審核通過

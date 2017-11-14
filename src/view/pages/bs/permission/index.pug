@@ -5,81 +5,61 @@ block content
     .container
       .section-title
         h1.title 權限管理
-        .function
-          form.form-group
-            .form-unit
-              a.button(href='#') 新增
 
-      .option
-        .option-item
-          .input-group
-            label 使用者名稱
-            input(type='text' placeholder='')
-        .option-item
-          button.inquire 查詢
+      .section-subtitle
+        h2.title 權限說明
 
       table.table
         thead
           tr
-            th 使用者名稱
-            th 所屬群組
+            th 群組名稱
             th 群組說明
-            th 更新群組設定
           tr
-            td 使用者一
-            td
-              select
-                option 系統管理者
-                option 社會處
-                option 各局處
-                option 運用單位
-                option 會員
+            td 系統管理者
             td 可以定義所有使用者與群組
-            td: a.button(href='#') 更新
           tr
-            td 使用者二
-            td
-              select
-                option 社會處
-                option 系統管理者
-                option 各局處
-                option 運用單位
-                option 會員
+            td 社會處
             td 可以定義所有使用者與群組
-            td: a.button(href='#') 更新
           tr
-            td 使用者三
-            td
-              select
-                option 各局處
-                option 系統管理者
-                option 社會處
-                option 運用單位
-                option 會員
+            td 各局處
             td 可以管理轄下運用單位
-            td: a.button(href='#') 更新
           tr
-            td 使用者四
-            td
-              select
-                option 運用單位
-                option 系統管理者
-                option 社會處
-                option 各局處
-                option 會員
+            td 運用單位
             td 可以管理自家的單位資料、活動
-            td: a.button(href='#') 更新
           tr
-            td 使用者五
-            td
+            td 會員
+            td 註冊成員只能使用前台功能
+
+      .section-subtitle
+        h2.title 新增管理者權限
+        .function
+          form.form-group
+            .form-unit
+              label 使用者名稱
+              input(type='text' placeholder='')
+            .form-unit
+              label 權限
               select
-                option 會員
                 option 系統管理者
                 option 社會處
-                option 各局處
-                option 運用單位
-            td 註冊成員只能使用前台功能
-            td: a.button(href='#') 更新
+            .form-unit
+              a.button(href='#') 新增
 
-      include /partials/bs/_pagination
+      table.table
+        thead
+          tr
+            th 管理者名稱
+            th 權限
+            th 管理
+          - for(var i = 0; i < 3; i++)
+            tr
+              td 管理者
+              td
+                select
+                  option 系統管理者
+                  option 社會處
+              td
+                button.button(type='button') 停權
+                button.button(type='button') 刪除
 
+      p.note 各局處、運用單位等權限請至所屬單位下新增該權限使用者。

@@ -1,0 +1,76 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container
+      .section-title
+        h1.title 活動名稱活動名稱 - 製作投保表單
+        .function
+          form.form-group
+            .form-unit
+              a.button(href='#') 匯出完成表單
+
+      .form-section
+        .aside
+          h2.form-title 投保資料
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 投保險種
+              input(type='text' value='')
+            .form-unit
+              label.label 投保期間
+              .input-group
+                input(type='text' value='2017/10/01')
+                span ~
+                input(type='text' value='2017/10/30')
+            .form-unit
+              label.label 保險公司
+              input(type='text' value='')
+            .form-unit
+              label.label 投保單位
+              input(type='text' value='')
+            .form-unit
+              label.label 保障內容
+              textarea
+
+      table.table
+        thead
+          tr
+            th.fit.center 選取
+            th.center 已作過表單
+            th 姓名
+            th.fit.center 性別
+            th 身分證字號
+            th 生日
+            th 聯絡電話1
+            th 聯絡電話2
+            th 緊急聯絡人
+            th 聯絡人關係
+          - for(var i = 0; i < 5; i++)
+            tr
+              td.fit.center
+                input(type='checkbox' checked)
+              td.center 否
+              td 志工人
+              td.fit.center 女
+              td A123456789
+              td 70/01/01
+              td 0981234567
+              td 0981234567
+              td 志工媽
+              td 母女
+          - for(var i = 0; i < 5; i++)
+            tr
+              td.fit.center
+                input(type='checkbox')
+              td.center 是
+              td 志工人
+              td.fit.center 男
+              td A123456789
+              td 70/01/01
+              td 0981234567
+              td 0981234567
+              td 志工爸
+              td 父子

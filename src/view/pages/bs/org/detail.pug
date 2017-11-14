@@ -20,6 +20,10 @@ block content
               label.label 單位名稱
               input(type='text' value='台東青年活動中心')
             .form-unit
+              label.label 單位層級
+              .input-group
+                .data 各局處
+            .form-unit
               label.label 單位簡介（100字以內）
               textarea
             .form-unit
@@ -54,6 +58,32 @@ block content
                   button.small-button 上傳照片
                 .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
                   button.small-button 上傳照片
+
+      .form-section
+        .aside
+          h2.form-title 單位人員
+
+        .main
+          form.form-group
+            table.table
+              thead
+                tr
+                  th.fixed.center 選取
+                  th 使用者名稱
+                  th 權限
+                - for(var i = 0; i < 5; i++)
+                  tr
+                    td.fixed.center
+                      input(type='checkbox')
+                    td 使用者
+                    td
+                      select
+                        option 單位管理人員
+                        option 一般會員
+
+            .form-unit
+              button.button 新增人員
+              button.button 刪除選取人員
 
       .form-section
         .aside
