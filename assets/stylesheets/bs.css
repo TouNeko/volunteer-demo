@@ -358,11 +358,11 @@ body {
   font-weight: 400;
   font-style: normal; }
 
-.form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .option .option-item label, .map-event-meta, .bs-detail .rating-comment .meta {
+.form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .map-event-meta, .bs-detail .rating-comment .meta {
   font-size: 0.75rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
-    .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .option .option-item label, .map-event-meta, .bs-detail .rating-comment .meta {
+    .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .map-event-meta, .bs-detail .rating-comment .meta {
       font-size: 0.85rem; } }
 
 .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, section .section-subtitle .title {
@@ -1082,9 +1082,17 @@ section {
     .bs-detail .detail-title .title-content .title {
       margin: 0; }
     .bs-detail .detail-title .title-content .sub-title {
-      margin: 8px 0 24px;
+      margin: 0 0 24px;
       font-weight: 500;
       color: #9a9a9a; }
+    .bs-detail .detail-title .title-content .status-tag {
+      display: inline-block;
+      vertical-align: text-top;
+      margin-left: 8px;
+      padding: 3px 12px;
+      color: #FF6767;
+      border: 1px solid #FF6767;
+      border-radius: 4px; }
 
 .bs-detail .rating-comment {
   padding: 12px;
