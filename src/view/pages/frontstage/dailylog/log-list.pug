@@ -1,0 +1,19 @@
+extends /layouts/_fs-layout
+
+block content
+  section
+    .container.log-list-section
+
+      .log-event-info
+        h1.name 活動名稱活動名稱活動名稱活動名稱
+        .meta 2017/12/15 - 2017/12/31
+        .meta 台東市博愛路425號
+
+      ul.log-list
+        - for(var i = 0; i < 8; i++)
+          li.log-day
+            .date 2017/11/0#{i}
+            .status 尚未撰寫
+            button.log-btn 撰寫
+            //- button.log-btn.edit 修改
+            //- button.log-btn.disabled 撰寫

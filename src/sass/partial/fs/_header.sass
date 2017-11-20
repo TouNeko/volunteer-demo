@@ -1,4 +1,4 @@
-$header-bg: $main-color-blue
+$header-bg: $main-color
 
 .header
   background-color: $header-bg
@@ -45,13 +45,16 @@ $header-bg: $main-color-blue
     font-size: .85rem
     font-weight: 700
     line-height: 56px
-    background-color: $main-color-blue
+    background-color: $main-color
     border-radius: 50%
     box-shadow: $box-shadow
     cursor: pointer
+    opacity: .1
+    transition: opacity .25s
 
     &:hover
-      background-color: $main-color-blue-dark
+      opacity: 1
+      background-color: $main-color-dark
 
     +tablet
       display: none

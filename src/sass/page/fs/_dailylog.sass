@@ -1,0 +1,148 @@
+.dailylog-list-section
+  .dailylog-list
+    margin: 0
+    padding: 0
+    list-style: none
+
+  .dailylog-item
+    width: 100%
+    margin-bottom: 12px
+    padding: 12px
+    overflow: hidden
+    background-color: $base-color-white
+    border-radius: $border-radius
+    box-shadow: $box-shadow
+
+  .dailylog-info
+    .name
+      display: block
+      margin-bottom: 4px
+      @extend %font-size-l
+      font-weight: 700
+      text-decoration: none
+      color: $sub-color-black
+
+    .meta
+      @extend %font-size-s
+      color: $sub-color-gray
+
+      .map
+        display: inline-block
+        vertical-align: text-top
+        overflow: hidden
+        margin-left: 4px
+        width: 12px
+        height: 12px
+        text-indent: -100%
+        white-space: nowrap
+        background: resolve('icon-map.svg') center no-repeat
+
+  .dailylog-function
+    text-align: right
+
+    .sign-btn, .log-btn
+      display: inline-block
+      @extend %button
+      @extend %button-size-s
+      @extend %button-primary
+      border-radius: 40px
+
+    .sign-btn + .log-btn
+      margin-left: 8px
+
+.sign-list-section, .log-list-section
+
+  .sign-event-info, .log-event-info
+    margin-bottom: 12px
+
+    .name
+      margin-bottom: 4px
+      @extend %font-size-l
+      font-weight: 700
+      text-decoration: none
+      color: $sub-color-black
+
+    .meta
+      @extend %font-size-s
+      color: $sub-color-gray
+
+  .sign-list, .log-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-content: content
+    margin: 0
+    padding: 0
+    list-style: none
+
+    .sign-day, .log-day
+      margin-bottom: 12px
+      padding: 16px 12px
+      width: calc(50% - 6px)
+      background-color: $sub-color-gray-light
+      border-radius: $border-radius
+      text-align: center
+
+      .date
+        margin-bottom: 2px
+        @extend %font-size-l
+        font-weight: 300
+        color: $sub-color
+
+    .sign-day
+
+      .sign-btn
+        display: block
+        margin: 0 auto
+        width: 96px
+        @extend %button
+        @extend %button-size-s
+        @extend %button-primary
+        border-radius: 40px
+
+        &.signed, &.failed
+          color: $color-black
+          background-color: $base-color-white
+
+          &::after
+            content: ''
+            display: inline-block
+            position: relative
+            top: 2px
+            margin-left: 4px
+            width: 16px
+            height: 12px
+
+        &.signed
+          &::after
+            background: resolve('icon-yes.svg') center no-repeat
+
+        &.failed
+          opacity: .5
+
+          &::after
+            background: resolve('icon-no.svg') center no-repeat
+
+    .log-day
+      .status
+        @extend %font-size-ui-s
+        font-weight: 700
+        color: $sub-color-gray
+
+      .log-btn
+        display: block
+        margin: 4px auto 0
+        width: 96px
+        @extend %button
+        @extend %button-size-s
+        @extend %button-primary
+        border-radius: 40px
+
+        &.edit
+          color: $main-color
+          background-color: $base-color-white
+
+        &.disabled
+          opacity: .5
+          color: $color-black
+          background-color: $base-color-white

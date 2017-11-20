@@ -1,0 +1,18 @@
+extends /layouts/_fs-layout
+
+block content
+  section
+    .container.sign-list-section
+
+      .sign-event-info
+        h1.name 活動名稱活動名稱活動名稱活動名稱
+        .meta 2017/12/15 - 2017/12/31
+        .meta 台東市博愛路425號
+
+      ul.sign-list
+        - for(var i = 0; i < 8; i++)
+          li.sign-day
+            .date 2017/11/0#{i}
+            button.sign-btn 報到
+            //- button.sign-btn.signed 已報到
+            //- button.sign-btn.failed 未報到

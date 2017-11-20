@@ -1,0 +1,67 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container
+      .section-title
+        h1.title 活動管理
+        .function
+          form.form-group
+            .form-unit
+              a.button(href='#') 新增
+
+      .option
+        .option-item
+          .select-group
+            label 召募狀態
+            select
+              option 召募中
+        .option-item
+          .select-group
+            label 召募需求
+            select
+              option 長期召募
+        .option-item
+          .select-group
+            label 運用單位
+            select
+              option 台東青年活動中心
+        .option-item
+          .input-group
+            label 服務名稱
+            input(type='text' placeholder='輸入服務名稱')
+        .option-item
+          button.inquire 查詢
+
+      table.table
+        thead
+          tr
+            th 召募需求
+            th 運用單位
+            th 召募狀態
+            th 召募時間
+            th 活動時間
+            th 活動名稱
+            th 需求人數
+            th 活動狀態
+            th.center 管理
+          - for(var i = 0; i < 5; i++)
+            tr
+              td 長期召募
+              td 台東青年活動中心
+              td 招募中
+              td 2017/10/30~2017/11/30
+              td 2017/10/30~2017/11/30
+              td 活動名稱活動名稱
+              td 20
+              td 已發佈
+              td.center
+                a.button(href='/backstage/event/detail') 活動管理
+                br
+                a.button(href='/backstage/event/people') 報名資料
+                br
+                a.button(href='/backstage/event/match') 志工媒合
+                br
+                a.button(href='/backstage/event/record') 志工日誌
+
+      include /partials/bs/_pagination

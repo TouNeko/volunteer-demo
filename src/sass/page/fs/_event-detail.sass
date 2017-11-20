@@ -1,6 +1,6 @@
 .event-detail-section, .org-detail-section
   .event-main, .event-meta, .event-content, .org-meta, .org-content
-    margin-bottom: 24px
+    margin-bottom: 12px
 
     .main, .aside
       position: relative
@@ -19,23 +19,34 @@
       .aside
         flex: 1
 
-  .event-main
+  .event-main, .org-main
     .title
-      margin-top: 0
-      @extend %font-size-xl
+      margin: 0 0 8px
+      @extend %font-size-l
+      color: $main-color
+
+    .description
+      margin: 0 0 8px
 
     .org-logo
       display: inline-block
-      width: 64px
-      height: 64px
+      vertical-align: middle
+      width: 48px
+      height: 48px
       background-position: center
       background-size: cover
       border-radius: $border-radius
 
     .org-name
       display: inline-block
-      vertical-align: text-bottom
+      vertical-align: middle
       margin-left: 4px
+
+      .name
+        display: inline-block
+        color: $sub-color-black
+        font-weight: 700
+        text-decoration: none
 
     .share
       position: absolute
@@ -54,11 +65,6 @@
         width: 24px
         height: 24px
         margin-left: 8px
-        filter: saturate(0)
-        transition: filter .25s
-
-        &:hover
-          filter: saturate(1)
 
       .facebook
         background: resolve('share-fb.svg') no-repeat
@@ -67,31 +73,13 @@
         background: resolve('share-line.svg') no-repeat
 
   .org-main
-    flex-wrap: nowrap
-
-    .org-logo
-      margin-right: 12px
-      width: 64px
-      height: 64px
-      background-position: center
-      background-size: cover
-      border-radius: $border-radius
-
-      +tablet
-        margin-right: 24px
-        width: 100px
-        height: 100px
-
     .org-name
-      display: inline-block
-      max-width: 720px
-      width: 100%
+      .name
+        color: $main-color
+        @extend %font-size-l
 
-      .title
-        margin: 0
-
-      .description
-        margin: 8px 0 24px
+    .description
+      margin: 8px 0 24px
 
   .event-meta, .org-meta
     .event-apply-info
@@ -106,10 +94,20 @@
 
     .cta-button
       display: block
-      margin-top: 42px
+      margin-top: 24px
       @extend %button
       @extend %button-size-m
       @extend %button-primary
+
+      &.fixed
+        position: fixed
+        z-index: 100
+        left: 12px
+        right: 12px
+        bottom: 12px
+
+        +tablet
+          position: static
 
     .cancel-button
       display: block
@@ -120,10 +118,19 @@
 
   .label
     @extend %font-size-ui-s
+    font-weight: 700
     color: $sub-color-gray
 
     &::after
       content: ' / '
+
+  .event-content, .event-meta
+    .content-title
+      margin-bottom: 8px
+      color: $sub-color-gray
+
+    .article p
+      margin: 0 0 8px
 
   .check-list
     margin: 0
@@ -137,3 +144,10 @@
 
       &.checked
         opacity: 1
+
+  .org-content
+    .content-title
+      color: $sub-color-gray
+
+    ul
+      padding-left: 24px

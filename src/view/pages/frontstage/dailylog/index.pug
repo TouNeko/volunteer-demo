@@ -1,0 +1,29 @@
+extends /layouts/_fs-layout
+
+block content
+  section.list
+    .container.dailylog-list-section
+      .section-title
+        h1.title 志工日誌
+        .function
+          form.form-group
+            .form-unit
+              label 排序
+              select
+                option 依時間排序
+            .form-unit
+              label 篩選
+              select
+                option 依類型篩選
+
+
+      ul.dailylog-list
+        - for(var i = 0; i < 6; i++)
+          li.dailylog-item
+            .dailylog-info
+              a.name(href='/frontstage/event/event-detail') 活動名稱
+              .meta 2017/12/15 - 2017/12/31
+              .meta 台東市博愛路425號<a href='#' class='map'>map</a>
+            .dailylog-function
+              a.sign-btn(href='/frontstage/dailylog/sign-list') 報到
+              a.log-btn(href='/frontstage/dailylog/log-list') 志工日誌

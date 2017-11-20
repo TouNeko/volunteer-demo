@@ -39,13 +39,14 @@
   @extend %font-size-ui-m
 
   .form-unit + .form-unit
-    margin-top: 12px
+    margin-top: 8px
 
     +tablet
-      margin-top: 18px
+      margin-top: 16px
 
   .label
     @extend %font-size-ui-s
+    font-weight: 700
     color: $sub-color-gray
 
     &::after
@@ -81,19 +82,20 @@
   select
     display: block
     margin-top: 4px
+    padding: 3px 32px 3px 6px
     width: 240px
     appearance: none
-    padding: 3px 32px 3px 6px
+    @extend %font-size-ui-s
     border: 1px solid $sub-color-gray-light
     border-radius: $border-radius
-    background: $sub-color-gray-light resolve('ui-arrow-down.svg') center right no-repeat
+    background: $base-color-white resolve('ui-arrow-down.svg') center right no-repeat
 
     &:focus
       outline: 0
       border-color: $sub-color-black-light
 
   .data
-    margin-top: 4px
+    margin-top: 0
 
     &.check
       &::after

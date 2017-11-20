@@ -1,0 +1,106 @@
+extends /layouts/_bs-layout
+
+block content
+  section
+    .container.bs-detail
+
+      .detail-title
+        .title-image.org-logo(style='background-image: url("http://fakeimg.pl/120x120/")')
+        .title-content
+          h1.title 台東青年活動中心
+          p.sub-title 運用單位資料管理
+
+      .form-section
+        .aside
+          h2.form-title 單位資料
+
+        .main
+          form.form-group
+            .form-unit
+              label.label 單位名稱
+              input(type='text' value='台東青年活動中心')
+            .form-unit
+              label.label 單位層級
+              .input-group
+                .data 各局處
+            .form-unit
+              label.label 單位簡介（100字以內）
+              textarea
+            .form-unit
+              label.label 登記地址
+              input(type='text' value='台東市博愛路425號')
+            .form-unit
+              label.label 聯絡電話
+              .input-group
+                input(type='text' value='098123456')
+                input(type='text' value='098123456')
+            .form-unit
+              label.label 傳真號碼
+              input(type='text' value='098123456')
+            .form-unit
+              label.label Email
+              input(type='text' value='Volunteer@taitung.com.tw')
+            .form-unit
+              label.label 單位 LOGO
+              .image-group
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 變更照片
+            .form-unit
+              label.label 單位照片（最多五張）
+              .image-group
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 變更照片
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 變更照片
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 上傳照片
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 上傳照片
+                .image-uploader(style='background-image: url("http://fakeimg.pl/120x120/")')
+                  button.small-button 上傳照片
+
+      .form-section
+        .aside
+          h2.form-title 單位人員
+
+        .main
+          form.form-group
+            table.table
+              thead
+                tr
+                  th.fixed.center 選取
+                  th 使用者名稱
+                  th 權限
+                - for(var i = 0; i < 5; i++)
+                  tr
+                    td.fixed.center
+                      input(type='checkbox')
+                    td 使用者
+                    td
+                      select
+                        option 單位管理人員
+                        option 一般會員
+
+            .form-unit
+              button.button(type='button' data-toggle='modal' data-target='#add-people') 新增人員
+              button.button 刪除選取人員
+
+      .form-section
+        .aside
+        .main
+          .button-group
+            button.cta-button 儲存變更
+            button 取消變更
+
+    #add-people.modal.fade
+      .modal-dialog
+        .modal-content
+          .modal-header
+            h4#myModalLabel.modal-title 請輸入人員姓名
+          .modal-body
+            form.form-group
+              .form-unit
+                input(type='password' placeholder='請輸入要新增人員姓名')
+          .modal-footer
+            button.btn.secondary(type='button', data-dismiss='modal') 取消
+            button.btn.primary(type='button') 新增

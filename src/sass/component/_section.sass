@@ -1,5 +1,8 @@
 section
-  margin: 24px 0
+  padding: 8px 0
+
+  &.list
+    background-color: $sub-color-gray-light
 
   .section-title, .section-subtitle
     margin: 12px 0
@@ -10,30 +13,36 @@ section
       align-items: center
 
     .title
-      margin: 0
-      font-weight: 500
-      color: $sub-color-black
+      margin: 0 0 8px
+      font-weight: 700
+      color: $sub-color
+
+      +tablet
+        margin: 0
 
     .function
       text-align: left
 
       .form-group
+        width: 100%
         display: inline-flex
         align-items: center
         border: 0
 
       .form-unit
-        display: inline-block
+        flex: 1
+        display: inline-flex
+        align-items: center
 
         label
-          display: inline-block
+          min-width: 32px
           margin-right: 4px
           @extend %font-size-ui-s
           font-weight: 500
           color: $sub-color-gray
 
         input, select
-          display: inline-block
+          flex: 1
           width: auto
           margin-top: 0
 

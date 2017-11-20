@@ -1,0 +1,63 @@
+extends /layouts/_fs-layout
+
+block content
+  section
+    .container.event-detail-section
+
+      .event-main
+        .main
+          h1.title 活動名稱活動名稱活動名稱活動名稱
+          p.description 活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。
+        .aside
+          .share
+            a.facebook(href='#')
+            a.line(href='#')
+          .org
+            .org-logo(style='background-image: url("http://fakeimg.pl/120x120/")')
+            .org-name
+              .label 運用單位
+              a.name(href='/frontstage/org/org-detail') 台東青年志工中心
+
+      .event-meta
+        .main
+          .event-images
+            img(src='http://fakeimg.pl/1920x1080/')
+        .aside
+          .event-apply-info
+            .event-people-apply
+              .label 完成報名
+              .value 136<span class='unit'>人</span>
+            .event-people-need
+              .label 需求人數
+              .value 240<span class='unit'>人</span>
+            .event-apply-presentage
+              .label 需求百分比
+              .value 56.7<span class='unit'>%</span>
+              .presentage-bar(style='width: 56.7%')
+          .event-info
+            .label 活動日期
+            .value 2017/10/15 - 2017/10/24
+            .sub-value 上午 10:00 - 下午 17:00
+          .event-info
+            .label 報名日期
+            .value 2017/09/01 - 2017/09/31
+          .event-info
+            .label 活動地點
+            .value 台東市博愛路425號
+          a.cta-button.fixed(href='/frontstage/event/event-apply') 我要報名
+
+
+      .event-content
+        .main
+          h2.content-title 活動詳細介紹
+          .article
+            p 活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。
+            p 活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。活動敘述這是一個 Volunteer 活動，希望志工踴躍參加。
+        .aside
+          h2.content-title 必要條件
+          ul.check-list
+            li.checked 條件與技能敘述。條件與技能敘述。條件與技能敘述。
+            li.checked 條件與技能敘述。條件與技能敘述。條件與技能敘述。
+          h2.content-title 加分條件
+          ul.check-list
+            li 條件與技能敘述。條件與技能敘述。條件與技能敘述。

@@ -1,0 +1,32 @@
+extends /layouts/_fs-layout
+
+block content
+  section.list
+    .container.record-section
+      .section-title
+        h1.title 服務紀錄
+
+      ul.record-list
+        - for(var i = 0; i < 2; i++)
+          li.record-item
+            .record-info
+              .title 到宅服務義工
+              form.form-group
+                .form-unit
+                  label.label 服務召募單位
+                  .data TTVolunter
+                .form-unit
+                  label.label 服務時間
+                  .data 2017/11/15 - 2017/11/30
+                .form-unit
+                  label.label 需求類別
+                  .data 基礎訓練
+                .form-unit
+                  label.label 服務類別
+                  .data 老人服務
+                .form-unit
+                  label.label 服務時數
+                  .data 8小時
+            .record-meta
+              .label 取得評價
+              .data.star 5

@@ -12,9 +12,9 @@
 
   .event-item, .org-item
     width: 100%
-    margin-bottom: 24px
+    margin-bottom: 12px
     overflow: hidden
-    background-color: $sub-color-gray-light
+    background-color: $base-color-white
     border-radius: $border-radius
     box-shadow: $box-shadow
 
@@ -32,14 +32,14 @@
     background-size: cover
 
   .event-info, .org-info
-    margin: 16px 16px 48px
+    margin: 8px 12px 24px
     color: $sub-color-black
 
     .name
       margin: 0 0 4px
       @extend %font-size-l
-      font-weight: 400
-      color: $main-color-blue-dark
+      font-weight: 700
+      color: $main-color-dark
       text-decoration: none
 
       &:hover
@@ -52,7 +52,7 @@
 
     .description
       overflow: hidden
-      height: 96px
+      max-height: 96px
       margin: 0
       color: $sub-color-black
 
@@ -61,16 +61,26 @@
       padding: 0
       list-style: none
 
+      &::before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 22px
+        height: 22px
+        margin-right: 4px
+        background: resolve('icon-tag.svg') center no-repeat
+
     .tag-item
       display: inline-block
 
       a
         display: block
-        padding: 4px 12px
+        padding: 2px 8px
         @extend %font-size-s
+        font-weight: 700
         text-decoration: none
-        color: $sub-color-black
-        background-color: $color-white
+        color: $sub-color-gray
+        background-color: $sub-color-gray-light
         border-radius: 48px
         transition: color .25s, background-color .25s
 
@@ -80,6 +90,36 @@
 
     .tag-item + .tag-item
       margin-left: 4px
+
+    .readmore
+      display: block
+      width: 82px
+      margin: 0 0 0 auto
+      padding: 4px 8px
+      @extend %font-size-s
+      font-weight: 700
+      text-decoration: none
+      color: $base-color-white
+      background-color: $main-color
+      border-radius: 48px
+      transition: background-color .25s
+
+      &:hover
+        background-color: $main-color-dark
+
+      &::after
+        content: ''
+        display: inline-block
+        position: relative
+        top: 2px
+        width: 12px
+        height: 12px
+        margin-left: 4px
+        background: resolve('icon-arrow-next.svg') center no-repeat
+
+      +tablet
+        width: 92px
+
 
 .event-apply-info
   position: relative
@@ -128,4 +168,4 @@
       left: 0
       bottom: 0
       height: 8px
-      background-color: $main-color-blue
+      background-color: $sub-color
