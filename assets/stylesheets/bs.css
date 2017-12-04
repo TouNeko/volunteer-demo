@@ -358,18 +358,18 @@ body {
   font-weight: 400;
   font-style: normal; }
 
-.form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .map-event-meta, .bs-detail .rating-comment .meta {
+.form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .map-event-meta, .member-sign .forgot-pw, .bs-detail .rating-comment .meta, .member-sign .note {
   font-size: 0.75rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
-    .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .map-event-meta, .bs-detail .rating-comment .meta {
+    .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .map-event-meta, .member-sign .forgot-pw, .bs-detail .rating-comment .meta, .member-sign .note {
       font-size: 0.85rem; } }
 
-.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
+.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
   font-size: 0.85rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
-    .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
+    .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
       font-size: 1rem; } }
 
 .bs-detail .detail-title .title-content .sub-title, .form-title {
@@ -733,7 +733,7 @@ a {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.modal-footer .btn, .form-group .button, .form-group .small-button, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .table button, .table .button, .option .option-item button, .map-manage-button {
+.modal-footer .btn, .form-group .button, .form-group .small-button, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .table button, .table .button, .option .option-item button, .map-manage-button, .member-sign .cta-button, .member-sign .signup-button {
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -742,7 +742,7 @@ a {
   box-shadow: none;
   transition: color .25s, background-color .25s; }
 
-.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button {
+.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .signup-button {
   padding: 8px 24px; }
 
 .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button {
@@ -751,18 +751,18 @@ a {
 .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button {
   padding: 4px 12px; }
 
-.modal-footer .btn.primary, .button-group .cta-button, section .section-title .function .form-unit .button, section .section-subtitle .function .form-unit .button, .option .option-item button, .map-manage-button {
+.modal-footer .btn.primary, .button-group .cta-button, section .section-title .function .form-unit .button, section .section-subtitle .function .form-unit .button, .option .option-item button, .map-manage-button, .member-sign .cta-button {
   color: white;
   background-color: #FF6767; }
-  .modal-footer .btn.primary:hover, .button-group .cta-button:hover, section .section-title .function .form-unit .button:hover, section .section-subtitle .function .form-unit .button:hover, .option .option-item button:hover, .map-manage-button:hover {
+  .modal-footer .btn.primary:hover, .button-group .cta-button:hover, section .section-title .function .form-unit .button:hover, section .section-subtitle .function .form-unit .button:hover, .option .option-item button:hover, .map-manage-button:hover, .member-sign .cta-button:hover {
     color: #ffffff;
     text-decoration: none;
     background-color: #FF5151; }
 
-.modal-footer .btn.secondary, .form-group .button, .form-group .small-button, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .table button, .table .button {
+.modal-footer .btn.secondary, .form-group .button, .form-group .small-button, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .table button, .table .button, .member-sign .signup-button {
   color: #474747;
   background-color: #f7f7f7; }
-  .modal-footer .btn.secondary:hover, .form-group .button:hover, .form-group .small-button:hover, .button-group button:hover, section .section-title .more-button:hover, section .section-subtitle .more-button:hover, .table button:hover, .table .button:hover {
+  .modal-footer .btn.secondary:hover, .form-group .button:hover, .form-group .small-button:hover, .button-group button:hover, section .section-title .more-button:hover, section .section-subtitle .more-button:hover, .table button:hover, .table .button:hover, .member-sign .signup-button:hover {
     color: #ffffff;
     text-decoration: none;
     background-color: #9a9a9a; }
@@ -1368,6 +1368,40 @@ section {
 .map-manage-button {
   display: inline-block;
   margin-top: 8px; }
+
+.member-sign {
+  max-width: 400px;
+  text-align: center; }
+  .member-sign .form-unit-sign {
+    margin-bottom: 24px; }
+    .member-sign .form-unit-sign input {
+      padding: 8px;
+      width: 100%;
+      height: 40px;
+      border-radius: 4px;
+      border: 1px solid #c7c7c7; }
+  .member-sign .cta-button {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%; }
+  .member-sign .forgot-pw {
+    font-weight: 500;
+    margin-bottom: 24px; }
+  .member-sign .divider {
+    display: block;
+    margin: 24px 0;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #c7c7c7; }
+  .member-sign .signup-button {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%; }
+  .member-sign .note {
+    font-weight: 500;
+    text-align: left;
+    color: #9a9a9a; }
 
 /* Slider */
 .slick-slider {
