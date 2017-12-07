@@ -365,11 +365,11 @@ body {
     .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .map-event-meta, .member-sign .forgot-pw, .bs-detail .rating-comment .meta, .member-sign .note {
       font-size: 0.85rem; } }
 
-.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
+.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
   font-size: 0.85rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
-    .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
+    .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
       font-size: 1rem; } }
 
 .bs-detail .detail-title .title-content .sub-title, .form-title {
@@ -418,6 +418,10 @@ a {
   color: #FF6767; }
   a:hover {
     color: #FF5151; }
+
+hr {
+  border: 0;
+  border-bottom: 1px solid rgba(71, 71, 71, 0.2); }
 
 .modal-open {
   overflow: hidden; }
@@ -733,7 +737,7 @@ a {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.modal-footer .btn, .form-group .button, .form-group .small-button, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .table button, .table .button, .option .option-item button, .map-manage-button, .member-sign .cta-button, .member-sign .signup-button {
+.modal-footer .btn, .form-group .button, .form-group .small-button, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .table button, .table .button, .option .option-item button, .map-manage-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button {
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -742,7 +746,7 @@ a {
   box-shadow: none;
   transition: color .25s, background-color .25s; }
 
-.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .signup-button {
+.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button {
   padding: 8px 24px; }
 
 .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button {
@@ -848,7 +852,7 @@ a {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #c7c7c7;
   border-radius: 4px;
   background: #ffffff url('../images/ui-arrow-down.svg') center right no-repeat; }
   .form-group select:focus {
@@ -921,6 +925,8 @@ a {
     .form-group .image-uploader {
       width: 100px;
       height: 100px; } }
+  .form-group .image-uploader .upload-hidden {
+    display: none; }
 
 .form-group .small-button {
   display: inline-block;
@@ -1078,7 +1084,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+  margin-top: 24px; }
   .bs-detail .detail-title .title-image {
     margin-right: 12px;
     width: 64px;
@@ -1108,6 +1115,9 @@ section {
       color: #FF6767;
       border: 1px solid #FF6767;
       border-radius: 4px; }
+
+.bs-detail .section-title + .detail-title {
+  margin-top: 0; }
 
 .bs-detail .rating-comment {
   padding: 12px;
@@ -1384,6 +1394,14 @@ section {
     display: block;
     margin-bottom: 24px;
     width: 100%; }
+  .member-sign .fb-signin-button {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;
+    color: white;
+    background-color: #4267b2; }
+    .member-sign .fb-signin-button:hover {
+      background-color: #3b5c9f; }
   .member-sign .forgot-pw {
     font-weight: 500;
     margin-bottom: 24px; }
@@ -1402,6 +1420,10 @@ section {
     font-weight: 500;
     text-align: left;
     color: #9a9a9a; }
+    .member-sign .note.center {
+      text-align: center; }
+  .member-sign hr {
+    margin: 24px 0; }
 
 /* Slider */
 .slick-slider {

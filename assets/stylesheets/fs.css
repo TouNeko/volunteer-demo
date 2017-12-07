@@ -432,6 +432,10 @@ a {
   a:hover {
     color: #FF5151; }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid rgba(71, 71, 71, 0.2); }
+
 .modal-open {
   overflow: hidden; }
 
@@ -861,7 +865,7 @@ a {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #c7c7c7;
   border-radius: 4px;
   background: #ffffff url('../images/ui-arrow-down.svg') center right no-repeat; }
   .form-group select:focus {
@@ -934,6 +938,8 @@ a {
     .form-group .image-uploader {
       width: 100px;
       height: 100px; } }
+  .form-group .image-uploader .upload-hidden {
+    display: none; }
 
 .form-group .small-button {
   display: inline-block;
@@ -1389,6 +1395,10 @@ section {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; } }
+
+@media (min-width: 46.25em) {
+  .event-detail-section .event-main, .event-detail-section .org-main, .org-detail-section .event-main, .org-detail-section .org-main {
+    margin-top: 24px; } }
 
 .event-detail-section .event-main .title, .event-detail-section .org-main .title, .org-detail-section .event-main .title, .org-detail-section .org-main .title {
   margin: 0 0 8px;
