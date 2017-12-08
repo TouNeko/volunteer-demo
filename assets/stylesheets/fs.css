@@ -650,6 +650,13 @@ hr {
   top: auto;
   left: auto; }
 
+.fade {
+  opacity: 0;
+  transition: opacity .25s; }
+
+.fade.in {
+  opacity: 1; }
+
 @media (min-width: 768px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
@@ -888,6 +895,8 @@ hr {
     opacity: .3; }
   .form-group .data.checked::after {
     opacity: 1; }
+  .form-group .data.important {
+    color: #FF6767; }
 
 .form-group .input-group, .form-group .data-group, .form-group .image-group, .form-group .check-item, .form-group .radio-item {
   margin-top: 4px; }
@@ -1293,6 +1302,9 @@ section {
     white-space: nowrap;
     background: url('../images/icon-map.svg') center no-repeat; }
 
+.dailylog-list-section .verify-status {
+  margin-top: 8px; }
+
 .dailylog-list-section .dailylog-function {
   text-align: right; }
   .dailylog-list-section .dailylog-function .sign-btn, .dailylog-list-section .dailylog-function .log-btn {
@@ -1503,6 +1515,23 @@ section {
     .event-detail-section .check-list li.checked, .org-detail-section .check-list li.checked {
       opacity: 1; }
 
+.event-detail-section .content-list, .org-detail-section .content-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .event-detail-section .content-list li, .org-detail-section .content-list li {
+    position: relative;
+    padding-left: 32px; }
+    .event-detail-section .content-list li::before, .org-detail-section .content-list li::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 6px;
+      height: 6px;
+      background-color: #9a9a9a;
+      border-radius: 50%; }
+
 .event-detail-section .org-content .content-title, .org-detail-section .org-content .content-title {
   color: #9a9a9a; }
 
@@ -1660,6 +1689,23 @@ section {
     bottom: 0;
     height: 8px;
     background-color: #FFA867; }
+
+.dailylog-tab {
+  border-bottom: 0; }
+  .dailylog-tab li a {
+    padding: 8px 24px;
+    color: #FF6767;
+    background-color: white;
+    border-radius: 4px;
+    border: 0; }
+    .dailylog-tab li a:hover {
+      border: 0; }
+  .dailylog-tab li.active a, .dailylog-tab li.active a:hover {
+    color: white;
+    background-color: #FF6767;
+    border: 0; }
+  .dailylog-tab li + li {
+    margin-left: 8px; }
 
 .hero .slider-content-wrap {
   position: relative;

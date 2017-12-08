@@ -637,6 +637,13 @@ hr {
   top: auto;
   left: auto; }
 
+.fade {
+  opacity: 0;
+  transition: opacity .25s; }
+
+.fade.in {
+  opacity: 1; }
+
 @media (min-width: 768px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
@@ -875,6 +882,8 @@ hr {
     opacity: .3; }
   .form-group .data.checked::after {
     opacity: 1; }
+  .form-group .data.important {
+    color: #FF6767; }
 
 .form-group .input-group, .form-group .data-group, .form-group .image-group, .form-group .check-item, .form-group .radio-item {
   margin-top: 4px; }
