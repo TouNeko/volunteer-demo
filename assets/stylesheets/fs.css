@@ -363,7 +363,7 @@ body {
 .event-apply-info .event-people-need .label,
 .event-apply-info .event-people-need .unit,
 .event-apply-info .event-apply-presentage .label,
-.event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
+.event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .event-type, .event-list .org-info .event-type, .org-list .event-info .event-type, .org-list .org-info .event-type, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
   font-size: 0.75rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
@@ -371,7 +371,7 @@ body {
     .event-apply-info .event-people-need .label,
     .event-apply-info .event-people-need .unit,
     .event-apply-info .event-apply-presentage .label,
-    .event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
+    .event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .event-type, .event-list .org-info .event-type, .org-list .event-info .event-type, .org-list .org-info .event-type, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
       font-size: 0.85rem; } }
 
 .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .message .cta-button, .message .back-button, .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, body, section .section-subtitle .title {
@@ -1467,16 +1467,16 @@ section {
   margin: 8px 0 24px; }
 
 .event-detail-section .event-meta .event-apply-info, .event-detail-section .org-meta .event-apply-info, .org-detail-section .event-meta .event-apply-info, .org-detail-section .org-meta .event-apply-info {
-  margin: 0 0 16px; }
+  margin: 0 0 12px; }
 
 .event-detail-section .event-meta .event-info, .event-detail-section .event-meta .org-info, .event-detail-section .org-meta .event-info, .event-detail-section .org-meta .org-info, .org-detail-section .event-meta .event-info, .org-detail-section .event-meta .org-info, .org-detail-section .org-meta .event-info, .org-detail-section .org-meta .org-info {
-  margin-bottom: 16px; }
+  margin-bottom: 12px; }
   .event-detail-section .event-meta .event-info .value, .event-detail-section .event-meta .org-info .value, .event-detail-section .org-meta .event-info .value, .event-detail-section .org-meta .org-info .value, .org-detail-section .event-meta .event-info .value, .org-detail-section .event-meta .org-info .value, .org-detail-section .org-meta .event-info .value, .org-detail-section .org-meta .org-info .value {
     font-weight: 300; }
 
 .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button {
   display: block;
-  margin-top: 24px; }
+  margin-top: 16px; }
   .event-detail-section .event-meta .cta-button.fixed, .event-detail-section .org-meta .cta-button.fixed, .org-detail-section .event-meta .cta-button.fixed, .org-detail-section .org-meta .cta-button.fixed {
     position: fixed;
     z-index: 100;
@@ -1581,9 +1581,15 @@ section {
       text-decoration: none; }
       .event-list .event-info .name:hover, .event-list .org-info .name:hover, .org-list .event-info .name:hover, .org-list .org-info .name:hover {
         text-decoration: underline; }
+    .event-list .event-info .event-type, .event-list .org-info .event-type, .org-list .event-info .event-type, .org-list .org-info .event-type {
+      display: block;
+      color: #707070;
+      text-decoration: none; }
     .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org {
+      display: block;
       margin: 0 0 4px;
-      color: #9a9a9a; }
+      color: #9a9a9a;
+      text-decoration: none; }
     .event-list .event-info .description, .event-list .org-info .description, .org-list .event-info .description, .org-list .org-info .description {
       overflow: hidden;
       max-height: 96px;

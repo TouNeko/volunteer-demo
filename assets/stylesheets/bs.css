@@ -1342,6 +1342,44 @@ section {
     .option .option-item button {
       width: 80px; }
 
+.event-preview {
+  margin: 24px auto;
+  text-align: center; }
+  .event-preview .screen-switch {
+    display: none; }
+  .event-preview .screen-switch-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px;
+    width: 80px;
+    height: 40px;
+    background-color: #f7f7f7;
+    border-radius: 20px; }
+    .event-preview .screen-switch-button::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 32px;
+      height: 32px;
+      background-color: #FF6767;
+      border-radius: 50%;
+      transition: left .25s; }
+  .event-preview .screen-preview {
+    display: block;
+    margin: 24px auto;
+    width: 375px;
+    height: 667px;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    transition: width .5s, height .5s; }
+  .event-preview .screen-switch:checked ~ .screen-preview {
+    width: 1136px;
+    height: 768px; }
+  .event-preview .screen-switch:checked ~ .screen-switch-button::before {
+    left: 44px; }
+
 .event-map {
   display: -webkit-box;
   display: -ms-flexbox;

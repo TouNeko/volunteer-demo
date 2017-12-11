@@ -40,7 +40,7 @@
           <h1 class="title">活動名稱活動名稱</h1>
           <div class="function">
             <form class="form-group">
-              <div class="form-unit"><a class="button" href="../../frontstage/event/event-detail.html" target="_blank">前台預覽</a><a class="button" href="../../backstage/event/people.html">報名資料</a><a class="button" href="../../backstage/event/match.html">志工媒合</a><a class="button" href="../../backstage/event/record.html">志工日誌</a></div>
+              <div class="form-unit"><a class="button" href="../../backstage/event/event-preview.html" target="_blank">前台預覽</a><a class="button" href="../../backstage/event/people.html">報名資料</a><a class="button" href="../../backstage/event/match.html">志工媒合</a><a class="button" href="../../backstage/event/record.html">志工日誌</a></div>
             </form>
           </div>
         </div>
@@ -184,40 +184,40 @@
         </div>
         <div class="form-section">
           <div class="aside">
-            <h2 class="form-title">服務類型</h2>
+            <h2 class="form-title">活動類型</h2>
           </div>
           <div class="main">
             <form class="form-group">
               <div class="form-unit">
-                <label class="label">服務類型</label>
-                <div class="check-group">
-                  <div class="check-item fixed-width">
-                    <input id="checkitem1" type="checkbox">
-                    <label for="checkitem1">身心障礙福利服務</label>
+                <label class="label">活動類型</label>
+                <div class="radio-group">
+                  <div class="radio-item fixed-width">
+                    <input id="radioitem1" type="radio" name="eventtype">
+                    <label for="radioitem1">身心障礙福利服務</label>
                   </div>
-                  <div class="check-item fixed-width">
-                    <input id="checkitem2" type="checkbox">
-                    <label for="checkitem2">諮商福利服務</label>
+                  <div class="radio-item fixed-width">
+                    <input id="radioitem2" type="radio" name="eventtype">
+                    <label for="radioitem2">諮商福利服務</label>
                   </div>
-                  <div class="check-item fixed-width">
-                    <input id="checkitem3" type="checkbox">
-                    <label for="checkitem3">老人福利服務</label>
+                  <div class="radio-item fixed-width">
+                    <input id="radioitem3" type="radio" name="eventtype">
+                    <label for="radioitem3">老人福利服務</label>
                   </div>
-                  <div class="check-item fixed-width">
-                    <input id="checkitem4" type="checkbox">
-                    <label for="checkitem4">家庭福利服務</label>
+                  <div class="radio-item fixed-width">
+                    <input id="radioitem4" type="radio" name="eventtype">
+                    <label for="radioitem4">家庭福利服務</label>
                   </div>
-                  <div class="check-item fixed-width">
-                    <input id="checkitem5" type="checkbox">
-                    <label for="checkitem5">婦女福利服務</label>
+                  <div class="radio-item fixed-width">
+                    <input id="radioitem5" type="radio" name="eventtype">
+                    <label for="radioitem5">婦女福利服務</label>
                   </div>
-                  <div class="check-item fixed-width">
-                    <input id="checkitem6" type="checkbox" checked>
-                    <label for="checkitem6">社會福利服務</label>
+                  <div class="radio-item fixed-width">
+                    <input id="radioitem6" type="radio" name="eventtype">
+                    <label for="radioitem6">社會福利服務</label>
                   </div>
-                  <div class="check-item fixed-width">
-                    <input id="checkitem7" type="checkbox" checked>
-                    <label for="checkitem7">少年福利服務</label>
+                  <div class="radio-item fixed-width">
+                    <input id="radioitem7" type="radio" name="eventtype" checked>
+                    <label for="radioitem7">少年福利服務</label>
                   </div>
                 </div>
               </div>
@@ -402,6 +402,7 @@
             <div class="button-group">
               <button class="cta-button">發佈活動</button>
               <button>儲存活動</button>
+              <button>下架活動</button>
               <button>刪除活動</button>
             </div>
           </div>
