@@ -37,6 +37,7 @@
     <section>
       <div class="container bs-detail">
         <div class="detail-title">
+          <div class="title-image" style="background-image: url(&quot;http://fakeimg.pl/120x120/&quot;);"></div>
           <div class="title-content">
             <h1 class="title">志・人</h1>
             <p class="sub-title">志工資料管理</p>
@@ -64,6 +65,15 @@
                 <div class="input-group">
                   <div class="data">A123***678</div>
                   <button class="small-button" type="button" data-toggle="modal" data-target="#need-pw">觀看資料</button>
+                </div>
+              </div>
+              <div class="form-unit">
+                <label class="label">志工照片</label>
+                <div class="image-group">
+                  <div class="image-uploader" style="background-image: url(&quot;http://fakeimg.pl/120x120/&quot;);">
+                    <input class="upload-hidden" id="org-logo-1" type="file">
+                    <label class="small-button" for="org-logo-1">變更照片</label>
+                  </div>
                 </div>
               </div>
               <div class="form-unit">
@@ -167,6 +177,31 @@
         </div>
         <div class="form-section">
           <div class="aside">
+            <h2 class="form-title">記錄資料</h2>
+          </div>
+          <div class="main">
+            <form class="form-group">
+              <div class="form-unit">
+                <label class="label">記錄冊號</label>
+                <input type="text" value="">
+              </div>
+              <div class="form-unit">
+                <label class="label">記錄冊發放日期</label>
+                <input type="text" value="">
+              </div>
+              <div class="form-unit">
+                <label class="label">記錄冊字號</label>
+                <input type="text" value="">
+              </div>
+              <div class="form-unit">
+                <label class="label">發證記錄</label>
+                <input type="text" value="">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="form-section">
+          <div class="aside">
             <h2 class="form-title">所屬運用單位</h2>
           </div>
           <div class="main">
@@ -207,14 +242,17 @@
                   <tr>
                     <th>志工隊編號</th>
                     <th>志工隊名稱</th>
+                    <th>志工職稱</th>
                   </tr>
                   <tr>
                     <td>A00VY111</td>
                     <td>台東縣志願服務協會</td>
+                    <td>職稱</td>
                   </tr>
                   <tr>
                     <td>A00VY111</td>
                     <td>台東縣志願服務協會</td>
+                    <td>職稱</td>
                   </tr>
                 </thead>
               </table>
@@ -239,6 +277,8 @@
                     <th>課程名稱</th>
                     <th>結訓成績</th>
                     <th>結訓證書</th>
+                    <th>證書發放日期</th>
+                    <th>發證公文號</th>
                     <th>人工補充</th>
                   </tr>
                   <tr>
@@ -248,6 +288,8 @@
                     <td>社福類志工訓練</td>
                     <td>100</td>
                     <td><a class="button" href="#">預覽</a></td>
+                    <td>2017/11/30</td>
+                    <td>府社救字第1060228253號</td>
                     <td></td>
                   </tr>
                   <tr>
@@ -257,6 +299,8 @@
                     <td>社福類志工訓練</td>
                     <td>100</td>
                     <td><a class="button" href="#">預覽</a></td>
+                    <td>2017/11/30</td>
+                    <td>府社救字第1060228253號</td>
                     <td></td>
                   </tr>
                 </thead>
@@ -335,6 +379,10 @@
                     <th>獎項名稱</th>
                     <th>審核狀況</th>
                     <th>獎狀</th>
+                    <th>榮譽卡號</th>
+                    <th>有效期限</th>
+                    <th>核備文號</th>
+                    <th>榮譽卡資料</th>
                     <th>人工補充</th>
                   </tr>
                   <tr>
@@ -343,6 +391,10 @@
                     <td>志願服務貢獻獎</td>
                     <td>已申請</td>
                     <td><a class="button" href="#">預覽</a></td>
+                    <td>2297317</td>
+                    <td>2018/11/30</td>
+                    <td>107.11.30府社救字第1060228253號</td>
+                    <td>換發</td>
                     <td>是</td>
                   </tr>
                   <tr>
@@ -351,6 +403,10 @@
                     <td>志願服務貢獻獎</td>
                     <td>已申請</td>
                     <td><a class="button" href="#">預覽</a></td>
+                    <td>2297317</td>
+                    <td>2018/11/30</td>
+                    <td>107.11.30府社救字第1060228253號</td>
+                    <td>換發</td>
                     <td>是</td>
                   </tr>
                 </thead>
