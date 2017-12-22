@@ -374,11 +374,11 @@ body {
     .event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .event-type, .event-list .org-info .event-type, .org-list .event-info .event-type, .org-list .org-info .event-type, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
       font-size: 0.85rem; } }
 
-.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .message .cta-button, .message .back-button, .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, body, section .section-subtitle .title {
+.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .message .cta-button, .message .back-button, .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .app-download .content .download-btn a, body, section .section-subtitle .title {
   font-size: 0.85rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
-    .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .message .cta-button, .message .back-button, .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, body, section .section-subtitle .title {
+    .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .message .cta-button, .message .back-button, .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .app-download .content .download-btn a, body, section .section-subtitle .title {
       font-size: 1rem; } }
 
 .form-title, .dailylog-list-section .dailylog-info .name, .sign-list-section .sign-event-info .name, .sign-list-section .log-event-info .name, .log-list-section .sign-event-info .name, .log-list-section .log-event-info .name, .sign-list-section .sign-list .sign-day .date, .sign-list-section .sign-list .log-day .date, .sign-list-section .log-list .sign-day .date, .sign-list-section .log-list .log-day .date, .log-list-section .sign-list .sign-day .date, .log-list-section .sign-list .log-day .date, .log-list-section .log-list .sign-day .date, .log-list-section .log-list .log-day .date, .event-detail-section .event-main .title, .event-detail-section .org-main .title, .org-detail-section .event-main .title, .org-detail-section .org-main .title, .event-detail-section .org-main .org-name .name, .org-detail-section .org-main .org-name .name, .event-detail-section .event-meta .event-info .value, .event-detail-section .event-meta .org-info .value, .event-detail-section .org-meta .event-info .value, .event-detail-section .org-meta .org-info .value, .org-detail-section .event-meta .event-info .value, .org-detail-section .event-meta .org-info .value, .org-detail-section .org-meta .event-info .value, .org-detail-section .org-meta .org-info .value, .event-list .event-info .name, .event-list .org-info .name, .org-list .event-info .name, .org-list .org-info .name, .record-section .record-item .title {
@@ -756,7 +756,7 @@ hr {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.modal-footer .btn, .form-group .button, .form-group .small-button, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .table button, .table .button, .message .cta-button, .message .back-button, .dailylog-list-section .dailylog-function .sign-btn, .dailylog-list-section .dailylog-function .log-btn, .sign-list-section .sign-list .sign-day .sign-btn, .sign-list-section .log-list .sign-day .sign-btn, .log-list-section .sign-list .sign-day .sign-btn, .log-list-section .log-list .sign-day .sign-btn, .sign-list-section .sign-list .log-day .log-btn, .sign-list-section .log-list .log-day .log-btn, .log-list-section .sign-list .log-day .log-btn, .log-list-section .log-list .log-day .log-btn, .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button {
+.modal-footer .btn, .form-group .button, .form-group .small-button, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .table button, .table .button, .message .cta-button, .message .back-button, .app-download .content .download-btn a, .dailylog-list-section .dailylog-function .sign-btn, .dailylog-list-section .dailylog-function .log-btn, .sign-list-section .sign-list .sign-day .sign-btn, .sign-list-section .log-list .sign-day .sign-btn, .log-list-section .sign-list .sign-day .sign-btn, .log-list-section .log-list .sign-day .sign-btn, .sign-list-section .sign-list .log-day .log-btn, .sign-list-section .log-list .log-day .log-btn, .log-list-section .sign-list .log-day .log-btn, .log-list-section .log-list .log-day .log-btn, .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button {
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -1266,6 +1266,76 @@ section {
     display: block;
     max-width: 320px;
     margin: 8px auto 0; }
+
+.app-download {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #FFA867, #FF6767); }
+  .app-download .container {
+    max-width: 960px;
+    min-height: 100vh; }
+    @media (min-width: 46.25em) {
+      .app-download .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 72px; } }
+    .app-download .container::after {
+      display: none; }
+  .app-download .content {
+    margin: 48px 0;
+    text-align: center; }
+    @media (min-width: 46.25em) {
+      .app-download .content {
+        text-align: left; } }
+    .app-download .content .logo {
+      display: inline-block;
+      width: 147px;
+      height: 34px;
+      background: url('../images/app-logo.png') center no-repeat;
+      background-size: contain; }
+    .app-download .content .slogan {
+      font-size: 28px;
+      font-weight: 500;
+      color: white; }
+      @media (min-width: 46.25em) {
+        .app-download .content .slogan {
+          font-size: 36px; } }
+    .app-download .content .download-btn {
+      margin-top: 12px; }
+      .app-download .content .download-btn a {
+        display: inline-block;
+        padding: 8px 36px;
+        color: #FF6767;
+        background-color: #ffffff;
+        border-radius: 24px; }
+      .app-download .content .download-btn a + a {
+        margin-left: 12px; }
+  .app-download .app-screen {
+    max-width: 261px;
+    margin: 48px auto; }
+    .app-download .app-screen img {
+      display: block;
+      margin: 0; }
+    @media (min-width: 46.25em) {
+      .app-download .app-screen {
+        margin-right: 0; } }
+
+.app-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  @entend %font-size-ui-s {}  font-weight: 500;
+  color: #ffffff; }
 
 .dailylog-list-section .dailylog-list {
   margin: 0;
