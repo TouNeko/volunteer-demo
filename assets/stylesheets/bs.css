@@ -366,11 +366,11 @@ body {
     .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group input[type='text'], .form-group input[type='password'], .form-group input[type='number'], .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .option .option-item select, .option .option-item input, .map-event-meta, .member-sign .forgot-pw, .bs-detail .rating-comment .meta, .member-sign .note {
       font-size: 0.85rem; } }
 
-.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
+.modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title, section .section-info {
   font-size: 0.85rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
-    .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title {
+    .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title, section .section-info {
       font-size: 1rem; } }
 
 .bs-detail .detail-title .title-content .sub-title, .form-title {
@@ -1054,6 +1054,9 @@ section {
       section .section-title .function .form-unit + .form-unit, section .section-subtitle .function .form-unit + .form-unit {
         margin-top: 0;
         margin-left: 16px; }
+  section .section-info {
+    text-align: right;
+    color: #9a9a9a; }
 
 .table {
   margin-bottom: 24px;
