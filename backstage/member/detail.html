@@ -43,462 +43,487 @@
             <p class="sub-title">志工資料管理</p>
           </div>
         </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">基本資料</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <div class="form-unit">
-                <label class="label">志工編號</label>
-                <input type="text" value="TV201710010001">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#data" data-toggle="tab">基本資料</a></li>
+          <li><a href="#group" data-toggle="tab">所屬單位</a></li>
+          <li><a href="#skill" data-toggle="tab">技能資訊</a></li>
+          <li><a href="#record" data-toggle="tab">紀錄資料</a></li>
+          <li><a href="#comment" data-toggle="tab">志工評價</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="data">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">基本資料</h2>
               </div>
-              <div class="form-unit">
-                <label class="label">志工姓名</label>
-                <div class="input-group">
-                  <div class="data">志・人</div>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#need-pw">觀看資料</button>
-                </div>
-              </div>
-              <div class="form-unit">
-                <label class="label">身分證字號</label>
-                <div class="input-group">
-                  <div class="data">A123***678</div>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#need-pw">觀看資料</button>
-                </div>
-              </div>
-              <div class="form-unit">
-                <label class="label">志工照片</label>
-                <div class="image-group">
-                  <div class="image-uploader" style="background-image: url(&quot;http://fakeimg.pl/120x120/&quot;);">
-                    <input class="upload-hidden" id="org-logo-1" type="file">
-                    <label class="small-button" for="org-logo-1">變更照片</label>
+              <div class="main">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">志工編號</label>
+                    <input type="text" value="TV201710010001">
                   </div>
-                </div>
-              </div>
-              <div class="form-unit">
-                <label class="label">生日</label>
-                <input type="text" value="70/10/01">
-              </div>
-              <div class="form-unit">
-                <label class="label">聯絡電話</label>
-                <div class="input-group">
-                  <input type="text" value="098123456">
-                  <input type="text" value="098123456">
-                </div>
-              </div>
-              <div class="form-unit">
-                <label class="label">荐訓單位</label>
-                <input type="text" value="">
-              </div>
-              <div class="form-unit">
-                <label class="label">基訓成績</label>
-                <input type="text" value="">
-              </div>
-              <div class="form-unit">
-                <label class="label">性別</label>
-                <div class="radio-group">
-                  <div class="radio-item">
-                    <input id="radioitem1" type="radio" name="radiogroup1">
-                    <label for="radioitem1">男性</label>
+                  <div class="form-unit">
+                    <label class="label">志工姓名</label>
+                    <div class="input-group">
+                      <div class="data">志・人</div>
+                      <button class="small-button" type="button" data-toggle="modal" data-target="#need-pw">觀看資料</button>
+                    </div>
                   </div>
-                  <div class="radio-item">
-                    <input id="radioitem2" type="radio" name="radiogroup1">
-                    <label for="radioitem2">女性</label>
+                  <div class="form-unit">
+                    <label class="label">身分證字號</label>
+                    <div class="input-group">
+                      <div class="data">A123***678</div>
+                      <button class="small-button" type="button" data-toggle="modal" data-target="#need-pw">觀看資料</button>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="form-unit">
-                <label class="label">是否為原住民</label>
-                <div class="radio-group">
-                  <div class="radio-item">
-                    <input id="radioitem1" type="radio" name="radiogroup2">
-                    <label for="radioitem1">是</label>
+                  <div class="form-unit">
+                    <label class="label">志工照片</label>
+                    <div class="image-group">
+                      <div class="image-uploader" style="background-image: url(&quot;http://fakeimg.pl/120x120/&quot;);">
+                        <input class="upload-hidden" id="org-logo-1" type="file">
+                        <label class="small-button" for="org-logo-1">變更照片</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="radio-item">
-                    <input id="radioitem2" type="radio" name="radiogroup2">
-                    <label for="radioitem2">否</label>
+                  <div class="form-unit">
+                    <label class="label">生日</label>
+                    <input type="text" value="70/10/01">
                   </div>
-                </div>
-              </div>
-              <div class="form-unit">
-                <label class="label">教育程度</label>
-                <select>
-                  <option>大專</option>
-                </select>
-              </div>
-              <div class="form-unit">
-                <label class="label">首次志工服務日</label>
-                <input type="text" value="2017/10/01">
-              </div>
-              <div class="form-unit">
-                <label class="label">職業別</label>
-                <div class="radio-group">
-                  <div class="radio-item fixed-width">
-                    <input id="radioitem1" type="radio" name="radiogroup3">
-                    <label for="radioitem1">在職軍公教人員</label>
+                  <div class="form-unit">
+                    <label class="label">聯絡電話</label>
+                    <div class="input-group">
+                      <input type="text" value="098123456">
+                      <input type="text" value="098123456">
+                    </div>
                   </div>
-                  <div class="radio-item fixed-width">
-                    <input id="radioitem2" type="radio" name="radiogroup3">
-                    <label for="radioitem2">退休軍公教人員</label>
+                  <div class="form-unit">
+                    <label class="label">荐訓單位</label>
+                    <input type="text" value="">
                   </div>
-                  <div class="radio-item fixed-width">
-                    <input id="radioitem3" type="radio" name="radiogroup3">
-                    <label for="radioitem3">工商界人士</label>
+                  <div class="form-unit">
+                    <label class="label">基訓成績</label>
+                    <input type="text" value="">
                   </div>
-                  <div class="radio-item fixed-width">
-                    <input id="radioitem4" type="radio" name="radiogroup3">
-                    <label for="radioitem4">一般退休人士</label>
+                  <div class="form-unit">
+                    <label class="label">性別</label>
+                    <div class="radio-group">
+                      <div class="radio-item">
+                        <input id="radioitem1" type="radio" name="radiogroup1">
+                        <label for="radioitem1">男性</label>
+                      </div>
+                      <div class="radio-item">
+                        <input id="radioitem2" type="radio" name="radiogroup1">
+                        <label for="radioitem2">女性</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="radio-item fixed-width">
-                    <input id="radioitem5" type="radio" name="radiogroup3">
-                    <label for="radioitem5">家管</label>
+                  <div class="form-unit">
+                    <label class="label">是否為原住民</label>
+                    <div class="radio-group">
+                      <div class="radio-item">
+                        <input id="radioitem1" type="radio" name="radiogroup2">
+                        <label for="radioitem1">是</label>
+                      </div>
+                      <div class="radio-item">
+                        <input id="radioitem2" type="radio" name="radiogroup2">
+                        <label for="radioitem2">否</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="radio-item fixed-width">
-                    <input id="radioitem6" type="radio" name="radiogroup3">
-                    <label for="radioitem6">學生</label>
+                  <div class="form-unit">
+                    <label class="label">教育程度</label>
+                    <select>
+                      <option>大專</option>
+                    </select>
                   </div>
-                  <div class="radio-item fixed-width">
-                    <input id="radioitem7" type="radio" name="radiogroup3">
-                    <label for="radioitem7">其他</label>
+                  <div class="form-unit">
+                    <label class="label">首次志工服務日</label>
+                    <input type="text" value="2017/10/01">
                   </div>
-                </div>
+                  <div class="form-unit">
+                    <label class="label">職業別</label>
+                    <div class="radio-group">
+                      <div class="radio-item fixed-width">
+                        <input id="radioitem1" type="radio" name="radiogroup3">
+                        <label for="radioitem1">在職軍公教人員</label>
+                      </div>
+                      <div class="radio-item fixed-width">
+                        <input id="radioitem2" type="radio" name="radiogroup3">
+                        <label for="radioitem2">退休軍公教人員</label>
+                      </div>
+                      <div class="radio-item fixed-width">
+                        <input id="radioitem3" type="radio" name="radiogroup3">
+                        <label for="radioitem3">工商界人士</label>
+                      </div>
+                      <div class="radio-item fixed-width">
+                        <input id="radioitem4" type="radio" name="radiogroup3">
+                        <label for="radioitem4">一般退休人士</label>
+                      </div>
+                      <div class="radio-item fixed-width">
+                        <input id="radioitem5" type="radio" name="radiogroup3">
+                        <label for="radioitem5">家管</label>
+                      </div>
+                      <div class="radio-item fixed-width">
+                        <input id="radioitem6" type="radio" name="radiogroup3">
+                        <label for="radioitem6">學生</label>
+                      </div>
+                      <div class="radio-item fixed-width">
+                        <input id="radioitem7" type="radio" name="radiogroup3">
+                        <label for="radioitem7">其他</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">居住地址</label>
+                    <input type="text" value="">
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">戶籍地址</label>
+                    <input type="text" value="">
+                    <div class="check-item">
+                      <input id="same-address" type="checkbox" checked>
+                      <label for="same-address">與居住地址相同</label>
+                    </div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">其他備註</label>
+                    <input type="text" value="">
+                  </div>
+                </form>
               </div>
-              <div class="form-unit">
-                <label class="label">居住地址</label>
-                <input type="text" value="">
-              </div>
-              <div class="form-unit">
-                <label class="label">戶籍地址</label>
-                <input type="text" value="">
-                <div class="check-item">
-                  <input id="same-address" type="checkbox" checked>
-                  <label for="same-address">與居住地址相同</label>
-                </div>
-              </div>
-              <div class="form-unit">
-                <label class="label">其他備註</label>
-                <input type="text" value="">
-              </div>
-            </form>
+            </div>
           </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">記錄資料</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <div class="form-unit">
-                <label class="label">記錄冊號</label>
-                <input type="text" value="">
+          <div class="tab-pane" id="group">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">所屬運用單位</h2>
               </div>
-              <div class="form-unit">
-                <label class="label">記錄冊發放日期</label>
-                <input type="text" value="">
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>運用單位類別</th>
+                        <th>運用單位編號</th>
+                        <th>單位名稱</th>
+                      </tr>
+                      <tr>
+                        <td>綜</td>
+                        <td>A00VY111</td>
+                        <td>台東縣志願服務協會</td>
+                      </tr>
+                      <tr>
+                        <td>綜</td>
+                        <td>A00VY111</td>
+                        <td>台東縣志願服務協會</td>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="form-unit">
+                    <button class="button">管理</button>
+                  </div>
+                </form>
               </div>
-              <div class="form-unit">
-                <label class="label">記錄冊字號</label>
-                <input type="text" value="">
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">所屬志工隊</h2>
               </div>
-              <div class="form-unit">
-                <label class="label">發證記錄</label>
-                <input type="text" value="">
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>志工隊編號</th>
+                        <th>志工隊名稱</th>
+                        <th>志工職稱</th>
+                      </tr>
+                      <tr>
+                        <td>A00VY111</td>
+                        <td>台東縣志願服務協會</td>
+                        <td>職稱</td>
+                      </tr>
+                      <tr>
+                        <td>A00VY111</td>
+                        <td>台東縣志願服務協會</td>
+                        <td>職稱</td>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="form-unit">
+                    <button class="button">管理</button>
+                  </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">志工證照</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>證照名稱</th>
-                    <th>證照照片</th>
-                  </tr>
-                  <tr>
-                    <td>志工證</td>
-                    <td><a class="button" href="#">預覽</a></td>
-                  </tr>
-                  <tr>
-                    <td>救生證照</td>
-                    <td><a class="button" href="#">預覽</a></td>
-                  </tr>
-                </thead>
-              </table>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">所屬運用單位</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>運用單位類別</th>
-                    <th>運用單位編號</th>
-                    <th>單位名稱</th>
-                  </tr>
-                  <tr>
-                    <td>綜</td>
-                    <td>A00VY111</td>
-                    <td>台東縣志願服務協會</td>
-                  </tr>
-                  <tr>
-                    <td>綜</td>
-                    <td>A00VY111</td>
-                    <td>台東縣志願服務協會</td>
-                  </tr>
-                </thead>
-              </table>
-              <div class="form-unit">
-                <button class="button">管理</button>
+          <div class="tab-pane" id="skill">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">志工證照</h2>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">所屬志工隊</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>志工隊編號</th>
-                    <th>志工隊名稱</th>
-                    <th>志工職稱</th>
-                  </tr>
-                  <tr>
-                    <td>A00VY111</td>
-                    <td>台東縣志願服務協會</td>
-                    <td>職稱</td>
-                  </tr>
-                  <tr>
-                    <td>A00VY111</td>
-                    <td>台東縣志願服務協會</td>
-                    <td>職稱</td>
-                  </tr>
-                </thead>
-              </table>
-              <div class="form-unit">
-                <button class="button">管理</button>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>證照名稱</th>
+                        <th>所屬技能</th>
+                        <th>證照照片</th>
+                      </tr>
+                      <tr>
+                        <td>志工證</td>
+                        <td>-</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                      </tr>
+                      <tr>
+                        <td>救生證照</td>
+                        <td>公共安全</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">受訓資訊</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>訓練單位</th>
-                    <th>受訓時間</th>
-                    <th>課程類別</th>
-                    <th>課程名稱</th>
-                    <th>結訓成績</th>
-                    <th>結訓證書</th>
-                    <th>證書發放日期</th>
-                    <th>發證公文號</th>
-                    <th>人工補充</th>
-                  </tr>
-                  <tr>
-                    <td>台東縣志願服務協會</td>
-                    <td>2017/10/01~2017/10/30</td>
-                    <td>基礎訓練</td>
-                    <td>社福類志工訓練</td>
-                    <td>100</td>
-                    <td><a class="button" href="#">預覽</a></td>
-                    <td>2017/11/30</td>
-                    <td>府社救字第1060228253號</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>台東縣志願服務協會</td>
-                    <td>2017/10/01~2017/10/30</td>
-                    <td>基礎訓練</td>
-                    <td>社福類志工訓練</td>
-                    <td>100</td>
-                    <td><a class="button" href="#">預覽</a></td>
-                    <td>2017/11/30</td>
-                    <td>府社救字第1060228253號</td>
-                    <td></td>
-                  </tr>
-                </thead>
-              </table>
-              <div class="form-unit">
-                <button class="button">管理</button>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">受訓資訊</h2>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">志工服務紀錄</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <div class="form-unit">
-                <label class="label">累積時數</label>
-                <div class="data">78小時</div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>訓練單位</th>
+                        <th>受訓時間</th>
+                        <th>課程類別</th>
+                        <th>課程名稱</th>
+                        <th>所屬技能</th>
+                        <th>結訓成績</th>
+                        <th>結訓證書</th>
+                        <th>證書發放日期</th>
+                        <th>發證公文號</th>
+                        <th>人工補充</th>
+                      </tr>
+                      <tr>
+                        <td>台東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>基礎訓練</td>
+                        <td>社福類志工訓練</td>
+                        <td>公共安全</td>
+                        <td>100</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                        <td>2017/11/30</td>
+                        <td>府社救字第1060228253號</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>台東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>基礎訓練</td>
+                        <td>社福類志工訓練</td>
+                        <td>公共安全</td>
+                        <td>100</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                        <td>2017/11/30</td>
+                        <td>府社救字第1060228253號</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="form-unit">
+                    <button class="button">管理</button>
+                  </div>
+                </form>
               </div>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>服務召募單位</th>
-                    <th>服務時間</th>
-                    <th>需求類別</th>
-                    <th>服務名稱</th>
-                    <th>服務類別</th>
-                    <th>服務時數</th>
-                    <th>取得評價</th>
-                    <th>人工補充</th>
-                  </tr>
-                  <tr>
-                    <td>台東縣志願服務協會</td>
-                    <td>2017/10/01~2017/10/30</td>
-                    <td>短期服務</td>
-                    <td>到宅服務義工</td>
-                    <td>老人服務</td>
-                    <td>8</td>
-                    <td>*****</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>台東縣志願服務協會</td>
-                    <td>2017/10/01~2017/10/30</td>
-                    <td>短期服務</td>
-                    <td>到宅服務義工</td>
-                    <td>老人服務</td>
-                    <td>8</td>
-                    <td>*****</td>
-                    <td></td>
-                  </tr>
-                </thead>
-              </table>
-              <div class="form-unit">
-                <button class="button">管理</button>
-              </div>
-            </form>
+            </div>
           </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">得獎資訊</h2>
+          <div class="tab-pane" id="record">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">記錄資料</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">記錄冊號</label>
+                    <input type="text" value="">
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">記錄冊發放日期</label>
+                    <input type="text" value="">
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">記錄冊字號</label>
+                    <input type="text" value="">
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">發證記錄</label>
+                    <input type="text" value="">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">志工服務紀錄</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">累積時數</label>
+                    <div class="data">78小時</div>
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>服務召募單位</th>
+                        <th>服務時間</th>
+                        <th>需求類別</th>
+                        <th>服務名稱</th>
+                        <th>服務類別</th>
+                        <th>服務時數</th>
+                        <th>取得評價</th>
+                        <th>人工補充</th>
+                      </tr>
+                      <tr>
+                        <td>台東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>短期服務</td>
+                        <td>到宅服務義工</td>
+                        <td>老人服務</td>
+                        <td>8</td>
+                        <td>*****</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>台東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>短期服務</td>
+                        <td>到宅服務義工</td>
+                        <td>老人服務</td>
+                        <td>8</td>
+                        <td>*****</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="form-unit">
+                    <button class="button">管理</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">得獎資訊</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">榮譽卡條件</label>
+                    <div class="data">已符合申請志願服務榮譽卡</div>
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>受訓時間</th>
+                        <th>授獎單位</th>
+                        <th>獎項名稱</th>
+                        <th>審核狀況</th>
+                        <th>獎狀</th>
+                        <th>榮譽卡號</th>
+                        <th>有效期限</th>
+                        <th>核備文號</th>
+                        <th>榮譽卡資料</th>
+                        <th>人工補充</th>
+                      </tr>
+                      <tr>
+                        <td>2017/10/01</td>
+                        <td>台東縣政府</td>
+                        <td>志願服務貢獻獎</td>
+                        <td>已申請</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                        <td>2297317</td>
+                        <td>2018/11/30</td>
+                        <td>107.11.30府社救字第1060228253號</td>
+                        <td>換發</td>
+                        <td>是</td>
+                      </tr>
+                      <tr>
+                        <td>2017/10/01</td>
+                        <td>台東縣政府</td>
+                        <td>志願服務貢獻獎</td>
+                        <td>已申請</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                        <td>2297317</td>
+                        <td>2018/11/30</td>
+                        <td>107.11.30府社救字第1060228253號</td>
+                        <td>換發</td>
+                        <td>是</td>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="form-unit">
+                    <button class="button">管理</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">保險資訊</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>保險單位</th>
+                        <th>保險時間</th>
+                        <th>保險類別</th>
+                      </tr>
+                      <tr>
+                        <td>台東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>志工團體意外保險</td>
+                      </tr>
+                      <tr>
+                        <td>台東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>志工團體意外保險</td>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="form-unit">
+                    <button class="button">管理</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="main">
-            <form class="form-group">
-              <div class="form-unit">
-                <label class="label">榮譽卡條件</label>
-                <div class="data">已符合申請志願服務榮譽卡</div>
+          <div class="tab-pane" id="comment">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">志工評價</h2>
               </div>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>受訓時間</th>
-                    <th>授獎單位</th>
-                    <th>獎項名稱</th>
-                    <th>審核狀況</th>
-                    <th>獎狀</th>
-                    <th>榮譽卡號</th>
-                    <th>有效期限</th>
-                    <th>核備文號</th>
-                    <th>榮譽卡資料</th>
-                    <th>人工補充</th>
-                  </tr>
-                  <tr>
-                    <td>2017/10/01</td>
-                    <td>台東縣政府</td>
-                    <td>志願服務貢獻獎</td>
-                    <td>已申請</td>
-                    <td><a class="button" href="#">預覽</a></td>
-                    <td>2297317</td>
-                    <td>2018/11/30</td>
-                    <td>107.11.30府社救字第1060228253號</td>
-                    <td>換發</td>
-                    <td>是</td>
-                  </tr>
-                  <tr>
-                    <td>2017/10/01</td>
-                    <td>台東縣政府</td>
-                    <td>志願服務貢獻獎</td>
-                    <td>已申請</td>
-                    <td><a class="button" href="#">預覽</a></td>
-                    <td>2297317</td>
-                    <td>2018/11/30</td>
-                    <td>107.11.30府社救字第1060228253號</td>
-                    <td>換發</td>
-                    <td>是</td>
-                  </tr>
-                </thead>
-              </table>
-              <div class="form-unit">
-                <button class="button">管理</button>
+              <div class="main">
+                <form class="form-group">
+                  <div class="rating-comment">
+                    <div class="meta">台東縣志願服務協會 - 志工人 - 2017/10/01 *****</div>
+                    <p class="content">謝謝你們讓我們學習更多事情！</p>
+                  </div>
+                  <div class="rating-comment">
+                    <div class="meta">台東縣志願服務協會 - 志工人 - 2017/10/01 *****</div>
+                    <p class="content">謝謝你們讓我們學習更多事情！</p>
+                  </div>
+                  <div class="form-unit">
+                    <button class="button">管理</button>
+                  </div>
+                </form>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">保險資訊</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>保險單位</th>
-                    <th>保險時間</th>
-                    <th>保險類別</th>
-                  </tr>
-                  <tr>
-                    <td>台東縣志願服務協會</td>
-                    <td>2017/10/01~2017/10/30</td>
-                    <td>志工團體意外保險</td>
-                  </tr>
-                  <tr>
-                    <td>台東縣志願服務協會</td>
-                    <td>2017/10/01~2017/10/30</td>
-                    <td>志工團體意外保險</td>
-                  </tr>
-                </thead>
-              </table>
-              <div class="form-unit">
-                <button class="button">管理</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">志工評價</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <div class="rating-comment">
-                <div class="meta">台東縣志願服務協會 - 志工人 - 2017/10/01 *****</div>
-                <p class="content">謝謝你們讓我們學習更多事情！</p>
-              </div>
-              <div class="rating-comment">
-                <div class="meta">台東縣志願服務協會 - 志工人 - 2017/10/01 *****</div>
-                <p class="content">謝謝你們讓我們學習更多事情！</p>
-              </div>
-              <div class="form-unit">
-                <button class="button">管理</button>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
         <div class="form-section">
