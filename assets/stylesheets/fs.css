@@ -1001,6 +1001,9 @@ input[type='checkbox']:disabled {
     .pagination a:hover {
       color: #ffffff;
       background-color: #707070; }
+    .pagination a.active {
+      color: #ffffff;
+      background-color: #FF6767; }
     @media (min-width: 46.25em) {
       .pagination a {
         padding: 4px 12px; } }
