@@ -26,28 +26,22 @@
   <body>
     <section>
       <div class="container personal-data">
-        <div class="section-title">
-          <h1 class="title">會員資料</h1>
-        </div>
         <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">基本資料</h2>
-          </div>
           <div class="main">
-            <form class="form-group">
-              <div class="form-unit">
-                <label class="label">會員 ID</label>
-                <div class="data">Volunteer_0001</div>
-              </div>
+            <form class="form-group no-border">
               <div class="form-unit">
                 <label class="label">Email</label>
-                <div class="data">Volunteer@taitung.com.tw</div>
+                <div class="data">Volunteer@taitung.com.tw</div><a class="small-button" href="../../frontstage/member/change-mail.html">編輯 Email</a>
               </div>
               <div class="form-unit">
                 <label class="label">密碼</label>
                 <div class="input-group">
-                  <div class="data password">・・・・・・・・</div><a class="small-button" href="../../frontstage/member/change-pw.html">變更密碼</a>
+                  <div class="data password">・・・・・・・・</div><a class="small-button" href="../../frontstage/member/change-pw.html">變更密碼</a><span class="note">若您是使用 Facebook 登入，我們建議您設定一組密碼，在 Facebook 服務無法使用時，可以使用帳號密碼登入服務。</span>
                 </div>
+              </div>
+              <div class="form-unit">
+                <label class="label">志工編號</label>
+                <div class="data">TTV10024531</div>
               </div>
               <div class="form-unit">
                 <label class="label">姓名</label>
@@ -58,8 +52,42 @@
                 <input type="text" value="A123***654">
               </div>
               <div class="form-unit">
-                <label class="label">呈現名稱</label>
-                <input type="text" value="志工人">
+                <label class="label">生日</label>
+                <input type="text" value="1992/01/01">
+              </div>
+              <div class="form-unit">
+                <label class="label">聯絡電話一</label>
+                <input type="text" value="0912345678">
+              </div>
+              <div class="form-unit">
+                <label class="label">聯絡電話二</label>
+                <input type="text" value="089-123456">
+              </div>
+              <div class="form-unit">
+                <label class="label">性別</label>
+                <div class="check-group">
+                  <div class="check-item">
+                    <input id="male" type="radio" name="gender">
+                    <label for="male">男</label>
+                  </div>
+                  <div class="check-item">
+                    <input id="female" type="radio" name="gender">
+                    <label for="female">女</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-unit">
+                <label class="label">是否為原住民</label>
+                <div class="check-group">
+                  <div class="check-item">
+                    <input id="no" type="radio" name="aborigines">
+                    <label for="no">否</label>
+                  </div>
+                  <div class="check-item">
+                    <input id="yes" type="radio" name="aborigines">
+                    <label for="yes">是</label>
+                  </div>
+                </div>
               </div>
               <div class="form-unit">
                 <label class="label">居住地址</label>
@@ -74,82 +102,8 @@
                 </div>
               </div>
               <div class="form-unit">
-                <label class="label">聯絡電話</label>
-                <div class="input-group">
-                  <input type="text" value="089123456">
-                  <input type="text" value="098123456">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">緊急聯絡人（一）</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <div class="form-unit">
-                <label class="label">姓名</label>
-                <input type="text" value="志工人">
-              </div>
-              <div class="form-unit">
-                <label class="label">關係</label>
-                <input type="text" value="父子">
-              </div>
-              <div class="form-unit">
-                <label class="label">聯絡電話</label>
-                <input type="text" value="089123456">
-              </div>
-              <div class="form-unit"><a class="small-button" href="#">新增緊急聯絡人</a></div>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside"></div>
-          <div class="main">
-            <div class="button-group">
-              <button class="cta-button">儲存上列變更</button>
-            </div>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">技能</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <div class="form-unit">
-                <label class="label">技能項目</label>
-                <div class="data-group">
-                  <div class="data check checked">救生員執照</div>
-                </div>
-              </div>
-              <div class="form-unit">
-                <label class="label">技能項目 - 認證中</label>
-                <div class="data-group">
-                  <div class="data check">CPR 執照</div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-section">
-          <div class="aside">
-            <h2 class="form-title">所屬單位</h2>
-          </div>
-          <div class="main">
-            <form class="form-group">
-              <div class="form-unit">
-                <div class="data-group">
-                  <div class="org-logo" style="background-image: url(&quot;http://fakeimg.pl/120x120/&quot;);"></div>
-                  <div class="data">台東青年志工中心</div><a class="small-button" href="#">管理介面</a>
-                </div>
-              </div>
-              <div class="form-unit">
-                <div class="data-group">
-                  <div class="org-logo" style="background-image: url(&quot;http://fakeimg.pl/120x120/&quot;);"></div>
-                  <div class="data">台東青年志工中心</div>
+                <div class="button-group">
+                  <button class="cta-button">儲存</button>
                 </div>
               </div>
             </form>

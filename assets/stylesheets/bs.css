@@ -804,6 +804,8 @@ hr {
         padding-left: 24px;
         border-top: 0;
         border-left: 3px solid #c7c7c7; } }
+    .form-section .form-group.no-border {
+      border-top: 0; }
 
 .form-title {
   margin: 0 12px 0 0;

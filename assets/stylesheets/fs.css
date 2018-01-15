@@ -363,7 +363,7 @@ body {
 .event-apply-info .event-people-need .label,
 .event-apply-info .event-people-need .unit,
 .event-apply-info .event-apply-presentage .label,
-.event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .event-type, .event-list .org-info .event-type, .org-list .event-info .event-type, .org-list .org-info .event-type, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
+.event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .personal-data .note, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .event-type, .event-list .org-info .event-type, .org-list .event-info .event-type, .org-list .org-info .event-type, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
   font-size: 0.75rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
@@ -371,7 +371,7 @@ body {
     .event-apply-info .event-people-need .label,
     .event-apply-info .event-people-need .unit,
     .event-apply-info .event-apply-presentage .label,
-    .event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .event-type, .event-list .org-info .event-type, .org-list .event-info .event-type, .org-list .org-info .event-type, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
+    .event-apply-info .event-apply-presentage .unit, .hero .slider-name span, .member-sign .forgot-pw, .personal-data .note, .record-section .record-meta .label, .footer .copyright, .dailylog-list-section .dailylog-info .meta, .sign-list-section .sign-event-info .meta, .sign-list-section .log-event-info .meta, .log-list-section .sign-event-info .meta, .log-list-section .log-event-info .meta, .event-list .event-info .event-type, .event-list .org-info .event-type, .org-list .event-info .event-type, .org-list .org-info .event-type, .event-list .event-info .org, .event-list .org-info .org, .org-list .event-info .org, .org-list .org-info .org, .event-list .event-info .tag-item a, .event-list .org-info .tag-item a, .org-list .event-info .tag-item a, .org-list .org-info .tag-item a, .event-list .event-info .readmore, .event-list .org-info .readmore, .org-list .event-info .readmore, .org-list .org-info .readmore, .member-sign .note {
       font-size: 0.85rem; } }
 
 .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .message .cta-button, .message .back-button, .event-detail-section .event-meta .cta-button, .event-detail-section .org-meta .cta-button, .org-detail-section .event-meta .cta-button, .org-detail-section .org-meta .cta-button, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .app-download .content .download-btn a, body, section .section-subtitle .title, section .section-info {
@@ -816,6 +816,8 @@ hr {
         padding-left: 24px;
         border-top: 0;
         border-left: 3px solid #c7c7c7; } }
+    .form-section .form-group.no-border {
+      border-top: 0; }
 
 .form-title {
   margin: 0 12px 0 0;
@@ -1894,6 +1896,20 @@ section {
   background-position: center;
   background-size: cover;
   border-radius: 4px; }
+
+.personal-data .small-button {
+  display: block;
+  max-width: 96px;
+  border-radius: 20px; }
+
+.personal-data .cta-button {
+  display: block;
+  width: 100%; }
+
+.personal-data .note {
+  display: inline-block;
+  line-height: 1.4;
+  color: #9a9a9a; }
 
 .record-section .record-list {
   margin: 0;
