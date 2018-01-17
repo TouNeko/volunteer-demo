@@ -44,121 +44,280 @@
             </form>
           </div>
         </div>
-        <div class="option">
-          <div class="option-item">
-            <div class="select-group">
-              <label>召募狀態</label>
-              <select>
-                <option>召募中</option>
-              </select>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#event-list" data-toggle="tab">活動列表</a></li>
+          <li><a href="#ttcoin" data-toggle="tab">台東金幣</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="event-list">
+            <div class="option">
+              <div class="option-item">
+                <div class="select-group">
+                  <label>召募狀態</label>
+                  <select>
+                    <option>召募中</option>
+                  </select>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="select-group">
+                  <label>活動狀態</label>
+                  <select>
+                    <option>活動中</option>
+                    <option>未開始</option>
+                    <option>活動結束</option>
+                    <option>草稿</option>
+                  </select>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="select-group">
+                  <label>運用單位</label>
+                  <select>
+                    <option>台東青年活動中心</option>
+                  </select>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="input-group">
+                  <label>服務名稱</label>
+                  <input type="text" placeholder="輸入服務名稱">
+                </div>
+              </div>
+              <div class="option-item">
+                <button class="inquire">查詢</button>
+              </div>
             </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>運用單位</th>
+                  <th>召募狀態</th>
+                  <th>召募時間</th>
+                  <th>活動時間</th>
+                  <th>活動名稱</th>
+                  <th>需求人數</th>
+                  <th>活動狀態</th>
+                  <th class="center">管理</th>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>20</td>
+                  <td>已發佈</td>
+                  <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>20</td>
+                  <td>已發佈</td>
+                  <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>20</td>
+                  <td>已發佈</td>
+                  <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>20</td>
+                  <td>已發佈</td>
+                  <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>20</td>
+                  <td>已發佈</td>
+                  <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
+                </tr>
+              </thead>
+            </table>
+            <div class="section-info"><span>1-10筆 / 500筆</span></div>
+            <ul class="pagination">
+              <li><a class="prev" href="#">上一頁</a></li>
+              <li><a class="page" href="#">1</a></li>
+              <li>...</li>
+              <li><a class="page" href="#">5</a></li>
+              <li><a class="page active" href="#">6</a></li>
+              <li><a class="page" href="#">7</a></li>
+              <li>...</li>
+              <li><a class="page" href="#">11</a></li>
+              <li><a class="next" href="#">下一頁</a></li>
+            </ul>
           </div>
-          <div class="option-item">
-            <div class="select-group">
-              <label>活動狀態</label>
-              <select>
-                <option>活動中</option>
-                <option>未開始</option>
-                <option>活動結束</option>
-                <option>草稿</option>
-              </select>
+          <div class="tab-pane active" id="ttcoin">
+            <div class="option">
+              <div class="option-item">
+                <div class="select-group">
+                  <label>召募狀態</label>
+                  <select>
+                    <option>召募中</option>
+                  </select>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="select-group">
+                  <label>活動狀態</label>
+                  <select>
+                    <option>活動中</option>
+                    <option>未開始</option>
+                    <option>活動結束</option>
+                    <option>草稿</option>
+                  </select>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="select-group">
+                  <label>運用單位</label>
+                  <select>
+                    <option>台東青年活動中心</option>
+                  </select>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="input-group">
+                  <label>服務名稱</label>
+                  <input type="text" placeholder="輸入服務名稱">
+                </div>
+              </div>
+              <div class="option-item">
+                <button class="inquire">查詢</button>
+              </div>
             </div>
-          </div>
-          <div class="option-item">
-            <div class="select-group">
-              <label>運用單位</label>
-              <select>
-                <option>台東青年活動中心</option>
-              </select>
-            </div>
-          </div>
-          <div class="option-item">
-            <div class="input-group">
-              <label>服務名稱</label>
-              <input type="text" placeholder="輸入服務名稱">
-            </div>
-          </div>
-          <div class="option-item">
-            <button class="inquire">查詢</button>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>運用單位</th>
+                  <th>召募狀態</th>
+                  <th>召募時間</th>
+                  <th>活動時間</th>
+                  <th>活動名稱</th>
+                  <th>活動狀態</th>
+                  <th>金幣兌換設定</th>
+                  <th class="center">管理</th>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>已發佈</td>
+                  <td>5小時 / 10金幣</td>
+                  <td class="center">
+                    <button class="button" type="button" data-toggle="modal" data-target="#set-coin">設定金幣</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>已發佈</td>
+                  <td>5小時 / 10金幣</td>
+                  <td class="center">
+                    <button class="button" type="button" data-toggle="modal" data-target="#set-coin">設定金幣</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>已發佈</td>
+                  <td>5小時 / 10金幣</td>
+                  <td class="center">
+                    <button class="button" type="button" data-toggle="modal" data-target="#set-coin">設定金幣</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>已發佈</td>
+                  <td>5小時 / 10金幣</td>
+                  <td class="center">
+                    <button class="button" type="button" data-toggle="modal" data-target="#set-coin">設定金幣</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>台東青年活動中心</td>
+                  <td>招募中</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>2017/10/30~2017/11/30</td>
+                  <td>活動名稱活動名稱</td>
+                  <td>已發佈</td>
+                  <td>5小時 / 10金幣</td>
+                  <td class="center">
+                    <button class="button" type="button" data-toggle="modal" data-target="#set-coin">設定金幣</button>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+            <div class="section-info"><span>1-10筆 / 500筆</span></div>
+            <ul class="pagination">
+              <li><a class="prev" href="#">上一頁</a></li>
+              <li><a class="page" href="#">1</a></li>
+              <li>...</li>
+              <li><a class="page" href="#">5</a></li>
+              <li><a class="page active" href="#">6</a></li>
+              <li><a class="page" href="#">7</a></li>
+              <li>...</li>
+              <li><a class="page" href="#">11</a></li>
+              <li><a class="next" href="#">下一頁</a></li>
+            </ul>
           </div>
         </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>運用單位</th>
-              <th>召募狀態</th>
-              <th>召募時間</th>
-              <th>活動時間</th>
-              <th>活動名稱</th>
-              <th>需求人數</th>
-              <th>活動狀態</th>
-              <th class="center">管理</th>
-            </tr>
-            <tr>
-              <td>台東青年活動中心</td>
-              <td>招募中</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>活動名稱活動名稱</td>
-              <td>20</td>
-              <td>已發佈</td>
-              <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
-            </tr>
-            <tr>
-              <td>台東青年活動中心</td>
-              <td>招募中</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>活動名稱活動名稱</td>
-              <td>20</td>
-              <td>已發佈</td>
-              <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
-            </tr>
-            <tr>
-              <td>台東青年活動中心</td>
-              <td>招募中</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>活動名稱活動名稱</td>
-              <td>20</td>
-              <td>已發佈</td>
-              <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
-            </tr>
-            <tr>
-              <td>台東青年活動中心</td>
-              <td>招募中</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>活動名稱活動名稱</td>
-              <td>20</td>
-              <td>已發佈</td>
-              <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
-            </tr>
-            <tr>
-              <td>台東青年活動中心</td>
-              <td>招募中</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>2017/10/30~2017/11/30</td>
-              <td>活動名稱活動名稱</td>
-              <td>20</td>
-              <td>已發佈</td>
-              <td class="center"><a class="button" href="../../backstage/event/detail.html">活動管理</a><br><a class="button" href="../../backstage/event/people.html">報名資料</a><br><a class="button" href="../../backstage/event/match.html">志工媒合</a><br><a class="button" href="../../backstage/event/record.html">志工日誌</a></td>
-            </tr>
-          </thead>
-        </table>
-        <div class="section-info"><span>1-10筆 / 500筆</span></div>
-        <ul class="pagination">
-          <li><a class="prev" href="#">上一頁</a></li>
-          <li><a class="page" href="#">1</a></li>
-          <li>...</li>
-          <li><a class="page" href="#">5</a></li>
-          <li><a class="page active" href="#">6</a></li>
-          <li><a class="page" href="#">7</a></li>
-          <li>...</li>
-          <li><a class="page" href="#">11</a></li>
-          <li><a class="next" href="#">下一頁</a></li>
-        </ul>
       </div>
-    </section><script src="../../assets/javascripts/global.js"></script>
+    </section>
+    <div class="modal fade" id="set-coin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">請輸入金幣兌換資料</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-group">
+              <div class="form-unit">
+                <label class="label">小時數</label>
+                <input type="text" placeholder="請輸入小時數">
+              </div>
+              <div class="form-unit">
+                <label class="label">兌換金幣數量</label>
+                <input type="text" placeholder="請輸入兌換金幣數量">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn secondary" type="button" data-dismiss="modal">取消</button>
+            <button class="btn primary" type="button">送出</button>
+          </div>
+        </div>
+      </div>
+    </div><script src="../../assets/javascripts/global.js"></script>
   </body>
 </html>
