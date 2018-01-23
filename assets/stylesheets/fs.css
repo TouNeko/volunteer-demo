@@ -915,7 +915,8 @@ hr {
 
 .form-group .check-group .check-item {
   display: inline-block;
-  margin-right: 16px; }
+  margin-right: 16px;
+  vertical-align: top; }
   .form-group .check-group .check-item input[type='checkbox'] {
     margin-right: 4px; }
   .form-group .check-group .check-item.fixed-width {
@@ -924,7 +925,8 @@ hr {
 
 .form-group .radio-group .radio-item {
   display: inline-block;
-  margin-right: 16px; }
+  margin-right: 16px;
+  vertical-align: top; }
   .form-group .radio-group .radio-item input[type='radio'] {
     margin-right: 4px; }
   .form-group .radio-group .radio-item.fixed-width {

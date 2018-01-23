@@ -48,6 +48,7 @@
           <li><a href="#group" data-toggle="tab">所屬單位</a></li>
           <li><a href="#skill" data-toggle="tab">技能資訊</a></li>
           <li><a href="#record" data-toggle="tab">紀錄資料</a></li>
+          <li><a href="#insurance" data-toggle="tab">保險資訊</a></li>
           <li><a href="#comment" data-toggle="tab">志工評價</a></li>
         </ul>
         <div class="tab-content">
@@ -272,11 +273,6 @@
                         <th>證照照片</th>
                       </tr>
                       <tr>
-                        <td>志工證</td>
-                        <td>-</td>
-                        <td><a class="button" href="#">預覽</a></td>
-                      </tr>
-                      <tr>
                         <td>救生證照</td>
                         <td>公共安全</td>
                         <td><a class="button" href="#">預覽</a></td>
@@ -315,7 +311,7 @@
                         <td>100</td>
                         <td><a class="button" href="#">預覽</a></td>
                         <td>2017/11/30</td>
-                        <td>府社救字第1060228253號</td>
+                        <td>府社教字第1060228253號</td>
                         <td></td>
                       </tr>
                       <tr>
@@ -327,7 +323,7 @@
                         <td>100</td>
                         <td><a class="button" href="#">預覽</a></td>
                         <td>2017/11/30</td>
-                        <td>府社救字第1060228253號</td>
+                        <td>府社教字第1060228253號</td>
                         <td></td>
                       </tr>
                     </thead>
@@ -342,25 +338,87 @@
           <div class="tab-pane" id="record">
             <div class="form-section">
               <div class="aside">
-                <h2 class="form-title">記錄資料</h2>
+                <h2 class="form-title">志願服務紀錄冊</h2>
               </div>
               <div class="main">
                 <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>紀錄冊號</th>
+                        <th>發證單位</th>
+                        <th>發證日期</th>
+                        <th>備查文號</th>
+                        <th>狀態</th>
+                        <th>管理</th>
+                      </tr>
+                      <tr>
+                        <td>粽字第053875號</td>
+                        <td>台東縣政府社會處</td>
+                        <td>2017/11/30</td>
+                        <td>府社教字第1060228253號</td>
+                        <td>核發</td>
+                        <td>
+                          <button class="button">刪除</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>粽字第053875號</td>
+                        <td>台東縣政府社會處</td>
+                        <td>2017/11/30</td>
+                        <td>府社教字第1060228253號</td>
+                        <td>核發</td>
+                        <td>
+                          <button class="button">刪除</button>
+                        </td>
+                      </tr>
+                    </thead>
+                  </table>
                   <div class="form-unit">
-                    <label class="label">記錄冊號</label>
-                    <input type="text" value="">
+                    <button class="button" type="button" data-toggle="modal" data-target="#add-service-booklet">新增</button>
                   </div>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">榮譽卡紀錄</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>榮譽卡號</th>
+                        <th>核發單位</th>
+                        <th>有效日期</th>
+                        <th>核發日期</th>
+                        <th>備查文號</th>
+                        <th>狀態</th>
+                        <th>榮譽卡預覽</th>
+                      </tr>
+                      <tr>
+                        <td>00000001</td>
+                        <td>台東縣政府</td>
+                        <td>2018/12/31</td>
+                        <td>2017/12/31</td>
+                        <td>府社教字第1050141375號</td>
+                        <td>核發</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                      </tr>
+                      <tr>
+                        <td>00000001</td>
+                        <td>台東縣政府</td>
+                        <td>2018/12/31</td>
+                        <td>2017/12/31</td>
+                        <td>府社教字第1050141375號</td>
+                        <td>核發</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                      </tr>
+                    </thead>
+                  </table>
                   <div class="form-unit">
-                    <label class="label">記錄冊發放日期</label>
-                    <input type="text" value="">
-                  </div>
-                  <div class="form-unit">
-                    <label class="label">記錄冊字號</label>
-                    <input type="text" value="">
-                  </div>
-                  <div class="form-unit">
-                    <label class="label">發證記錄</label>
-                    <input type="text" value="">
+                    <button class="button">新增</button>
                   </div>
                 </form>
               </div>
@@ -415,62 +473,8 @@
                 </form>
               </div>
             </div>
-            <div class="form-section">
-              <div class="aside">
-                <h2 class="form-title">得獎資訊</h2>
-              </div>
-              <div class="main">
-                <form class="form-group">
-                  <div class="form-unit">
-                    <label class="label">榮譽卡條件</label>
-                    <div class="data">已符合申請志願服務榮譽卡</div>
-                  </div>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>受訓時間</th>
-                        <th>授獎單位</th>
-                        <th>獎項名稱</th>
-                        <th>審核狀況</th>
-                        <th>獎狀</th>
-                        <th>榮譽卡號</th>
-                        <th>有效期限</th>
-                        <th>核備文號</th>
-                        <th>榮譽卡資料</th>
-                        <th>人工補充</th>
-                      </tr>
-                      <tr>
-                        <td>2017/10/01</td>
-                        <td>台東縣政府</td>
-                        <td>志願服務貢獻獎</td>
-                        <td>已申請</td>
-                        <td><a class="button" href="#">預覽</a></td>
-                        <td>2297317</td>
-                        <td>2018/11/30</td>
-                        <td>107.11.30府社救字第1060228253號</td>
-                        <td>換發</td>
-                        <td>是</td>
-                      </tr>
-                      <tr>
-                        <td>2017/10/01</td>
-                        <td>台東縣政府</td>
-                        <td>志願服務貢獻獎</td>
-                        <td>已申請</td>
-                        <td><a class="button" href="#">預覽</a></td>
-                        <td>2297317</td>
-                        <td>2018/11/30</td>
-                        <td>107.11.30府社救字第1060228253號</td>
-                        <td>換發</td>
-                        <td>是</td>
-                      </tr>
-                    </thead>
-                  </table>
-                  <div class="form-unit">
-                    <button class="button">管理</button>
-                  </div>
-                </form>
-              </div>
-            </div>
+          </div>
+          <div class="tab-pane" id="insurance">
             <div class="form-section">
               <div class="aside">
                 <h2 class="form-title">保險資訊</h2>
@@ -496,9 +500,6 @@
                       </tr>
                     </thead>
                   </table>
-                  <div class="form-unit">
-                    <button class="button">管理</button>
-                  </div>
                 </form>
               </div>
             </div>
@@ -517,9 +518,6 @@
                   <div class="rating-comment">
                     <div class="meta">台東縣志願服務協會 - 志工人 - 2017/10/01 *****</div>
                     <p class="content">謝謝你們讓我們學習更多事情！</p>
-                  </div>
-                  <div class="form-unit">
-                    <button class="button">管理</button>
                   </div>
                 </form>
               </div>
@@ -553,6 +551,51 @@
           <div class="modal-footer">
             <button class="btn secondary" type="button" data-dismiss="modal">取消</button>
             <button class="btn primary" type="button">送出</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add-service-booklet">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">新增志願服務紀錄冊</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-group">
+              <div class="form-unit">
+                <label class="label">紀錄冊字號</label>
+                <select>
+                  <option>粽</option>
+                  <option>內</option>
+                  <option>民</option>
+                </select>
+              </div>
+              <div class="form-unit">
+                <label class="label">發證單位</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">發證日期</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">備查文號</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">狀態</label>
+                <select>
+                  <option>核發</option>
+                  <option>換發</option>
+                  <option>補發</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn primary" type="button">儲存</button>
+            <button class="btn secondary" type="button" data-dismiss="modal">取消</button>
           </div>
         </div>
       </div>
