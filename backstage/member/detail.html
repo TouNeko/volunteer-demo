@@ -395,7 +395,7 @@
                         <th>核發日期</th>
                         <th>備查文號</th>
                         <th>狀態</th>
-                        <th>榮譽卡預覽</th>
+                        <th>管理</th>
                       </tr>
                       <tr>
                         <td>00000001</td>
@@ -404,7 +404,9 @@
                         <td>2017/12/31</td>
                         <td>府社教字第1050141375號</td>
                         <td>核發</td>
-                        <td><a class="button" href="#">預覽</a></td>
+                        <td>
+                          <button class="button">刪除</button>
+                        </td>
                       </tr>
                       <tr>
                         <td>00000001</td>
@@ -413,12 +415,14 @@
                         <td>2017/12/31</td>
                         <td>府社教字第1050141375號</td>
                         <td>核發</td>
-                        <td><a class="button" href="#">預覽</a></td>
+                        <td>
+                          <button class="button">刪除</button>
+                        </td>
                       </tr>
                     </thead>
                   </table>
                   <div class="form-unit">
-                    <button class="button">新增</button>
+                    <button class="button" type="button" data-toggle="modal" data-target="#add-honor-record">新增</button>
                   </div>
                 </form>
               </div>
@@ -577,6 +581,51 @@
               </div>
               <div class="form-unit">
                 <label class="label">發證日期</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">備查文號</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">狀態</label>
+                <select>
+                  <option>核發</option>
+                  <option>換發</option>
+                  <option>補發</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn primary" type="button">儲存</button>
+            <button class="btn secondary" type="button" data-dismiss="modal">取消</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add-honor-record">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">新增榮譽卡紀錄</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-group">
+              <div class="form-unit">
+                <label class="label">榮譽卡號</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">核發單位</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">有效日期</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">核發日期</label>
                 <input type="text" placeholder="">
               </div>
               <div class="form-unit">
