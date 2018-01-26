@@ -373,6 +373,13 @@ body {
     .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title, section .section-info {
       font-size: 1rem; } }
 
+.c-empty::after {
+  font-size: 1rem;
+  line-height: 1.5; }
+  @media (min-width: 46.25em) {
+    .c-empty::after {
+      font-size: 1.25rem; } }
+
 .bs-detail .detail-title .title-content .sub-title, .form-title {
   font-size: 1.25rem;
   line-height: 1.5; }
@@ -399,6 +406,13 @@ section .section-title .title {
   @media (min-width: 46.25em) {
     .container {
       padding: 0 24px; } }
+
+.c-empty::after {
+  content: '尚無資料';
+  display: block;
+  margin: 24px auto;
+  text-align: center;
+  color: #9a9a9a; }
 
 *, *:before, *:after {
   box-sizing: border-box; }

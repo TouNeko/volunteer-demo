@@ -381,6 +381,13 @@ body {
     .modal-footer .btn, .button-group button, section .section-title .more-button, section .section-subtitle .more-button, .message .cta-button, .message .back-button, .event-detail-section .event-meta .cta-button span, .event-detail-section .org-meta .cta-button span, .org-detail-section .event-meta .cta-button span, .org-detail-section .org-meta .cta-button span, .event-detail-section .event-meta .cancel-button, .event-detail-section .org-meta .cancel-button, .org-detail-section .event-meta .cancel-button, .org-detail-section .org-meta .cancel-button, .member-sign .cta-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .app-download .content .download-btn a, body, section .section-subtitle .title, section .section-info {
       font-size: 1rem; } }
 
+.c-empty::after {
+  font-size: 1rem;
+  line-height: 1.5; }
+  @media (min-width: 46.25em) {
+    .c-empty::after {
+      font-size: 1.25rem; } }
+
 .form-title, .dailylog-list-section .dailylog-info .name, .sign-list-section .sign-event-info .name, .sign-list-section .log-event-info .name, .log-list-section .sign-event-info .name, .log-list-section .log-event-info .name, .sign-list-section .sign-list .sign-day .date, .sign-list-section .sign-list .log-day .date, .sign-list-section .log-list .sign-day .date, .sign-list-section .log-list .log-day .date, .log-list-section .sign-list .sign-day .date, .log-list-section .sign-list .log-day .date, .log-list-section .log-list .sign-day .date, .log-list-section .log-list .log-day .date, .event-detail-section .event-main .title, .event-detail-section .org-main .title, .org-detail-section .event-main .title, .org-detail-section .org-main .title, .event-detail-section .org-main .org-name .name, .org-detail-section .org-main .org-name .name, .event-detail-section .event-meta .event-info .value, .event-detail-section .event-meta .org-info .value, .event-detail-section .org-meta .event-info .value, .event-detail-section .org-meta .org-info .value, .org-detail-section .event-meta .event-info .value, .org-detail-section .event-meta .org-info .value, .org-detail-section .org-meta .event-info .value, .org-detail-section .org-meta .org-info .value, .event-list .event-info .name, .event-list .org-info .name, .org-list .event-info .name, .org-list .org-info .name, .record-section .record-item .title {
   font-size: 1.25rem;
   line-height: 1.5; }
@@ -411,6 +418,13 @@ body {
   @media (min-width: 46.25em) {
     .container {
       padding: 0 24px; } }
+
+.c-empty::after {
+  content: '尚無資料';
+  display: block;
+  margin: 24px auto;
+  text-align: center;
+  color: #9a9a9a; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
