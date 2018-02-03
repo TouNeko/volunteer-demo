@@ -300,6 +300,7 @@
               </div>
               <div class="main">
                 <form class="form-group">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-training-info">新增</button>
                   <table class="table">
                     <thead>
                       <tr>
@@ -314,6 +315,7 @@
                         <th>證書發放日期</th>
                         <th>發證公文號</th>
                         <th>人工</th>
+                        <th>編輯</th>
                       </tr>
                       <tr>
                         <td>臺東縣志願服務協會</td>
@@ -327,6 +329,9 @@
                         <td>2017/11/30</td>
                         <td>府社教字第1060228253號</td>
                         <td></td>
+                        <td>
+                          <button class="small-button" type="button" data-toggle="modal" data-target="#add-training-info">編輯</button>
+                        </td>
                       </tr>
                       <tr>
                         <td>臺東縣志願服務協會</td>
@@ -340,6 +345,9 @@
                         <td>2017/11/30</td>
                         <td>府社教字第1060228253號</td>
                         <td></td>
+                        <td>
+                          <button class="small-button" type="button" data-toggle="modal" data-target="#add-training-info">編輯</button>
+                        </td>
                       </tr>
                     </thead>
                   </table>
@@ -705,6 +713,70 @@
                     <label class="small-button" for="org-logo-1">上傳照片</label>
                   </div>
                 </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn primary" type="button">儲存</button>
+            <button class="btn secondary" type="button" data-dismiss="modal">取消</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add-training-info">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">新增受訓資訊</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-group">
+              <div class="form-unit">
+                <label class="label">訓練單位</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">受訓時間</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">課程類別</label>
+                <select>
+                  <option>課程類別內容</option>
+                </select>
+              </div>
+              <div class="form-unit">
+                <label class="label">課程編號</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">課程名稱</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">時數</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">所屬技能</label>
+                <select>
+                  <option>所屬技能內容</option>
+                </select>
+              </div>
+              <div class="form-unit">
+                <label class="label">合格</label>
+                <select>
+                  <option>Y</option>
+                  <option>N</option>
+                </select>
+              </div>
+              <div class="form-unit">
+                <label class="label">證書發放日期</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-unit">
+                <label class="label">發證公文號</label>
+                <input type="text" placeholder="">
               </div>
             </form>
           </div>
