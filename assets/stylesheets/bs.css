@@ -359,11 +359,11 @@ body {
   font-weight: 400;
   font-style: normal; }
 
-.form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group input[type='text'], .form-group input[type='password'], .form-group input[type='number'], .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .option .option-item select, .option .option-item input, .map-event-meta, .member-sign .forgot-pw, .bs-detail .rating-comment .meta, .member-sign .note {
+.form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .select-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group input[type='text'], .form-group input[type='password'], .form-group input[type='number'], .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .option .option-item select, .option .option-item input, .map-event-meta, .member-sign .forgot-pw, .bs-detail .rating-comment .meta, .member-sign .note {
   font-size: 0.75rem;
   line-height: 1.5; }
   @media (min-width: 46.25em) {
-    .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group input[type='text'], .form-group input[type='password'], .form-group input[type='number'], .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .option .option-item select, .option .option-item input, .map-event-meta, .member-sign .forgot-pw, .bs-detail .rating-comment .meta, .member-sign .note {
+    .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .select-group .button, .form-group .check-item .button, .form-group .radio-item .button, .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button, .form-group .label, .form-group input[type='text'], .form-group input[type='password'], .form-group input[type='number'], .form-group select, section .section-title .function .form-unit label, section .section-subtitle .function .form-unit label, .table, .bs-detail .detail-title .title-content .status-tag, .option .option-item label, .option .option-item select, .option .option-item input, .map-event-meta, .member-sign .forgot-pw, .bs-detail .rating-comment .meta, .member-sign .note {
       font-size: 0.85rem; } }
 
 .modal-footer .btn, .button-group button, .button-group .button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button, .form-group, .pagination a, .header a, .header .member-name, .map-event-name, body, section .section-subtitle .title, section .section-info {
@@ -770,7 +770,7 @@ hr {
 .modal-footer .btn, .button-group button, .button-group .button, section .section-title .more-button, section .section-subtitle .more-button, .member-sign .cta-button, .member-sign .fb-signin-button, .member-sign .signup-button {
   padding: 8px 24px; }
 
-.form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button {
+.form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .select-group .button, .form-group .check-item .button, .form-group .radio-item .button {
   padding: 8px 16px 7px; }
 
 .form-group .button, .form-group .small-button, .table button, .table .button, .option .option-item button, .map-manage-button {
@@ -901,18 +901,20 @@ hr {
   .form-group .data.important {
     color: #FF6767; }
 
-.form-group .input-group, .form-group .data-group, .form-group .image-group, .form-group .check-item, .form-group .radio-item {
+.form-group .input-group, .form-group .data-group, .form-group .image-group, .form-group .select-group, .form-group .check-item, .form-group .radio-item {
   margin-top: 4px; }
-  .form-group .input-group input, .form-group .input-group .data, .form-group .data-group input, .form-group .data-group .data, .form-group .image-group input, .form-group .image-group .data, .form-group .check-item input, .form-group .check-item .data, .form-group .radio-item input, .form-group .radio-item .data {
+  .form-group .input-group input, .form-group .input-group .data, .form-group .input-group select, .form-group .data-group input, .form-group .data-group .data, .form-group .data-group select, .form-group .image-group input, .form-group .image-group .data, .form-group .image-group select, .form-group .select-group input, .form-group .select-group .data, .form-group .select-group select, .form-group .check-item input, .form-group .check-item .data, .form-group .check-item select, .form-group .radio-item input, .form-group .radio-item .data, .form-group .radio-item select {
     display: inline-block;
     margin-right: 8px; }
-  .form-group .input-group .small, .form-group .data-group .small, .form-group .image-group .small, .form-group .check-item .small, .form-group .radio-item .small {
+  .form-group .input-group select, .form-group .data-group select, .form-group .image-group select, .form-group .select-group select, .form-group .check-item select, .form-group .radio-item select {
+    width: auto; }
+  .form-group .input-group .small, .form-group .data-group .small, .form-group .image-group .small, .form-group .select-group .small, .form-group .check-item .small, .form-group .radio-item .small {
     width: 48px;
     margin-right: 8px; }
-  .form-group .input-group .medium, .form-group .data-group .medium, .form-group .image-group .medium, .form-group .check-item .medium, .form-group .radio-item .medium {
+  .form-group .input-group .medium, .form-group .data-group .medium, .form-group .image-group .medium, .form-group .select-group .medium, .form-group .check-item .medium, .form-group .radio-item .medium {
     width: 128px;
     margin-right: 8px; }
-  .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .check-item .button, .form-group .radio-item .button {
+  .form-group .input-group .button, .form-group .data-group .button, .form-group .image-group .button, .form-group .select-group .button, .form-group .check-item .button, .form-group .radio-item .button {
     display: inline-block; }
 
 .form-group .check-group .check-item {
