@@ -70,7 +70,7 @@
                     </div>
                   </div>
                   <div class="form-unit">
-                    <label class="label">身分證字號</label>
+                    <label class="label">身份證字號 / 居留證號</label>
                     <div class="input-group">
                       <div class="data">A123***678</div>
                       <button class="small-button" type="button" data-toggle="modal" data-target="#need-pw">觀看資料</button>
@@ -191,6 +191,26 @@
                 </form>
               </div>
             </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">緊急聯絡人</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">緊急聯絡人 1 姓名</label>
+                    <input type="text" value="">
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">緊急聯絡人 1 電話</label>
+                    <input type="text" value="">
+                  </div>
+                  <div class="form-unit">
+                    <button class="small-button">新增一組緊急聯絡人</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
           <div class="tab-pane" id="group">
             <div class="form-section">
@@ -286,22 +306,24 @@
                         <th>訓練單位</th>
                         <th>受訓時間</th>
                         <th>課程類別</th>
+                        <th>課程編號</th>
                         <th>課程名稱</th>
+                        <th>時數</th>
                         <th>所屬技能</th>
-                        <th>結訓成績</th>
-                        <th>結訓證書</th>
+                        <th>合格</th>
                         <th>證書發放日期</th>
                         <th>發證公文號</th>
-                        <th>人工補充</th>
+                        <th>人工</th>
                       </tr>
                       <tr>
                         <td>台東縣志願服務協會</td>
                         <td>2017/10/01~2017/10/30</td>
                         <td>基礎訓練</td>
+                        <td>123456</td>
                         <td>社福類志工訓練</td>
+                        <td>8</td>
                         <td>公共安全</td>
-                        <td>100</td>
-                        <td><a class="button" href="#">預覽</a></td>
+                        <td>Y</td>
                         <td>2017/11/30</td>
                         <td>府社教字第1060228253號</td>
                         <td></td>
@@ -310,10 +332,11 @@
                         <td>台東縣志願服務協會</td>
                         <td>2017/10/01~2017/10/30</td>
                         <td>基礎訓練</td>
+                        <td>123456</td>
                         <td>社福類志工訓練</td>
+                        <td>8</td>
                         <td>公共安全</td>
-                        <td>100</td>
-                        <td><a class="button" href="#">預覽</a></td>
+                        <td>Y</td>
                         <td>2017/11/30</td>
                         <td>府社教字第1060228253號</td>
                         <td></td>
@@ -331,6 +354,16 @@
               </div>
               <div class="main">
                 <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">匯出條件 - 發證日期</label>
+                    <div class="input-group">
+                      <input type="text" value="2018/01/31">~
+                      <input type="text" value="2018/03/31">
+                    </div>
+                  </div>
+                  <div class="form-unit">
+                    <button class="small-button" type="button">匯出資料</button>
+                  </div>
                   <table class="table">
                     <thead>
                       <tr>
@@ -378,6 +411,16 @@
               </div>
               <div class="main">
                 <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">匯出條件 - 發證日期</label>
+                    <div class="input-group">
+                      <input type="text" value="2018/01/31">~
+                      <input type="text" value="2018/03/31">
+                    </div>
+                  </div>
+                  <div class="form-unit">
+                    <button class="small-button" type="button">匯出資料</button>
+                  </div>
                   <table class="table">
                     <thead>
                       <tr>

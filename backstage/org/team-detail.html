@@ -87,9 +87,25 @@
           <div class="main">
             <form class="form-group">
               <div class="form-unit">
-                <button class="button" type="button" data-toggle="modal" data-target="#add-people">新增人員</button>
-                <button class="button">匯出人員</button>
-                <button class="button">刪除選取人員</button>
+                <label class="label">管理</label>
+                <div class="input-group">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-people">新增人員</button>
+                  <button class="small-button">刪除選取人員</button>
+                </div>
+              </div>
+              <div class="form-unit">
+                <label class="label">匯出條件 - 職位發證公文號</label>
+                <input type="text" value="府社救字第1060228253號">
+              </div>
+              <div class="form-unit">
+                <label class="label">匯出條件 - 任職起始日</label>
+                <div class="input-group">
+                  <input type="text" value="2018/01/31">~
+                  <input type="text" value="2018/03/31">
+                </div>
+              </div>
+              <div class="form-unit">
+                <button class="small-button" type="button">匯出資料</button>
               </div>
               <table class="table">
                 <thead>

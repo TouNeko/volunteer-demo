@@ -1950,6 +1950,10 @@ section {
   max-width: 96px;
   border-radius: 20px; }
 
+.personal-data button.small-button {
+  min-width: 96px;
+  max-width: none; }
+
 .personal-data .cta-button {
   display: block;
   width: 100%; }
