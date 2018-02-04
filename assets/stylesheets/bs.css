@@ -1013,10 +1013,10 @@ input[type='checkbox']:disabled {
         padding: 4px 12px; } }
 
 section {
-  padding: 8px 0;
-  min-height: 100vh; }
+  padding: 8px 0; }
   section.list {
-    background-color: #f7f7f7; }
+    background-color: #f7f7f7;
+    min-height: 100vh; }
   section .section-title, section .section-subtitle {
     margin: 12px 0; }
     @media (min-width: 46.25em) {
