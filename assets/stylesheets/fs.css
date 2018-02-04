@@ -854,6 +854,13 @@ hr {
   .form-group .label::after {
     content: ' / '; }
 
+.form-group .from-unit.sub {
+  margin: 4px 16px; }
+  .form-group .from-unit.sub .label {
+    color: #707070; }
+    .form-group .from-unit.sub .label::after {
+      display: none; }
+
 .form-group input[type='text'], .form-group input[type='password'], .form-group input[type='number'] {
   display: block;
   margin-top: 4px;
@@ -1600,6 +1607,9 @@ section {
 
 .event-detail-section .event-content .article p, .event-detail-section .event-meta .article p, .org-detail-section .event-content .article p, .org-detail-section .event-meta .article p {
   margin: 0 0 8px; }
+
+.event-detail-section .event-images, .org-detail-section .event-images {
+  max-width: 707px; }
 
 .event-detail-section .event-slider, .org-detail-section .event-slider {
   margin-bottom: 8px; }

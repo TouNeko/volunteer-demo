@@ -842,6 +842,13 @@ hr {
   .form-group .label::after {
     content: ' / '; }
 
+.form-group .from-unit.sub {
+  margin: 4px 16px; }
+  .form-group .from-unit.sub .label {
+    color: #707070; }
+    .form-group .from-unit.sub .label::after {
+      display: none; }
+
 .form-group input[type='text'], .form-group input[type='password'], .form-group input[type='number'] {
   display: block;
   margin-top: 4px;
