@@ -38,11 +38,6 @@
       <div class="container">
         <div class="section-title">
           <h1 class="title">製作投保表單</h1>
-          <div class="function">
-            <form class="form-group">
-              <div class="form-unit"><a class="button" href="#">匯出完成表單</a></div>
-            </form>
-          </div>
         </div>
         <div class="form-section">
           <div class="aside">
@@ -78,6 +73,15 @@
                 <textarea></textarea>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="form-section">
+          <div class="aside"></div>
+          <div class="main">
+            <div class="button-group">
+              <button class="cta-button">儲存</button>
+              <button>匯出完成表單</button>
+            </div>
           </div>
         </div>
         <ul class="nav nav-tabs">
@@ -246,6 +250,20 @@
             </ul>
           </div>
           <div class="tab-pane" id="complete-list">
+            <div class="section-subtitle">
+              <h2 class="title">身分證查詢</h2>
+              <div class="function">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label>身份證字號</label>
+                    <input type="text" placeholder="">
+                  </div>
+                  <div class="form-unit">
+                    <button class="button" type="button">查詢</button>
+                  </div>
+                </form>
+              </div>
+            </div>
             <table class="table">
               <thead>
                 <tr>
@@ -391,6 +409,18 @@
                 </tr>
               </thead>
             </table>
+            <div class="section-info"><span>1-10筆 / 500筆</span></div>
+            <ul class="pagination">
+              <li><a class="prev" href="#">上一頁</a></li>
+              <li><a class="page" href="#">1</a></li>
+              <li>...</li>
+              <li><a class="page" href="#">5</a></li>
+              <li><a class="page active" href="#">6</a></li>
+              <li><a class="page" href="#">7</a></li>
+              <li>...</li>
+              <li><a class="page" href="#">11</a></li>
+              <li><a class="next" href="#">下一頁</a></li>
+            </ul>
           </div>
           <div class="tab-pane" id="cancel-list">
             <table class="table">
