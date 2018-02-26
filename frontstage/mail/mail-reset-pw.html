@@ -1,0 +1,102 @@
+
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <style>
+      body {
+        background-color: #F7F7F7;
+        font-family: sans-serif;
+        color: #474747;
+      }
+      .mail-wrap {
+        max-width: 600px;
+        margin: 16px auto;
+      }
+      .mail-content {
+        padding: 16px;
+        margin: 0 8px;
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
+      }
+      .mail-content table {
+        width: 100%;
+      }
+      .mail-content .logo {
+        display: block;
+        width: 136px;
+        height: auto;
+      }
+      .mail-content .title {
+        margin: 0;
+        font-size: 18px;
+        text-align: right;
+        color: #FF6767;
+      }
+      .mail-content .content {
+        margin: 32px auto 48px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+      .mail-content .note {
+        font-size: 13px;
+        color: #9a9a9a;
+        margin: 16px 0;
+      }
+      .mail-content ol {
+        margin: 0;
+        padding: 8px 0 0 24px;
+      }
+      .mail-content a {
+        color: #FF6767;
+      }
+      .mail-content .footer {
+        padding: 16px 0 0;
+        font-size: 13px;
+        color: #C7C7C7;
+        border-top: 1px solid #C7C7C7;
+      }
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="mail-wrap">
+      <div class="mail-content">
+        <table>
+          <tr>
+            <td><img class="logo" src="/assets/images/mail-logo.png"/></td>
+            <td></td>
+            <td>
+              <h1 class="title">重設密碼</h1>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="content">
+                <p>%name% 您好：</p>
+                <p>您於 TTVolunteer 執行了重設密碼，<br>請在行動裝置上點擊下方連結，打開 TTVoluntter，進行密碼重新設定流程。</p><a href="#" target="_blank">%link%</a>
+                <p>謝謝您的配合。</p>
+              </div>
+              <div class="note"><span>註：</span>
+                <ol>
+                  <li>本信件為自動寄發請勿直接回信</li>
+                  <li>倘若您未執行做過這個動作，請無視這封通知信，謝謝！</li>
+                </ol>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="footer">© TTVolunteer</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
