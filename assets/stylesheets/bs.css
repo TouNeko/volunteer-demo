@@ -1355,6 +1355,10 @@ section {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+    .option .option-item.large {
+      width: 66.666%; }
+      .option .option-item.large .input-group, .option .option-item.large .select-group {
+        width: 95%; }
     .option .option-item label {
       margin-right: 8px;
       font-weight: 500;
