@@ -58,7 +58,10 @@
                 <th>課程名稱</th>
                 <th>時數</th>
                 <th>所屬技能</th>
-                <th>管理</th>
+                <th>報名人數</th>
+                <th>報到人數</th>
+                <th>社會處承認</th>
+                <th class="center">管理</th>
               </tr>
               <tr>
                 <td>臺東縣志願服務協會</td>
@@ -68,8 +71,11 @@
                 <td>社福類志工訓練</td>
                 <td>8</td>
                 <td>公共安全</td>
-                <td>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯</button>
+                <td>50</td>
+                <td>40</td>
+                <td>承認</td>
+                <td class="center">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯課程</button>
                   <button class="button" type="button">匯出證書</button>
                 </td>
               </tr>
@@ -81,8 +87,11 @@
                 <td>社福類志工訓練</td>
                 <td>8</td>
                 <td>公共安全</td>
-                <td>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯</button>
+                <td>50</td>
+                <td>40</td>
+                <td>承認</td>
+                <td class="center">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯課程</button>
                   <button class="button" type="button">匯出證書</button>
                 </td>
               </tr>
@@ -94,8 +103,11 @@
                 <td>社福類志工訓練</td>
                 <td>8</td>
                 <td>公共安全</td>
-                <td>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯</button>
+                <td>50</td>
+                <td>40</td>
+                <td>承認</td>
+                <td class="center">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯課程</button>
                   <button class="button" type="button">匯出證書</button>
                 </td>
               </tr>
@@ -107,8 +119,11 @@
                 <td>社福類志工訓練</td>
                 <td>8</td>
                 <td>公共安全</td>
-                <td>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯</button>
+                <td>50</td>
+                <td>40</td>
+                <td>承認</td>
+                <td class="center">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯課程</button>
                   <button class="button" type="button">匯出證書</button>
                 </td>
               </tr>
@@ -120,8 +135,11 @@
                 <td>社福類志工訓練</td>
                 <td>8</td>
                 <td>公共安全</td>
-                <td>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯</button>
+                <td>50</td>
+                <td>40</td>
+                <td>承認</td>
+                <td class="center">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯課程</button>
                   <button class="button" type="button">匯出證書</button>
                 </td>
               </tr>
@@ -133,8 +151,11 @@
                 <td>社福類志工訓練</td>
                 <td>8</td>
                 <td>公共安全</td>
-                <td>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯</button>
+                <td>50</td>
+                <td>40</td>
+                <td>承認</td>
+                <td class="center">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯課程</button>
                   <button class="button" type="button">匯出證書</button>
                 </td>
               </tr>
@@ -146,8 +167,11 @@
                 <td>社福類志工訓練</td>
                 <td>8</td>
                 <td>公共安全</td>
-                <td>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯</button>
+                <td>50</td>
+                <td>40</td>
+                <td>承認</td>
+                <td class="center">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯課程</button>
                   <button class="button" type="button">匯出證書</button>
                 </td>
               </tr>
@@ -159,8 +183,11 @@
                 <td>社福類志工訓練</td>
                 <td>8</td>
                 <td>公共安全</td>
-                <td>
-                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯</button>
+                <td>50</td>
+                <td>40</td>
+                <td>承認</td>
+                <td class="center">
+                  <button class="small-button" type="button" data-toggle="modal" data-target="#add-course">編輯課程</button>
                   <button class="button" type="button">匯出證書</button>
                 </td>
               </tr>
@@ -217,9 +244,49 @@
               </div>
               <div class="form-unit">
                 <label class="label">所屬技能</label>
-                <select>
-                  <option>所屬技能內容</option>
-                </select>
+                <div class="check-group">
+                  <div class="check-item fixed-width">
+                    <input id="checkitem1" type="checkbox">
+                    <label for="checkitem1">家電修理</label>
+                  </div>
+                  <div class="check-item fixed-width">
+                    <input id="checkitem2" type="checkbox">
+                    <label for="checkitem2">機械</label>
+                  </div>
+                  <div class="check-item fixed-width">
+                    <input id="checkitem3" type="checkbox">
+                    <label for="checkitem3">醫療護理</label>
+                  </div>
+                  <div class="check-item fixed-width">
+                    <input id="checkitem4" type="checkbox">
+                    <label for="checkitem4">手工藝</label>
+                  </div>
+                  <div class="check-item fixed-width">
+                    <input id="checkitem5" type="checkbox">
+                    <label for="checkitem5">體育</label>
+                  </div>
+                  <div class="check-item fixed-width">
+                    <input id="checkitem6" type="checkbox" checked>
+                    <label for="checkitem6">活動攝影</label>
+                  </div>
+                  <div class="check-item fixed-width">
+                    <input id="checkitem7" type="checkbox" checked>
+                    <label for="checkitem7">駕駛</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-unit">
+                <label class="label">是否為社會處承認課程</label>
+                <div class="radio-group">
+                  <div class="radio-item">
+                    <input id="radioitem1" type="radio" name="recognize" checked>
+                    <label for="radioitem1">承認</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="radioitem2" type="radio" name="recognize">
+                    <label for="radioitem2">不承認</label>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
