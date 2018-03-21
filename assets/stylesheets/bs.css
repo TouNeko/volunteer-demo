@@ -1359,6 +1359,10 @@ section {
       width: 66.666%; }
       .option .option-item.large .input-group, .option .option-item.large .select-group {
         width: 95%; }
+      .option .option-item.large button {
+        width: auto; }
+      .option .option-item.large button + button {
+        margin-left: 8px; }
     .option .option-item label {
       margin-right: 8px;
       font-weight: 500;
