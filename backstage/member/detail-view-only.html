@@ -1,0 +1,461 @@
+<!DOCTYPE html><!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7 ">
+<![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8 ">
+<![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9 ">
+<![endif]--><!--[if gt IE 8]><!-->
+<html lang="zh-TW"><!--<![endif]-->
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!-- [if lt IE 9] <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> -->
+    <script>var breakpoints = {"phone":"320px","tablet":"740px","desktop":"980px","wide":"1300px"}</script><link rel="stylesheet" href="../../assets/stylesheets/bs.css"/>
+    <title>website</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta content="website" property="og:title">
+    <meta content="website" property="og:site_name">
+    <meta content="http://localhost:3750" property="og:url">
+    <meta content="/assets/images/ogimage.jpg" property="og:image">
+    <meta content="" property="og:description">
+    <meta content="website" property="og:type">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo"><a href="../../backstage/index.html">Volunteer 後台</a></div>
+        <div class="nav-wrap">
+          <div class="nav-button">目錄</div>
+          <nav class="navigation"><a href="../../backstage/permission/index.html">權限管理</a><a href="../../backstage/member/index.html">志工管理</a><a href="../../backstage/event/index.html">活動管理</a><a href="../../backstage/org/index.html">單位管理</a><a href="../../backstage/insurance/index.html">保險管理</a><a href="../../backstage/verify/index.html">資料審核</a><a href="../../backstage/apikey/index.html">API Key</a></nav>
+        </div>
+        <div class="member"><span class="member-name">Volunteer</span><a href="../../backstage/index.html">登出</a></div>
+      </div>
+    </header>
+    <section>
+      <div class="container bs-detail">
+        <div class="detail-title">
+          <div class="title-image" style="background-image: url(&quot;/assets/images/imgphr-square.png&quot;);"></div>
+          <div class="title-content">
+            <h1 class="title">志・人</h1>
+            <p class="sub-title">志工資料預覽</p>
+          </div>
+        </div>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#data" data-toggle="tab">基本資料</a></li>
+          <li><a href="#group" data-toggle="tab">所屬單位</a></li>
+          <li><a href="#skill" data-toggle="tab">技能資訊</a></li>
+          <li><a href="#record" data-toggle="tab">紀錄資料</a></li>
+          <li><a href="#insurance" data-toggle="tab">保險資訊</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="data">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">基本資料</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">志工編號</label>
+                    <div class="data">TV201710010001</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">志工帳號</label>
+                    <div class="data">TV201710010001</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">志工信箱</label>
+                    <div class="data">user@volunteer.tw</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">志工姓名</label>
+                    <div class="data">志・人</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">身份證字號 / 居留證號</label>
+                    <div class="data">A123***678</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">志工照片</label>
+                    <div class="image-group">
+                      <div class="image-uploader" style="background-image: url(&quot;/assets/images/imgphr-square.png&quot;);"></div>
+                    </div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">生日</label>
+                    <div class="data">70/10/01</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">聯絡電話</label>
+                    <div class="input-group">
+                      <div class="data">098123456</div>
+                      <div class="data">098123456</div>
+                    </div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">荐訓單位</label>
+                    <div class="data"></div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">基訓成績</label>
+                    <div class="data"></div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">性別</label>
+                    <div class="data">男性</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">是否為原住民</label>
+                    <div class="data">否</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">教育程度</label>
+                    <div class="data"> 學士</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">首次志工服務日</label>
+                    <div class="data">2017/10/01</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">職業別</label>
+                    <div class="data">工商界人士</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">是否為外國人</label>
+                    <div class="data">否</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">居住地址</label>
+                    <div class="data">臺東市中華路一段684號</div>
+                  </div>
+                  <div class="form-unit">
+                    <label class="label">戶籍地址</label>
+                    <div class="data">臺東市中華路一段684號</div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">緊急聯絡人</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">緊急聯絡人 1 姓名</label>
+                    <div class="from-unit sub">
+                      <label class="label">姓名</label>
+                      <div class="data">志工爸</div>
+                    </div>
+                    <div class="from-unit sub">
+                      <label class="label">電話</label>
+                      <div class="data">0912345678</div>
+                    </div>
+                    <div class="from-unit sub">
+                      <label class="label">關係</label>
+                      <div class="data">父子</div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="group">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">所屬運用單位</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>運用單位類別</th>
+                        <th>運用單位編號</th>
+                        <th>單位名稱</th>
+                      </tr>
+                      <tr>
+                        <td>綜</td>
+                        <td>A00VY111</td>
+                        <td>臺東縣志願服務協會</td>
+                      </tr>
+                      <tr>
+                        <td>綜</td>
+                        <td>A00VY111</td>
+                        <td>臺東縣志願服務協會</td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">所屬志工隊</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>志工隊編號</th>
+                        <th>志工隊名稱</th>
+                        <th>志工職稱</th>
+                      </tr>
+                      <tr>
+                        <td>A00VY111</td>
+                        <td>臺東縣志願服務協會</td>
+                        <td>職稱</td>
+                      </tr>
+                      <tr>
+                        <td>A00VY111</td>
+                        <td>臺東縣志願服務協會</td>
+                        <td>職稱</td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="skill">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">志工證照</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>證照名稱</th>
+                        <th>所屬技能</th>
+                        <th>證照照片</th>
+                      </tr>
+                      <tr>
+                        <td>救生證照</td>
+                        <td>公共安全</td>
+                        <td><a class="button" href="#">預覽</a></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">受訓資訊</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>訓練單位</th>
+                        <th>受訓時間</th>
+                        <th>課程類別</th>
+                        <th>課程編號</th>
+                        <th>課程名稱</th>
+                        <th>時數</th>
+                        <th>所屬技能</th>
+                        <th>合格</th>
+                        <th>證書發放日期</th>
+                        <th>發證公文號</th>
+                        <th>人工</th>
+                      </tr>
+                      <tr>
+                        <td>臺東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>基礎訓練</td>
+                        <td>123456</td>
+                        <td>社福類志工訓練</td>
+                        <td>8</td>
+                        <td>公共安全</td>
+                        <td>Y</td>
+                        <td>2017/11/30</td>
+                        <td>府社教字第1060228253號</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>臺東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>基礎訓練</td>
+                        <td>123456</td>
+                        <td>社福類志工訓練</td>
+                        <td>8</td>
+                        <td>公共安全</td>
+                        <td>Y</td>
+                        <td>2017/11/30</td>
+                        <td>府社教字第1060228253號</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="record">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">志願服務紀錄冊</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>紀錄冊號</th>
+                        <th>發證單位</th>
+                        <th>發證日期</th>
+                        <th>備查文號</th>
+                        <th>狀態</th>
+                        <th>紀錄冊預覽</th>
+                      </tr>
+                      <tr>
+                        <td>粽字第053875號</td>
+                        <td>臺東縣政府社會處</td>
+                        <td>2017/11/30</td>
+                        <td>府社教字第1060228253號</td>
+                        <td>核發</td>
+                        <td><a class="button" href="#" target="_blank">預覽</a></td>
+                      </tr>
+                      <tr>
+                        <td>粽字第053875號</td>
+                        <td>臺東縣政府社會處</td>
+                        <td>2017/11/30</td>
+                        <td>府社教字第1060228253號</td>
+                        <td>核發</td>
+                        <td><a class="button" href="#" target="_blank">預覽</a></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">榮譽卡紀錄</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>榮譽卡號</th>
+                        <th>核發單位</th>
+                        <th>有效日期</th>
+                        <th>核發日期</th>
+                        <th>備查文號</th>
+                        <th>狀態</th>
+                        <th>榮譽卡預覽</th>
+                      </tr>
+                      <tr>
+                        <td>00000001</td>
+                        <td>臺東縣政府</td>
+                        <td>2018/12/31</td>
+                        <td>2017/12/31</td>
+                        <td>府社教字第1050141375號</td>
+                        <td>核發</td>
+                        <td><a class="button" href="#" target="_blank">預覽</a></td>
+                      </tr>
+                      <tr>
+                        <td>00000001</td>
+                        <td>臺東縣政府</td>
+                        <td>2018/12/31</td>
+                        <td>2017/12/31</td>
+                        <td>府社教字第1050141375號</td>
+                        <td>核發</td>
+                        <td><a class="button" href="#" target="_blank">預覽</a></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">志工服務紀錄</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <div class="form-unit">
+                    <label class="label">累積時數</label>
+                    <div class="data">78小時</div>
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>服務召募單位</th>
+                        <th>服務時間</th>
+                        <th>需求類別</th>
+                        <th>服務名稱</th>
+                        <th>服務類別</th>
+                        <th>服務時數</th>
+                        <th>取得評價</th>
+                        <th>人工補充</th>
+                      </tr>
+                      <tr>
+                        <td>臺東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>短期服務</td>
+                        <td>到宅服務義工</td>
+                        <td>老人服務</td>
+                        <td>8</td>
+                        <td>*****</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>臺東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>短期服務</td>
+                        <td>到宅服務義工</td>
+                        <td>老人服務</td>
+                        <td>8</td>
+                        <td>*****</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="insurance">
+            <div class="form-section">
+              <div class="aside">
+                <h2 class="form-title">保險資訊</h2>
+              </div>
+              <div class="main">
+                <form class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>保險單位</th>
+                        <th>保險時間</th>
+                        <th>保險類別</th>
+                      </tr>
+                      <tr>
+                        <td>臺東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>志工團體意外保險</td>
+                      </tr>
+                      <tr>
+                        <td>臺東縣志願服務協會</td>
+                        <td>2017/10/01~2017/10/30</td>
+                        <td>志工團體意外保險</td>
+                      </tr>
+                    </thead>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><script src="../../assets/javascripts/global.js"></script>
+  </body>
+</html>
