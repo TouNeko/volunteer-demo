@@ -1849,19 +1849,31 @@ section {
     background-color: #FFA867; }
 
 .dailylog-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 0; }
-  .dailylog-tab li a {
-    padding: 8px 24px;
-    color: #FF6767;
-    background-color: white;
-    border-radius: 4px;
-    border: 0; }
-    .dailylog-tab li a:hover {
+  .dailylog-tab::after {
+    display: none; }
+  .dailylog-tab li {
+    width: calc(100% / 3); }
+    .dailylog-tab li a {
+      width: 100%;
+      padding: 8px 12px;
+      text-align: center;
+      color: #FF6767;
+      background-color: white;
+      border-radius: 4px;
       border: 0; }
-  .dailylog-tab li.active a, .dailylog-tab li.active a:hover {
-    color: white;
-    background-color: #FF6767;
-    border: 0; }
+      .dailylog-tab li a:hover {
+        border: 0; }
+    .dailylog-tab li.active a, .dailylog-tab li.active a:hover {
+      color: white;
+      background-color: #FF6767;
+      border: 0; }
   .dailylog-tab li + li {
     margin-left: 8px; }
 
