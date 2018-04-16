@@ -438,6 +438,10 @@ hr {
   border: 0;
   border-bottom: 1px solid rgba(71, 71, 71, 0.2); }
 
+img.error {
+  margin: 72px auto 24px;
+  display: block; }
+
 .modal-open {
   overflow: hidden; }
 
